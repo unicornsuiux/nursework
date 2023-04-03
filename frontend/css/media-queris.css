@@ -1,0 +1,14 @@
+@media only screen and (max-width:1200px){
+    .header_links .link_item .nav-link{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+@media only screen and (max-width:1024px){
+    .header_links{
+        display: none;
+    }
+    .header .navbar-toggler{
+        display: block;
+    }
+}

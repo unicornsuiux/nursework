@@ -486,7 +486,7 @@ header .navbar a{
     display: inline-block;
     position: relative;
     background-color: var(--theme-primay-color);
-  }
+}
 .chevron:before {
     content: '';
     display: block;
@@ -523,6 +523,10 @@ header .navbar a{
     margin: -11px 0 0 -7px;
 }
 
+/* PROFESSTIONALS */
+.profession_content .count::after{
+    display: none;
+}
 
 
 

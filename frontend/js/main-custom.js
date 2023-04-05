@@ -1,10 +1,10 @@
 
-    $('.custom-file-input').on('change', function() {
-        //get the file name
-        var fileName = $(this).val();
-        //replace the "Choose a file" label
-        $(this).next('.custom-file-label').html(fileName);
-    })
+    // $('.custom-file-input').on('change', function() {
+    //     //get the file name
+    //     var fileName = $(this).val();
+    //     //replace the "Choose a file" label
+    //     $(this).next('.custom-file-label').html(fileName);
+    // })
 
     $(document).on('change', '.file-input', function() {
         console.log("files uploaded");
@@ -104,7 +104,6 @@ $('.solution_silder_wrap').owlCarousel({
         }
     }
 });
-
 $('.testimonail_silder').owlCarousel({
     loop: true,
     margin: 10,
@@ -151,3 +150,33 @@ $(document).ready(function() {
     }
   });
 });
+
+
+    $('.custom_input').change(function () {
+        var filename = $(this).val().split('\\').pop();
+        $(this).next('.file-name').text(filename).css('visibility','visible');
+    });
+
+
+    $(document).ready(function() {
+        // hide all steps except the first one
+        $('.step-2, .step-3, .step-4, .step-5, .step-6').hide();
+        
+        // when the "Next" button is clicked, show the next step and hide the current step
+        $('.continue').click(function() {
+          var currentStep = $(this).parent();
+          var nextStep = $(this).parent().next();
+          currentStep.hide();
+          nextStep.show();
+          return false; // prevent page refresh
+        });
+        
+        // when the "Back" button is clicked, show the previous step and hide the current step
+        $('.Back').click(function() {
+          var currentStep = $(this).parent();
+          var previousStep = $(this).parent().prev();
+          currentStep.hide();
+          previousStep.show();
+          return false; // prevent page refresh
+        });
+      });       

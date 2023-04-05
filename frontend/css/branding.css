@@ -121,12 +121,13 @@ button:hover {
 
 li{
     list-style: none;
-    font-size: var(--theme-font16);
+    font-size: var(--theme-font18);
 }
 
 p{
     font-family: 'Noto Sans Lepcha', sans-serif;
-    font-size: var(--theme-font16);
+    font-size: var(--theme-font18);
+    line-height: 30px;
 }
 
 img {

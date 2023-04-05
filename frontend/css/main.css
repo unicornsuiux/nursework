@@ -527,11 +527,243 @@ header .navbar a{
 .profession_content .count::after{
     display: none;
 }
+.job_item_title{
+    margin-bottom: 25px;
+}
+.job_item_title p{
+    font-weight: 700;
+    min-height: 68px;
+}
+.job_item-btn a{
+    width: 150px;
+    height: 55px;
+}
 
 
+/* sign in wrap */
+
+#sign_in_wrap{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background-color: green;
+}
+#sign_in_wrap .container-fluid, #sign_in_wrap .row{
+    height: 100%;
+}
+.sign_in_left, .sign_in_right{
+    height: 100%;
+}
+.sign_in_left{
+    background: rgb(3,14,79);
+    background: linear-gradient(90deg, rgba(3,14,79,0.9893207282913166) 100%, rgba(8,15,117,1) 100%);
+}
 
 
+/*  */
+#sign_in_wrap{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://learnwithomar.org/img/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  
+  }
+  .signin-left {
+    background: linear-gradient(-45deg, #1D1CE5, #030E4F, #000000, #030E4F);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 58px;
+  }
+  .signin-right{
+    background-color: white;
+    height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 58px;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
+  .signin-left h2{
+    color: white;
+    margin-bottom: 32px;
+    font-size: 32px;
+  }
+  .signin-left p,
+  .signin-left p a{
+    color: white;
+  }
+  
+  .signin-right h2{
+    font-size: 32px;
+    color: black;
+  }
+  .login-wrapper .container{
+    overflow: hidden;
+  }
+
+  .brand-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  .info_item{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  .info_item img{
+    width: 30px;
+    margin-top: 5px;
+  }
+  .info-title{
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .info-disc{
+    flex-grow: 1;
+  }
+  .info-disc span{
+    font-size: 16px;
+    line-height: 30px;
+    color: #0000009e;
+  }
+  .info_from_user{
+    padding: 30px 0;
+  }
+  .back-icon .close-icon{
+    right: unset;
+    left: 0px;
+    top: 0;
+  }
+  .close-icon{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    position: absolute;
+    right: 60px;
+    top: 30px;
+    cursor: pointer;
+  }
+.input__wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.sign_in_right .form-floating>label, .sign_in_right .form-floating>label {
+    position: absolute;
+    top: -9px;
+    left: -4px;
+}
+.sign_in_right .form-floating .form-select:focus{
+    box-shadow: none;
+}
+
+
+.file-upload {
+    position: relative;
+    font-size: 18px;
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .file-upload label {
+    display: block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: 2px dashed #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 65%;
+    font-size: 16px;
+  }
+  
+  .file-upload label:hover {
+    background-color: #f5f5f5;
+    border-color: #aaa;
+  }
+  
+  .file-upload label i {
+    margin-right: 10px;
+  }
+  
+  .file-upload input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .file-upload input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  
+  .file-upload input[type="file"]::before {
+    content: 'Select file';
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 6px 12px;
+    background-color: #fff;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .file-upload input[type="file"]:hover::before {
+    background-color: #f5f5f5;
+    border-color: #aaa;
+  }
+  
+  .file-upload input[type="file"]:active::before {
+    background-color: #eee;
+  }
+  
+  .file-upload .file-name {
+    visibility: hidden;
+    opacity: 1;
+    margin:0px auto;
+    width: 35%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #333;
+    border-radius: 6px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+  }
+  
 
 
 

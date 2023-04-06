@@ -752,7 +752,7 @@ header .navbar a{
   .country-select .country-list{
     width: 100%;
   }
-  #country_selector{
+  .all-country-dropdown input{
     width: 100%;
     border: 0;
     border-bottom: 1px solid #ccc;

@@ -160,7 +160,7 @@ $(document).ready(function() {
 
     $(document).ready(function() {
         // hide all steps except the first one
-        $('.step-2, .step-3, .step-4, .step-5, .step-6, .step-7, .step-8, .step-9,.step-10').hide();
+        $('.step-2, .step-3, .step-4, .step-5, .step-6, .step-7, .step-8, .step-9, .step-10, .step-11').hide();
         
         // when the "Next" button is clicked, show the next step and hide the current step
         $('.continue').click(function() {
@@ -181,7 +181,7 @@ $(document).ready(function() {
         });
       });       
 
-    $("#country_selector").countrySelect({
+    $("#country_selector1, #country_selector2").countrySelect({
         preferredCountries: ['ca', 'gb', 'us']
     });
 

@@ -160,7 +160,7 @@ $(document).ready(function() {
 
     $(document).ready(function() {
         // hide all steps except the first one
-        $('.step-2, .step-3, .step-4, .step-5, .step-6').hide();
+        $('.step-2, .step-3, .step-4, .step-5, .step-6, .step-7, .step-8, .step-9,.step-10').hide();
         
         // when the "Next" button is clicked, show the next step and hide the current step
         $('.continue').click(function() {
@@ -180,3 +180,11 @@ $(document).ready(function() {
           return false; // prevent page refresh
         });
       });       
+
+    $("#country_selector").countrySelect({
+        preferredCountries: ['ca', 'gb', 'us']
+    });
+
+
+
+

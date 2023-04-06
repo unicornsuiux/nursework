@@ -650,12 +650,12 @@ header .navbar a{
   }
   .back-icon .close-icon{
     right: unset;
-    left: 0px;
-    top: 0;
+    left: -44px;
+    top: -40px;
   }
   .close-icon{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     object-fit: contain;
     position: absolute;
     right: 60px;
@@ -743,7 +743,29 @@ header .navbar a{
     background-color: #f5f5f5;
     border-color: #aaa;
   }
-  
+  .country-select{
+    width: 100%;
+  }
+  .country-select.inside .selected-flag, .country-select.inside .flag-dropdown{
+    width: 100%;
+  }
+  .country-select .country-list{
+    width: 100%;
+  }
+  #country_selector{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+  }
+  .flag-dropdown:hover{
+    background-color: transparent;
+  }
+  .all-country-dropdown label{
+    top: -24px !important;
+    opacity: .65;
+    transform: scale(.85) translateY(-0.5rem) translateX(0.15rem);
+  }
   .file-upload input[type="file"]:active::before {
     background-color: #eee;
   }

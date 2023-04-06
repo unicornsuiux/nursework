@@ -19,12 +19,13 @@
     <meta property="og:url" content="">
     </meta>
     <script language=javascript src="./frontend/js/top.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.1/dist/css/datepicker.min.css">
 </head>
 
 <body class="p-0">
     <section id="sign_in_wrap" class="p-0">
         <div class="container-fluid reg">
-            <div class="row">
+            <div class="row main_row">
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6 p-0 sign_in_left">
@@ -32,8 +33,10 @@
                                 <a href=""><img src=""></a>
                                 <div>
                                     <h2>Please Sign up to continue!</h2>
-                                    <p>We will verify your account and you will get an activation email from admin. You
-                                        can check your course details and progress from your profile page.</p>
+                                    <p>
+                                        We will verify your account and you will get an activation email from our admin.
+                                        Please follow instructions in the emaail to complete your profile.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +67,7 @@
                                             <div class="info_item">
                                                 <img src="./frontend/img/number-1.png" alt="">
                                                 <div class="info-disc">
-                                                    <p class="info-title">Your personal infomation</p>
+                                                    <p class="info-title">Your professtional infomation</p>
                                                     <span>We'll ask for your name email and address</span>
                                                 </div>
                                             </div>
@@ -83,8 +86,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <button class="theme_btn w-100 rounded border-0 py-3 continue">Let
-                                            Go</button>
+                                        <button class="theme_btn w-100 rounded border-0 py-3 continue">Next</button>
                                     </div>
                                     <div class="step-2 position-relative h-100 back-icon signin_step">
                                         <div class="close-icon Back">
@@ -125,7 +127,7 @@
                                             You are going to need your license details for this step. Go grab that now
                                             if you don,t have it handy. W,ll wait.
                                         </p>
-                                        <div class="info_from_user pt-0">
+                                        <div class="info_from_user">
                                             <div class="info_item">
                                                 <img src="./frontend/img/number-1.png" alt="">
                                                 <div class="info-disc">
@@ -136,7 +138,7 @@
                                             <div class="info_item">
                                                 <img src="./frontend/img/number-1.png" alt="">
                                                 <div class="info-disc">
-                                                    <p class="info-title">Your personal infomation</p>
+                                                    <p class="info-title">Your professtional infomation</p>
                                                     <span>We'll ask for your name email and address</span>
                                                 </div>
                                             </div>
@@ -155,12 +157,884 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <button class="theme_btn w-100 rounded border-0 py-3 mb-2 continue">I have
-                                            my license
-                                            details</button>
+                                        <button
+                                            class="theme_btn w-100 rounded border-0 py-3 mb-2 continue">Next</button>
                                         <button class="theme_btn w-100 rounded border-0 py-3 bg-dark Back">Back</button>
                                     </div>
-                                    <div class="step-4 position-relative back-icon h-100 signin_step">
+                                    <div class="step-5 position-relative back-icon h-100 signin_step">
+                                        <div class="close-icon Back">
+                                            <img src="./frontend/img/left-arrow.png" alt="">
+                                        </div>
+                                        <div class="input__wrap">
+                                            <h3>Let,s know about your professtional Experience</h3>
+                                            <span>Please tell us about your past year of Experience</span>
+
+
+                                            <div class="form-floating my-2">
+                                                <input type="text"
+                                                    class="form-control border-0 ps-0 rounded-0 border-bottom"
+                                                    id="floatingInput" placeholder="Enter your last organization">
+                                                <label for="floatingInput" class="ps-0">Name of Hospital</label>
+                                            </div>
+                                            <div class="d-flex gap-2">
+                                                <div class="form-floating mb-2 w-50">
+                                                    <input id="employer-1" type="date"
+                                                        class="form-control border-0 ps-0 rounded-0 border-bottom"
+                                                        placeholder="DD/MM/YYYY">
+                                                    <label for="employer-1" class="ps-0">To</label>
+                                                </div>
+                                                <div class="form-floating mb-2 w-50">
+                                                    <input id="employer-1" type="date"
+                                                        class="form-control border-0 ps-0 rounded-0 border-bottom"
+                                                        placeholder="DD/MM/YYYY">
+                                                    <label for="employer-1" class="ps-0">From</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-floating my-2">
+                                                <input type="text"
+                                                    class="form-control border-0 ps-0 rounded-0 border-bottom"
+                                                    id="floatingInput" placeholder="Enter your last organization">
+                                                <label for="floatingInput" class="ps-0">Name of Hospital (Other)</label>
+                                            </div>
+
+                                            <div class="d-flex gap-2">
+                                                <div class="form-floating mb-2 w-50">
+                                                    <input id="employer-1" type="date"
+                                                        class="form-control border-0 ps-0 rounded-0 border-bottom"
+                                                        placeholder="DD/MM/YYYY">
+                                                    <label for="employer-1" class="ps-0">To</label>
+                                                </div>
+                                                <div class="form-floating mb-2 w-50">
+                                                    <input id="employer-1" type="date"
+                                                        class="form-control border-0 ps-0 rounded-0 border-bottom"
+                                                        placeholder="DD/MM/YYYY">
+                                                    <label for="employer-1" class="ps-0">From</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-floating my-2">
+                                                <input type="text"
+                                                    class="form-control border-0 ps-0 rounded-0 border-bottom bg-white"
+                                                    id="floatingInput" readonly>
+                                                <label for="floatingInput" class="ps-0">Your Total Number of
+                                                    Experience</label>
+                                            </div>
+                                            <div class="checkbox-wrapper-13">
+                                                <input id="c1-13" class="p-0" type="checkbox">
+                                                <label for="c1-13">Yes, this look correct</label>
+                                            </div>
+                                        </div>
+                                        <button class="theme_btn w-100 rounded border-0 py-3 continue">Continue</button>
+                                    </div>
+                                    <div class="step-6 position-relative back-icon h-100 signin_step">
+                                        <div class="close-icon Back">
+                                            <img src="./frontend/img/left-arrow.png" alt="">
+                                        </div>
+                                        <div class="input__wrap">
+                                            <h3>Let,s know about your specialty experience</h3>
+                                            <span>Please tell us about your expertise year of Experience</span>
+
+                                            <div class="form-floating my-2">
+                                                <input type="text"
+                                                    class="form-control border-0 ps-0 rounded-0 border-bottom bg-white"
+                                                    id="floatingInput" value="XYZ Hospital" readonly>
+                                                <label for="floatingInput" class="ps-0">Hospital 1</label>
+                                            </div>
+                                            <div class="row h-auto">
+                                                <div class="col-lg-12">
+                                                    <div class="row h-auto py-2 mb-3 mx-0 border-bottom mb-2">
+                                                        <div class="col-6 ps-0">
+                                                            <h5>Expertise</h5>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <h5>Experience</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Cardiac</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Maternity</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Neurology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">ER</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Critical care</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">ICU</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">NICU</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Gastroenterology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">General surgery</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Gynaecology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Haematology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Nephrology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Oncology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Ophthalmology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Renal unit</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Rheumatology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Urology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">others</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button class="theme_btn w-100 rounded border-0 py-3 continue">Continue</button>
+                                    </div>
+                                    <div class="step-7 position-relative back-icon h-100 signin_step">
+                                        <div class="close-icon Back">
+                                            <img src="./frontend/img/left-arrow.png" alt="">
+                                        </div>
+                                        <div class="input__wrap">
+                                            <h3>Let,s know about your specialty experience</h3>
+                                            <span>Please tell us about your expertise year of Experience</span>
+
+                                            <div class="form-floating my-2">
+                                                <input type="text"
+                                                    class="form-control border-0 ps-0 rounded-0 border-bottom bg-white"
+                                                    id="floatingInput" value="XYZ Hospital" readonly>
+                                                <label for="floatingInput" class="ps-0">Hospital 2</label>
+                                            </div>
+                                            <div class="row h-auto">
+                                                <div class="col-lg-12">
+                                                    <div class="row h-auto py-2 mb-3 mx-0 border-bottom mb-2">
+                                                        <div class="col-6 ps-0">
+                                                            <h5>Expertise</h5>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <h5>Experience</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Cardiac</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Maternity</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Neurology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">ER</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Critical care</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">ICU</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">NICU</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Gastroenterology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">General surgery</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Gynaecology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Haematology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Nephrology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Oncology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Ophthalmology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Renal unit</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Rheumatology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">Urology</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="checkbox-wrapper-13 d-flex justify-content-between align-items-center w-50">
+                                                            <label for="c1-13" class="fs-6">others</label>
+                                                            <input id="c1-13" class="p-0" type="checkbox">
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-50">
+                                                            <p class="mb-0 fs-6">Months</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button class="theme_btn w-100 rounded border-0 py-3 continue">Continue</button>
+                                    </div>
+                                    <div class="step-7 position-relative back-icon h-100 signin_step">
+                                        <div class="close-icon Back">
+                                            <img src="./frontend/img/left-arrow.png" alt="">
+                                        </div>
+                                        <div class="input__wrap">
+                                            <h3>Let,s know about your specialty experience</h3>
+                                            <span>Please tell us about your expertise year of Experience</span>
+
+                                            <div class="form-floating my-2">
+                                                <input type="text"
+                                                    class="form-control border-0 ps-0 rounded-0 border-bottom bg-white"
+                                                    id="floatingInput" value="XYZ Hospital" readonly>
+                                                <label for="floatingInput" class="ps-0">Hospital 2</label>
+                                            </div>
+                                            <div class="row h-auto">
+                                                <div class="col-lg-12">
+                                                    <div class="row h-auto py-2 mb-3 mx-0 border-bottom mb-2">
+                                                        <div class="col-6 ps-0">
+                                                            <h5>Selected Expertise</h5>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <h5>Total Experience</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">Cardiac</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">Maternity</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">Neurology</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">ER</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">Critical care</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">ICU</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">NICU</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">Gastroenterology</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">General surgery</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">Gynaecology</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">Haematology</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">Nephrology</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">Oncology</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">Ophthalmology</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">Renal unit</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">Rheumatology</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">Urology</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center gap-4 mb-2">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                            <p class="mb-0 fs-6">others</p>
+                                                            <input type="number" class="w-50 border-secondary h-30px"
+                                                                name="" id="" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div class="checkbox-wrapper-13">
+                                                        <input id="c1-13" class="p-0" type="checkbox">
+                                                        <label for="c1-13">Yes, this look correct</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="theme_btn w-100 rounded border-0 py-3 continue">Continue</button>
+                                    </div>
+                                    <div class="step-8 position-relative back-icon h-100 signin_step">
+                                        <div class="close-icon Back">
+                                            <img src="./frontend/img/left-arrow.png" alt="">
+                                        </div>
+                                        <div class="input__wrap">
+                                            <h3>What is you preferred internation location</h3>
+                                            <div class="mt-5 mb-3 all-country-dropdown">
+                                                <div class="form-item form-floating">
+                                                    <label for="country_selector" class="ps-0">Select a country
+                                                        here...</label>
+                                                    <input id="country_selector" type="text">
+                                                </div>
+                                                <div class="form-item" style="display:none;">
+                                                    <input type="text" id="country_selector_code"
+                                                        name="country_selector_code" data-countrycodeinput="1"
+                                                        readonly="readonly"
+                                                        placeholder="Selected country code will appear here" />
+                                                </div>
+                                            </div>
+                                            <div class="form-floating my-3">
+                                                <select class="form-select border-0 ps-0 rounded-0 border-bottom"
+                                                    id="floatingSelect" aria-label="Floating label select example">
+                                                    <option selected>Select State</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <label for="floatingInput" class="ps-0">Select State</label>
+                                            </div>
+                                        </div>
+                                        <button class="theme_btn w-100 rounded border-0 py-3 continue">Continue</button>
+                                    </div>
+                                    <div class="step-8 position-relative back-icon h-100 signin_step">
                                         <div class="close-icon Back">
                                             <img src="./frontend/img/left-arrow.png" alt="">
                                         </div>
@@ -176,17 +1050,22 @@
                                                     <option value="2">Two</option>
                                                     <option value="3">Three</option>
                                                 </select>
-                                                <label for="floatingInput" class="ps-0">Worker Type</label>
+                                                <label for="floatingInput" class="ps-0">Nurse Type</label>
                                             </div>
-                                            <div class="form-floating my-3">
-                                                <select class="form-select border-0 ps-0 rounded-0 border-bottom"
-                                                    id="floatingSelect" aria-label="Floating label select example">
-                                                    <option selected>Any</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                                <label for="floatingInput" class="ps-0">State</label>
+                                            <div class="my-3 all-country-dropdown">
+                                                <div class="form-item">
+                                                    <input id="country_selector" type="text">
+                                                    <label for="country_selector" style="display:none;">Select a country
+                                                        here...</label>
+                                                </div>
+                                                <div class="form-item" style="display:none;">
+                                                    <input type="text" id="country_selector_code"
+                                                        name="country_selector_code" data-countrycodeinput="1"
+                                                        readonly="readonly"
+                                                        placeholder="Selected country code will appear here" />
+                                                    <label for="country_selector_code">...and the selected country code
+                                                        will be updated here</label>
+                                                </div>
                                             </div>
                                             <div class="form-floating mb-3">
                                                 <input type="number"
@@ -198,12 +1077,12 @@
                                                 <input type="date"
                                                     class="form-control border-0 ps-0 rounded-0 border-bottom"
                                                     id="floatingInput" placeholder="123456" value="mm/dd/yyyy">
-                                                <label for="floatingInput" class="ps-0">Expire Date</label>
+                                                <label for="floatingInput" class="ps-0">Expiry Date</label>
                                             </div>
                                         </div>
                                         <button class="theme_btn w-100 rounded border-0 py-3 continue">Continue</button>
                                     </div>
-                                    <div class="step-5 position-relative h-100 signin_step">
+                                    <div class="step-9 position-relative h-100 signin_step">
                                         <div class="brand-img">
                                             <img src="./frontend/img/logo.jpg" alt="">
                                         </div>
@@ -247,7 +1126,7 @@
                                             to personal documents</button>
                                         <button class="theme_btn w-100 rounded border-0 py-3 bg-dark Back">Back</button>
                                     </div>
-                                    <div class="step-6 position-relative h-100 back-icon signin_step">
+                                    <div class="step-10 position-relative h-100 back-icon signin_step">
                                         <div class="close-icon Back">
                                             <img src="./frontend/img/left-arrow.png" alt="">
                                         </div>
@@ -304,40 +1183,8 @@
 
                                         </div>
                                         <button class="theme_btn w-100 rounded border-0 py-3">Continue</button>
-
                                     </div>
                                 </form>
-                                <!-- <form action="" id="signup-form">
-                                    <div class="step-1">
-                                        <h1>1</h1>
-                                        <button class="continue">Next</button>
-                                    </div>
-                                    <div class="step-2 signin_step">
-                                        <h1>2</h1>
-                                        <button class="Back">Back</button>
-                                        <button class="continue">Next</button>
-                                    </div>
-                                    <div class="step-3 signin_step">
-                                        <h1>3</h1>
-                                        <button class="Back">Back</button>
-                                        <button class="continue">Next</button>
-                                    </div>
-                                    <div class="step-4 signin_step">
-                                        <h1>4</h1>
-                                        <button class="Back">Back</button>
-                                        <button class="continue">Next</button>
-                                    </div>
-                                    <div class="step-5 signin_step">
-                                        <h1>5</h1>
-                                        <button class="Back">Back</button>
-                                        <button class="continue">Next</button>
-                                    </div>
-                                    <div class="step-6 signin_step">
-                                        <h1>6</h1>
-                                        <button class="Back">Back</button>
-                                        <button class="continue">Next</button>
-                                    </div>
-                                </form> -->
                             </div>
                         </div>
                     </div>
@@ -348,10 +1195,7 @@
         <!-- reg end -->
     </section>
 
-
-
     <script language=javascript src="./frontend/js-partails/footer-scripts.js"></script>
-
 </body>
 
 </html>

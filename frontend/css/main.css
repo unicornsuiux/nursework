@@ -583,9 +583,11 @@ header .navbar a{
   .signin-right{
     background-color: white;
     height: 100%;
-      display: flex;
-      align-items: center;
-      padding: 58px;
+    display: flex;
+    align-items: center;
+    padding: 58px;
+    overflow-y: auto;
+    max-height: 100vh;
   }
   @keyframes gradient {
     0% {
@@ -666,7 +668,7 @@ header .navbar a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    /* height: 100%; */
 }
 .sign_in_right .form-floating>label, .sign_in_right .form-floating>label {
     position: absolute;
@@ -785,10 +787,101 @@ header .navbar a{
     padding: 10px;
     background-color: #f4f4f4;
   }
-  
+.hospitals_worked_wrap{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+.hospitals_worked_wrap .input_for_hospital,
+.hospitals_worked_wrap .input_for_dates{
+    width: 50%;
+}
+.genral-icon{
+    width: 30px;
+}
+.remove-icon{
+    position: absolute;
+    width: 20px;
+    left: 0;
+    top: -24px;
+}
+.all-hopitals-data{
+    max-height: 600px;
+    overflow-y: auto;
+    min-height: 200px;
+    overflow-y: auto;
+    /* box-shadow: 1px 1px 10px #f4d4d4; */
+    border-radius: 6px;
+    padding: 10px;
+}
+.sign_in_right .all-hopitals-data .form-floating>label, .sign_in_right .form-floating>label {
+    left: 0;
+}
+.specialty-experince_wrap select{
+    cursor: pointer;
+}
 
-
-
+.selected-countries{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.selected-countries button{
+    background: transparent;
+    border: 0;
+    display: flex;
+    gap: 10px;
+    padding: 16px 0px;
+    align-items: baseline;
+    width: 165px;
+}
+.selected-countries button span{
+    font-size: 16px;
+}
+#selected-countries{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+.selected-countries button img{
+    width: 15px;
+}
+.selected-country{
+    background: #f4f4f4;
+    color: #5a4040;
+    display: inline-block;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    min-width: 70px;
+}
+.countries-menu{
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 7px;
+    margin-top: 10px;
+    /* display: none; */
+}
+.selected-country i{
+    cursor: pointer;
+}
+.countries-menu .checkbox-wrapper-13{
+    margin-bottom: 15px;
+}
+.countries-menu .checkbox-wrapper-13:last-child{
+    margin-bottom: 0;
+}
+.countries-menu .checkbox-wrapper-13 label{
+    font-size: 14px;
+}
+.addition-info label{
+    font-size: 16px;
+}
 
 
 

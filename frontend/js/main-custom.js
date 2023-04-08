@@ -158,9 +158,12 @@ $(document).ready(function() {
     });
 
 
+
+
+
     $(document).ready(function() {
         // hide all steps except the first one
-        $('.step-2, .step-3, .step-4, .step-5, .step-6, .step-7, .step-8, .step-9, .step-10, .step-11').hide();
+        $('.step-2, .step-3, .step-4, .step-5, .step-6, .step-7, .step-8, .step-9, .step-10, .step-11, .step-12, .step-13, .step-14, .step-15, .step-16, .step-17, .step-18, .step-19, .step-20, .step-21').hide();
         
         // when the "Next" button is clicked, show the next step and hide the current step
         $('.continue').click(function() {
@@ -179,11 +182,78 @@ $(document).ready(function() {
           previousStep.show();
           return false; // prevent page refresh
         });
-      });       
+      });   
+    
+    
 
-    $("#country_selector1, #country_selector2").countrySelect({
-        preferredCountries: ['ca', 'gb', 'us']
-    });
+    $(document).ready(function() {
+        // add event listener to existing cross icons
+        $(".hospitals_worked_wrap .remove-icon").on("click", function() {
+          $(this).closest(".hospitals_worked_wrap").remove();
+        });
+      
+        // add event listener to new cross icons in cloned elements
+        $(".btn-success").on("click", function(e) {
+          e.preventDefault(); // prevent form submission
+          var hospitalsWrap = $(".hospitals_worked_wrap").last();
+          var newHospitalsWrap = hospitalsWrap.clone();
+          var newCrossIcon = $("<img src='./frontend/img/close.png' class='remove-icon genral-icon' alt='Remove'>"); // create new cross icon
+          newHospitalsWrap.append(newCrossIcon); // add new cross icon to cloned element
+          newHospitalsWrap.insertAfter(hospitalsWrap);
+          
+          // add event listener to new cross icon
+          newCrossIcon.on("click", function() {
+            $(this).closest(".hospitals_worked_wrap").remove();
+          });
+           // add box-shadow to .all-hopitals-data element
+             $(".all-hopitals-data").css("box-shadow", "1px 1px 10px #f4d4d4");
+        });
+      });
+      
+      
+      
+
+// $('#country_selector1').countrySelect({
+//     onlyCountries: ['us', 'gb', 'ca', 'au', 'ae', 'sa', 'eg', 'jo', 'lb', 'qa'],
+//     priorityCountries: ['us', 'gb', 'ca', 'au', 'ae', 'sa', 'eg', 'jo', 'lb', 'qa']
+// });
+
+
+
+
+  $('.country-selector .country').change(function() {
+    var selectedOptions = $('#selected-countries');
+    if ($(this).is(':checked')) {
+        var tag = $('<span>', {
+            class: 'selected-country',
+            text: $(this).val()
+        });
+        var icon = $('<i>', {
+            class: 'fas fa-times ml-1',
+            click: function() {
+                tag.remove();
+                $(this).siblings('input[type="checkbox"]').prop('checked', false);
+            }
+        });
+        tag.append(icon);
+        selectedOptions.append(tag);
+    } else {
+        var tagToRemove = selectedOptions.find('span[data-value="' + $(this).val() + '"]');
+        if (tagToRemove.length) {
+            tagToRemove.remove();
+        }
+    }
+});
+
+
+$('#multi-country-select-btn').click(function () {
+    $('.countries-menu').slideToggle();
+})
+  
+  
+  
+  
+  
 
 
 

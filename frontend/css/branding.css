@@ -82,20 +82,25 @@ body {
 .bg-f4{
     background-color: #f4f4f4; 
 }
-
-body::-webkit-scrollbar {
+#selected-countries::-webkit-scrollbar-thumb{
+    background-color: #f4f4f4;
+    height: 10px !important;
+    width: 2px;
+}
+::-webkit-scrollbar {
     width: 6px;
     box-shadow: none;
 }
 
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background-color: var(--theme-bg-light);
     box-shadow: none;
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: var(--theme-color-dark);
     box-shadow: none;
+    border-radius: 3px;
 }
 
 .font_light {
@@ -1078,9 +1083,7 @@ body .search-field {
     .checkbox-wrapper-13 input[type=checkbox]:hover:not(:checked):not(:disabled) {
       --bc: var(--border-hover);
     }
-    .checkbox-wrapper-13 input[type=checkbox]:focus {
-      box-shadow: 0 0 0 var(--focus);
-    }
+
     .checkbox-wrapper-13 input[type=checkbox]:not(.switch) {
       width: 21px;
     }

@@ -12,3 +12,23 @@
         display: block;
     }
 }
+
+@media only screen and (max-width:992px){
+    .sign_in_left{
+        display: none;
+    }
+    .sign_in_right{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:600px){
+    .signin-right{
+        padding: 30px 20px;
+    }
+    .input__wrap h3{
+        font-size: 20px;
+    }
+    .close-icon{
+        right: 10px;
+    }
+}

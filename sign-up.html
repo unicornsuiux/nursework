@@ -19,7 +19,6 @@
     <meta property="og:url" content="">
     </meta>
     <script language=javascript src="./frontend/js/top.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.1/dist/css/datepicker.min.css">
 </head>
 
 <body class="p-0">
@@ -29,15 +28,26 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-5 p-0 sign_in_left">
-                            <div class="signin-left">
-                                <a href=""><img src=""></a>
-                                <div>
-                                    <h2>Please Sign up to continue!</h2>
-                                    <p>
-                                        We will verify your account and you will get an activation email from our admin.
-                                        Please follow instructions in the emaail to complete your profile.
-                                    </p>
+                            <div class="signin-left signup-slider owl-carousel owl-theme">
+                                <div class="signup-slide" style="background-image: url('./frontend/img/N1.jpeg');">
                                 </div>
+                                <div class="signup-slide" style="background-image: url('./frontend/img/N2.jpeg');">
+                                </div>
+                                <div class="signup-slide" style="background-image: url('./frontend/img/N3.jpeg');">
+                                </div>
+                                <div class="signup-slide" style="background-image: url('./frontend/img/N4.jpeg');">
+                                </div>
+                                <div class="signup-slide" style="background-image: url('./frontend/img/N5.jpeg');">
+                                </div>
+                                <div class="signup-slide" style="background-image: url('./frontend/img/N6.jpeg');">
+                                </div>
+                            </div>
+                            <div class="signup_overlay">
+                                <h2>Please Sign up to continue!</h2>
+                                <p>
+                                    We will verify your account and you will get an activation email from our admin.
+                                    Please follow instructions in the emaail to complete your profile.
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-7 p-0 sign_in_right">
@@ -115,7 +125,7 @@
                                             <img src="./frontend/img/left-arrow.png" alt="">
                                         </div>
                                         <div class="input__wrap h-100">
-                                            <h3 class="">Enter Your OTP to verify your Email</h3>
+                                            <h3 class="">Enter 4 digit code sent to your email</h3>
                                             <div class="d-flex gap-4 mt-5 pe-5">
                                                 <div class="mb-3">
                                                     <input type="number"
@@ -210,7 +220,7 @@
                                         <button class="theme_btn w-100 rounded border-0 py-3 continue">Continue</button>
                                     </div>
 
-                                    <div class="step-6 position-relative h-100 signin_step">
+                                    <div class="step-5 position-relative h-100 signin_step">
                                         <div class="brand-img">
                                             <img src="./frontend/img/logo.jpg" alt="">
                                         </div>
@@ -258,11 +268,11 @@
                                         <button class="theme_btn w-100 rounded border-0 py-3 bg-dark Back">Back</button>
                                     </div>
 
-                                    <div class="step-7 position-relative back-icon h-100 signin_step">
+                                    <div class="step-6 position-relative back-icon h-100 signin_step">
                                         <div class="close-icon Back">
                                             <img src="./frontend/img/left-arrow.png" alt="">
                                         </div>
-                                        <div class="input__wrap justify-content-start">
+                                        <div class="input__wrap justify-content-start worked-hospitls">
                                             <h3 class="mb-4">Please enter information about various
                                                 hospitals where you have worked as an RN</h3>
 
@@ -280,22 +290,21 @@
                                                             <input id="employer-1" type="date"
                                                                 class="form-control border-0 ps-0 rounded-0 border-bottom"
                                                                 placeholder="DD/MM/YYYY">
-                                                            <label for="employer-1" class="ps-0">To</label>
+                                                            <label for="employer-1" class="ps-0">From</label>
                                                         </div>
                                                         <div class="form-floating  w-50">
                                                             <input id="employer-1" type="date"
                                                                 class="form-control border-0 ps-0 rounded-0 border-bottom"
                                                                 placeholder="DD/MM/YYYY">
-                                                            <label for="employer-1" class="ps-0">From</label>
+                                                            <label for="employer-1" class="ps-0">To</label>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <button id="add-more-hospitals" class="btn btn-success py-2 my-3 ms-1">
-                                                    <span>Add More</span>
-                                                    <img src="./frontend/img/plus.svg" class="genral-icon"
-                                                        alt=""></button>
                                             </div>
-
+                                            <button id="add-more-hospitals" class="btn btn-success py-2 my-3 ms-1">
+                                                <span>Add More</span>
+                                                <img src="./frontend/img/plus.svg" class="genral-icon" alt="">
+                                            </button>
 
                                             <div class="form-floating mt-4 my-2 w-50">
                                                 <input type="text"
@@ -313,16 +322,16 @@
                                             class="theme_btn w-100 rounded border-0 py-3 continue mt-4">Continue</button>
                                     </div>
 
-                                    <div class="step-8 position-relative back-icon h-100 signin_step">
+                                    <div class="step-7 position-relative back-icon h-100 signin_step">
                                         <div class="close-icon Back">
                                             <img src="./frontend/img/left-arrow.png" alt="">
                                         </div>
-                                        <div class="input__wrap pb-4">
-                                            <h3>Let,s know about your specialty experience</h3>
-                                            <span>Please tell us about your expertise year of Experience</span>
-                                            <div class="row h-auto">
+                                        <div class="input__wrap pb-4 h-100">
+                                            <h3>Please indicate your approx experience (in months) in Specialty wards in
+                                                specific Hospitals worked</h3>
+                                            <div class="row h-auto all-skill-wrapper">
                                                 <div class="col-lg-12">
-                                                    <div class="row h-auto py-2 mb-3 mx-0 border-bottom mb-2">
+                                                    <div class="row h-auto py-2 mb-3 mx-0 border-bottom mb-2 p-sticky">
                                                         <div class="col-4 ps-0">
                                                             <h5>Expertise</h5>
                                                         </div>
@@ -859,6 +868,93 @@
                                                         <div class="col-md-4">
                                                             <div class="checkbox-wrapper-13 h-100 border-bottom">
                                                                 <input id="c1-13" class="p-0" type="checkbox">
+                                                                <label for="c1-13">Perioperative/surgical</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-floating">
+                                                                <select
+                                                                    class="form-select border-0 border-bottom  rounded-0"
+                                                                    id="floatingSelect"
+                                                                    aria-label="Floating label select example">
+                                                                    <option selected>Open this select menu</option>
+                                                                    <option value="1">Hospital 1</option>
+                                                                    <option value="2">Hospital 2</option>
+                                                                </select>
+                                                                <label for="floatingSelect">Select hospital</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-floating">
+                                                                <input type="number"
+                                                                    class="form-control border-0 border-bottom rounded-0 "
+                                                                    id="floatingInput" placeholder="">
+                                                                <label for="floatingInput" class="ps-0">Months</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="specialty-experince_wrap mb-4 row h-auto">
+                                                        <div class="col-md-4">
+                                                            <div class="checkbox-wrapper-13 h-100 border-bottom">
+                                                                <input id="c1-13" class="p-0" type="checkbox">
+                                                                <label for="c1-13">Pediatric/NICU</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-floating">
+                                                                <select
+                                                                    class="form-select border-0 border-bottom  rounded-0"
+                                                                    id="floatingSelect"
+                                                                    aria-label="Floating label select example">
+                                                                    <option selected>Open this select menu</option>
+                                                                    <option value="1">Hospital 1</option>
+                                                                    <option value="2">Hospital 2</option>
+                                                                </select>
+                                                                <label for="floatingSelect">Select hospital</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-floating">
+                                                                <input type="number"
+                                                                    class="form-control border-0 border-bottom rounded-0 "
+                                                                    id="floatingInput" placeholder="">
+                                                                <label for="floatingInput" class="ps-0">Months</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="specialty-experince_wrap mb-4 row h-auto">
+                                                        <div class="col-md-4">
+                                                            <div class="checkbox-wrapper-13 h-100 border-bottom">
+                                                                <input id="c1-13" class="p-0" type="checkbox">
+                                                                <label for="c1-13">ICU/CCU</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-floating">
+                                                                <select
+                                                                    class="form-select border-0 border-bottom  rounded-0"
+                                                                    id="floatingSelect"
+                                                                    aria-label="Floating label select example">
+                                                                    <option selected>Open this select menu</option>
+                                                                    <option value="1">Hospital 1</option>
+                                                                    <option value="2">Hospital 2</option>
+                                                                </select>
+                                                                <label for="floatingSelect">Select hospital</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-floating">
+                                                                <input type="number"
+                                                                    class="form-control border-0 border-bottom rounded-0 "
+                                                                    id="floatingInput" placeholder="">
+                                                                <label for="floatingInput" class="ps-0">Months</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="specialty-experince_wrap mb-4 row h-auto">
+                                                        <div class="col-md-4">
+                                                            <div class="checkbox-wrapper-13 h-100 border-bottom">
+                                                                <input id="c1-13" class="p-0" type="checkbox">
                                                                 <label for="c1-13">Other</label>
                                                             </div>
                                                         </div>
@@ -890,12 +986,13 @@
                                         <button class="theme_btn w-100 rounded border-0 py-3 continue">Continue</button>
                                     </div>
 
-                                    <div class="step-9 position-relative back-icon h-100 signin_step">
+                                    <div class="step-8 position-relative back-icon h-100 signin_step">
                                         <div class="close-icon Back">
                                             <img src="./frontend/img/left-arrow.png" alt="">
                                         </div>
                                         <div class="input__wrap h-100">
-                                            <h3>What is you preferred internation location</h3>
+                                            <h3>Please indicate your approx experience (in months) in Specialty wards in
+                                                specific Hospitals worked</h3>
                                             <div class="country-selector mb-3">
                                                 <div class="selected-countries">
                                                     <button class="" type="button" id="multi-country-select-btn">
@@ -935,7 +1032,7 @@
                                                     id="floatingSelect" aria-label="Floating label select example">
                                                     <option selected>Select State</option>
 
-                                                    <!-- United States -->
+
                                                     <optgroup label="United States">
                                                         <option value="AL">Alabama</option>
                                                         <option value="AK">Alaska</option>
@@ -989,7 +1086,7 @@
                                                         <option value="WY">Wyoming</option>
                                                     </optgroup>
 
-                                                    <!-- United Kingdom -->
+
                                                     <optgroup label="United Kingdom">
                                                         <option value="ENG">England</option>
                                                         <option value="SCT">Scotland</option>
@@ -997,7 +1094,7 @@
                                                         <option value="NIR">Northern Ireland</option>
                                                     </optgroup>
 
-                                                    <!-- Canada -->
+
                                                     <optgroup label="Canada">
                                                         <option value="AB">Alberta</option>
                                                         <option value="BC">British Columbia</option>
@@ -1014,7 +1111,7 @@
                                                         <option value="YT">Yukon</option>
                                                     </optgroup>
 
-                                                    <!-- Australia -->
+
                                                     <optgroup label="Australia">
                                                         <option value="ACT">Australian Capital Territory</option>
                                                         <option value="NSW">New South Wales</option>
@@ -1029,13 +1126,156 @@
                                                 <label for="floatingInput" class="ps-0">Select State</label>
                                             </div>
 
-                                            <div class="form-floating addition-info">
-                                                <textarea class="form-control border-0 border-bottom"
-                                                    placeholder="Leave a comment here" id="floatingTextarea2"
-                                                    style="height: 100px"></textarea>
-                                                <label for="floatingTextarea2" class="ps-0">Reasons for choosing this
-                                                    country for work</label>
+                                            <div class="mb-5 addition-info">
+                                                <label for="Additionalmsg" class="form-label fw-bold">Additional
+                                                    Information,
+                                                    Rationale for your location choices</label>
+                                                <input typle="text" class="form-control border-0 border-bottom px-0"
+                                                    id="Additionalmsg"
+                                                    placeholder=" (family members already present in preferred country, do you have kids or a spouse that will move with you, other reasons)"
+                                                    style="height: 80px">
                                             </div>
+
+                                        </div>
+                                        <button class="theme_btn w-100 rounded border-0 py-3 continue">Continue</button>
+                                    </div>
+                                    <div class="step-9 position-relative back-icon h-100 signin_step">
+                                        <div class="close-icon Back">
+                                            <img src="./frontend/img/left-arrow.png" alt="">
+                                        </div>
+                                        <div class="input__wrap h-100">
+                                            <h3>To help us gauge timelines to get you hired for International nursing
+                                                role, please answer the following</h3>
+
+                                            <div class="quik-question-ask">
+                                                <div class="quik-question-ask_header border-bottom mb-3">
+                                                    <div class="quik-question-ask_head_title py-3">
+                                                        <div class="yes">
+                                                            <h5>Yes</h5>
+                                                        </div>
+                                                        <div class="No">
+                                                            <h5>No</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="quik-question-ask_inner">
+                                                    <div class="quik-question_wrapper">
+                                                        <div class="quik-question">
+                                                            <p class="fw-bold">Have you completed the (NCLEX - RX)
+                                                                exam and
+                                                                successfully
+                                                                cleared it?</p>
+                                                        </div>
+                                                        <div class="quik-question_anwser">
+                                                            <div>
+                                                                <div class="checkbox-wrapper-13 check-for-answer">
+                                                                    <label class="radio-container">
+                                                                        <input type="radio" name="nclex"
+                                                                            class="nclex-yes">
+                                                                        <span class="checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <label class="radio-container check-for-answer">
+                                                                    <input type="radio" name="nclex" class="nclex-no">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="quik-question-ask_inner">
+                                                    <div class="quik-question_wrapper">
+                                                        <div class="quik-question">
+                                                            <p class="fw-bold"> Have you successfully completed the
+                                                                English
+                                                                Language
+                                                                Proficiency text (either TOELL or IELTS)?</p>
+                                                        </div>
+                                                        <div class="quik-question_anwser">
+                                                            <div>
+                                                                <label class="radio-container">
+                                                                    <input type="radio" name="ielts" class="ielts-yes">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="radio-container">
+                                                                    <input type="radio" name="ielts" class="ielts-no">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="quik-question-ask_inner">
+                                                    <div class="quik-question_wrapper">
+                                                        <div class="quik-question">
+                                                            <p class="fw-bold"> Have you completed the " CGFNS
+                                                                Certificate
+                                                                Program" and
+                                                                the "Visa Screen assessment" from CGNS to validate your
+                                                                Nuring credentails ?</p>
+                                                        </div>
+                                                        <div class="quik-question_anwser">
+                                                            <div>
+                                                                <label class="radio-container">
+                                                                    <input type="radio" name="visa" class="visa-yes">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="radio-container">
+                                                                    <input type="radio" name="visa" class="visa-no">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Upload-document-wrap">
+                                                    <div id="NCLEX">
+                                                        <div class="file-upload">
+                                                            <label for="passport-front-page">
+                                                                <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                                                                <span>Upload Copy of
+                                                                    NCLEX - RX exams</span>
+                                                            </label>
+                                                            <input type="file" id="passport-front-page"
+                                                                class="custom_input" accept="image/*">
+                                                            <p class="file-name"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="TOELL">
+                                                        <div class="file-upload">
+                                                            <label for="passport-front-page">
+                                                                <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                                                                <span>Upload Copy of
+                                                                    TOELL or IELTS exams</span>
+                                                            </label>
+                                                            <input type="file" id="passport-front-page"
+                                                                class="custom_input" accept="image/*">
+                                                            <p class="file-name"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="visascreen">
+                                                        <div class="file-upload">
+                                                            <label for="passport-front-page">
+                                                                <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                                                                <span>Upload Copy of
+                                                                    CGFNS and Visa Screen</span>
+                                                            </label>
+                                                            <input type="file" id="passport-front-page"
+                                                                class="custom_input" accept="image/*">
+                                                            <p class="file-name"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
                                         </div>
                                         <button class="theme_btn w-100 rounded border-0 py-3 continue">Continue</button>
                                     </div>

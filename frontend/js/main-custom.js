@@ -1,10 +1,26 @@
 
-    // $('.custom-file-input').on('change', function() {
-    //     //get the file name
-    //     var fileName = $(this).val();
-    //     //replace the "Choose a file" label
-    //     $(this).next('.custom-file-label').html(fileName);
-    // })
+$('.signup-slider').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    mouseDrag:false,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
 
     $(document).on('change', '.file-input', function() {
         console.log("files uploaded");
@@ -250,6 +266,44 @@ $('#multi-country-select-btn').click(function () {
     $('.countries-menu').slideToggle();
 })
   
+
+$(document).ready(function(){
+    $('.nclex-yes').click(function(){ 
+        if($(this).is(':checked')){ 
+            $('#NCLEX').slideDown();
+        }
+    });
+    $('.nclex-no').click(function(){ 
+        if($(this).is(':checked')){ 
+            $('#NCLEX').slideUp();
+        }
+    });
+// 
+    $('.ielts-yes').click(function(){ 
+        if($(this).is(':checked')){ 
+            $('#TOELL').slideDown();
+        }
+    });
+    $('.ielts-no').click(function(){ 
+        if($(this).is(':checked')){ 
+            $('#TOELL').slideUp();
+        }
+    });
+
+// 
+$('.visa-yes').click(function(){ 
+    if($(this).is(':checked')){ 
+        $('#visascreen').slideDown();
+    }
+});
+$('.visa-no').click(function(){ 
+    if($(this).is(':checked')){ 
+        $('#visascreen').slideUp();
+    }
+});
+
+
+});
   
   
   

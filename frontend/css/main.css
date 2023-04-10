@@ -4,6 +4,7 @@
 /* ALL FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lepcha&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+Lepcha&display=swap');
 @font-face {
     font-family: Muli;
     src: url(../font/muli/Muli.ttf);
@@ -558,10 +559,44 @@ header .navbar a{
     background: rgb(3,14,79);
     background: linear-gradient(90deg, rgba(3,14,79,0.9893207282913166) 100%, rgba(8,15,117,1) 100%);
 }
-
+.signup-slider, .signup-slide{
+    height: 100%;
+}
+.signup-slide{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.signup_overlay{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    z-index: 10;
+    background: #f4f4f4bd;
+    padding: 20px;
+    border-radius: 10px;
+}
+.all-skill-wrapper{
+    max-height: 400px;
+    overflow-y: auto;
+}
+.p-sticky{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+}
+/* .signup-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
 
 /*  */
-#sign_in_wrap{
+  #sign_in_wrap{
     width: 100%;
     height: 100vh;
     background-image: url(https://learnwithomar.org/img/3.jpg);
@@ -578,7 +613,6 @@ header .navbar a{
     height: 100%;
       display: flex;
       align-items: center;
-      padding: 58px;
   }
   .signin-right{
     background-color: white;
@@ -599,6 +633,9 @@ header .navbar a{
     100% {
       background-position: 0% 50%;
     }
+  }
+  .sign_in_left{
+    position: relative;
   }
 
   .signin-left h2{
@@ -669,6 +706,11 @@ header .navbar a{
     flex-direction: column;
     justify-content: center;
     /* height: 100%; */
+}
+.input__wrap h3{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
 }
 .sign_in_right .form-floating>label, .sign_in_right .form-floating>label {
     position: absolute;
@@ -821,7 +863,9 @@ header .navbar a{
 .specialty-experince_wrap select{
     cursor: pointer;
 }
-
+.worked-hospitls{
+    height: 95%;
+}
 .selected-countries{
     display: flex;
     align-items: center;
@@ -879,12 +923,46 @@ header .navbar a{
 .countries-menu .checkbox-wrapper-13 label{
     font-size: 14px;
 }
+.addition-info{
+   margin-bottom: 40px;
+}
 .addition-info label{
     font-size: 16px;
 }
+.addition-info input::placeholder{
+    font-style: italic;
+    font-size: 12px;
+}
 
-
-
+.quik-question-ask_head_title{
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    margin-left: auto;
+}
+.quik-question-ask_head_title>div{
+    min-width:70px;
+}
+.quik-question_anwser>div{
+    min-width:70px;
+}
+.quik-question_wrapper{
+    display: flex;
+}
+.quik-question{
+    width: 70%;
+}
+.quik-question_anwser{
+    width: 30%;
+    justify-content: flex-end;
+    display: flex;
+}
+.quik-question p{
+    font-size: 16px;
+}
+.Upload-document-wrap>div{
+    display: none;
+}
 
 
 

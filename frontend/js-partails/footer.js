@@ -2,11 +2,11 @@
 document.write('    <div class="flex">');
 document.write('        <section class="flex-content padding_1x">');
 document.write('            <div class="footer-logo">');
-document.write('                <img src="./frontend/img/logo.jpg" alt="">');
+document.write('                <img src="./frontend/img/nclogo.png" alt="">');
 document.write('                <h3 class="mt-2">Nursework</h3>');
 document.write('            </div>');
 document.write('        </section>');
-document.write('        <section class="flex-content padding_1x">');
+document.write('        <section class="flex-content padding_1x mt-4 mt-sm-0">');
 document.write('            <h3>Top Products</h3>');
 document.write('            <a href="#">Managed Website</a>');
 document.write('            <a href="#">Manage Reputation</a>');

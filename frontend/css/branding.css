@@ -1155,3 +1155,6 @@ body .search-field {
     background-color: #275EFE;
     border-color: #275EFE;
 }
+.flex-colunm{
+    flex-direction: column;
+}

@@ -22,7 +22,7 @@
 .navbar-brand{
     cursor: pointer;
     height: 60px;
-    width: 60px;
+    width: 80px;
 }
 .header .navbar-brand h3{
     font-family: 'Tilt Warp', cursive;
@@ -182,7 +182,7 @@ header .navbar a{
 }
 .count{
     font-family: 'Tilt Warp', cursive;
-    font-size: 50px;
+    font-size: 25px;
 }
 .side_by_img_size{
     width: 100%;
@@ -192,14 +192,15 @@ header .navbar a{
 
 /* value */
 
-.values .count{
+.tabs-values .count{
     font-size: var(--theme-sub-title-size);
     text-transform: uppercase;
     position: relative;
     display: block;
     padding-left: 35px;
+    margin-bottom: 20px;
 }
-.values .count:after{
+.tabs-values .count:after{
     content: "";
     position: absolute;
     background-image: url(../img/check.svg);
@@ -209,6 +210,7 @@ header .navbar a{
     height: 30px;
     left: 0;
 }
+.tabs-values
 
 
 /* get started */   
@@ -229,6 +231,7 @@ header .navbar a{
     justify-content: center;
     color: #fff;
     margin-top: 20px;
+    font-size: var(--theme-font18);
 }
 .get-started_btns a:nth-child(1){
     background-color: var(--theme-primay-color);
@@ -851,7 +854,8 @@ header .navbar a{
 .all-hopitals-data{
     max-height: 600px;
     overflow-y: auto;
-    min-height: 200px;
+    /* min-height: 200px; */
+    min-height: 250px;
     overflow-y: auto;
     /* box-shadow: 1px 1px 10px #f4d4d4; */
     border-radius: 6px;
@@ -969,7 +973,7 @@ header .navbar a{
 .avatar-upload {
     position: relative;
     display: flex;
-    /* flex-direction: column; */
+    flex-wrap: wrap;
     align-items: end;
     gap: 20px;
   }
@@ -1052,6 +1056,24 @@ header .navbar a{
     width: 150px;
     height: 60px;
     object-fit: contain;
+  }
+
+  .twitter-typeahead{
+    width: 100%;
+  }
+  .tt-menu{
+    top: 110%;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+    background-color: #f4f4f4;
+    display: block;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  .tt-suggestion {
+    padding: 10px;
+    font-size: 14px;
   }
 
 

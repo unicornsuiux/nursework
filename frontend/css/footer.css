@@ -52,36 +52,6 @@ fieldset{
     padding:4rem;
 }
 
-.btn{
-    padding:0.8rem 2rem;
-    border-radius:5px;
-    text-align:center;
-    font-weight:500;
-    text-transform:uppercase;
-}
-
-.btn_1{
-    border:1px solid var(--primary);
-    background-color:var(--primary);
-    color:var(--secondary);
-}
-
-.btn_1:hover{
-    background-color:transparent;
-    color:var(--primary);
-}
-
-.btn_2{
-    border:1px solid var(--secondary);
-    background-color:var(--secondary);
-    color:var(--primary);
-}
-
-.btn_2:hover{
-    border:1px solid var(--primary);
-    background-color:var(--primary);
-    color:var(--secondary);
-}
 
 @media (max-width:920px){
     .flex{
@@ -96,7 +66,7 @@ fieldset{
         padding:0.5rem 1rem;
     }
     
-    a, p{
+    footer a, footer p{
         font-size:12px;
     }
 }

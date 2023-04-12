@@ -164,6 +164,9 @@
     .Upload-document-wrap .file-upload .file-name{
         width: 100%;
     }
+    .reference_screen .input__wrap{
+        max-height: unset;
+    }
 }
 @media only screen and (max-width:425px){
     .side_by_img_size img{

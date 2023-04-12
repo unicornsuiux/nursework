@@ -24,6 +24,11 @@
         padding: 30px;
     }
 }
+@media only screen and (max-width:768px){
+    .signin-right{
+        max-height: unset;
+    }
+}
 @media only screen and (max-width:600px){
     .signin-right{
         padding: 30px 15px;
@@ -149,6 +154,15 @@
     }
     .document-btn{
         line-height: 25px;
+    }
+    .Upload-document-wrap .file-upload{
+        flex-direction: column;
+    }
+    .Upload-document-wrap .file-upload label{
+        width: 100%;
+    }
+    .Upload-document-wrap .file-upload .file-name{
+        width: 100%;
     }
 }
 @media only screen and (max-width:425px){

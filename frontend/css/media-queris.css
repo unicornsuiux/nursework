@@ -89,19 +89,20 @@
         left: 0;
         top: 0;
     }
-    .step-4.back-icon .close-icon{
+    .sign_up_Pi.back-icon .close-icon{
         left: -6px;
         top: -18px;
     }
-    .step-4.back-icon .close-icon {
+    .sign_up_Pi.back-icon .close-icon {
         left: -7px;
         top: -23px;
     }
-    .step-5.back-icon .close-icon,
-    .step-6.back-icon .close-icon, 
-    .step-9.back-icon .close-icon,
-    .step-12.back-icon .close-icon,
-    .step-13.back-icon .close-icon
+    .sign_up_step_5.back-icon .close-icon,
+    .sign_up_Qi.back-icon .close-icon, 
+    .sign_up_step_9.back-icon .close-icon,
+    .sign_up_profile.back-icon .close-icon,
+    .sign_up_step_13.back-icon .close-icon,
+    .sign_up_countries.back-icon .close-icon
      {
         left: -5px;
         top: -19px;
@@ -136,7 +137,7 @@
     .quik-question{
         width: 90%;
     }
-    .step-8.back-icon .close-icon {
+    .sign_up_compeleted.back-icon .close-icon {
         left: -5px;
         top: -17px;
     }

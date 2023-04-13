@@ -640,7 +640,6 @@ header .navbar a{
   .sign_in_left{
     position: relative;
   }
-
   .signin-left h2{
     color: white;
     margin-bottom: 32px;
@@ -650,7 +649,6 @@ header .navbar a{
   .signin-left p a{
     color: white;
   }
-  
   .signin-right h2{
     font-size: 32px;
     color: black;
@@ -723,17 +721,15 @@ header .navbar a{
 .sign_in_right .form-floating .form-select:focus{
     box-shadow: none;
 }
-
-
 .file-upload {
     position: relative;
     font-size: 18px;
     display: flex;
     gap: 15px;
     margin-top: 15px;
-  }
+}
   
-  .file-upload label {
+.file-upload label {
     display: block;
     padding: 10px 20px;
     background-color: #fff;
@@ -744,7 +740,7 @@ header .navbar a{
     transition: all 0.2s ease-in-out;
     width: 65%;
     font-size: 16px;
-  }
+}
   
   .file-upload label:hover {
     background-color: #f5f5f5;
@@ -937,7 +933,6 @@ header .navbar a{
     font-style: italic;
     font-size: 12px;
 }
-
 .quik-question-ask_head_title{
     display: flex;
     justify-content: flex-end;
@@ -1078,6 +1073,203 @@ header .navbar a{
   }
 
 
+
+/* Login for emplayer */
+/*-------------------- 23. Login ------------------- */
+
+.login-area {
+    background: #F3F8FB;
+}
+
+.login-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+}
+
+.login-box form {
+    margin: auto;
+    width: 450px;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.login-form-head {
+    text-align: center;
+    background: #8655FC;
+    padding: 50px;
+}
+
+.login-form-head h4 {
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #fff;
+}
+
+.login-form-head p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.login-form-body {
+    padding: 50px;
+}
+
+.form-gp {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+
+.icon-input i {
+    position: absolute;
+    right: 5px;
+    color: #7e74ff;
+    font-size: 16px;
+}
+
+.submit-btn-area {
+    text-align: center;
+}
+
+.submit-btn-area button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: #585b5f;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background: var(--theme-primay-color);
+    color: #fff;
+}
+
+.submit-btn-area button:hover {
+    background: var(--theme-white);
+    color: var(--theme-font-color);
+}
+
+.submit-btn-area button i {
+    margin-left: 15px;
+    -webkit-transition: margin-left 0.3s ease 0s;
+    transition: margin-left 0.3s ease 0s;
+}
+
+.submit-btn-area button:hover i {
+    margin-left: 20px;
+}
+
+.login-other a {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: 43px;
+    line-height: 43px;
+    border-radius: 40px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.07);
+}
+
+.login-other a i {
+    margin-left: 5px;
+}
+
+.login-other a.fb-login {
+    background: #8655FC;
+    color: #fff;
+}
+
+.login-other a.fb-login:hover {
+    box-shadow: 0 5px 15px rgba(44, 113, 218, 0.38);
+}
+
+.login-other a.google-login {
+    background: #fb5757;
+    color: #fff;
+}
+
+.login-other a.google-login:hover {
+    box-shadow: 0 5px 15px rgba(251, 87, 87, 0.38);
+}
+
+.form-footer a {
+    margin-left: 5px;
+}
+
+/* login-s2 */
+
+.login-s2 {
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.login-s2:before {
+    content: '';
+    position: absolute;
+    height: 206%;
+    width: 97%;
+    background: #fcfcff;
+    border-radius: 50%;
+    left: -42%;
+    z-index: -1;
+    top: -47%;
+    box-shadow: inset 0 0 51px rgba(0, 0, 0, 0.1);
+}
+
+.login-s2 .login-form-head,
+.login-s2 .login-box form,
+.login-s2 .login-box form .form-gp input {
+    background: transparent;
+}
+
+.login-s2 .login-form-head h4,
+.login-s2 .login-form-head p {
+    color: #444;
+}
+
+
+/* main company profile wrap */
+.company_profile_main .company_cover_photo{
+    width: 100%;
+    height: 340px;
+    background-image: url(../img/N3.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.company_profile_main .company_cover_photo::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.company_profile_main .comapny_logo_wrap{
+    height: 100%;
+    display: flex;
+    align-items: end;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
 
 
 

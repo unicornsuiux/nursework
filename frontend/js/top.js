@@ -7,12 +7,14 @@ document.write('<script src="https://code.jquery.com/jquery-3.4.1.js" integrity=
 document.write('<script src="https://kit.fontawesome.com/bbcc34f546.js" crossorigin="anonymous"></script>');
 document.write('<link rel="preconnect" href="https://fonts.googleapis.com">');
 document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/country-select-js@2.0.1/build/css/countrySelect.min.css">');
-// document.write('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.min.css">');
 document.write('<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>');
 document.write('<link rel="stylesheet" href="./frontend/owl/owl.carousel.min.css">');
 document.write('<link rel="stylesheet" href="./frontend/owl/owl.theme.default.min.css">');
 document.write('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">');
 document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>')
+document.write('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.min.css">');
+document.write('<link rel="stylesheet" href="./frontend/css/font-awesome.min.css">');
+document.write('<link rel="stylesheet" href="./frontend/css/themify-icons.css">');
 document.write('<link rel="stylesheet" href="./frontend/css/main.css">');
 document.write('<link rel="stylesheet" href="./frontend/css/footer.css">');
 document.write('<link rel="stylesheet" href="./frontend/css/media-queris.css">')

@@ -1288,6 +1288,10 @@ header .navbar a{
 .employer_logo{
     width: 100px;
     flex-shrink: 0;
+    border: 2px solid #333;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 50%;
 }
 .company_logo_info{
     border-bottom: 1px solid #0000002e;
@@ -1316,7 +1320,7 @@ header .navbar a{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .employer_name{
     padding-top: 10px;
@@ -1603,4 +1607,11 @@ header .navbar a{
     border-radius: 35px;
     background-color: #000;
     padding: 10px 13px 10px 30px;
+}
+.job_discription_wrap{
+    max-height: 450px;
+    overflow-y: auto;
+}
+.job_discription_wrap ul li{
+    list-style:circle;
 }

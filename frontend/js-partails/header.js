@@ -6,7 +6,7 @@ document.write('                <img src="./frontend/img/nclogo.png" class="obj_
 document.write('            </a>');
 document.write('            <div class="header_links">');
 document.write('                <li class="link_item">');
-document.write('                    <a class="nav-link" href="#">');
+document.write('                    <a class="nav-link" href="./company-profile.html">');
 document.write('                        EmployerZone');
 document.write('                    </a>');
 document.write('                </li>');

@@ -20,57 +20,582 @@
     </meta>
     <script language=javascript src="./frontend/js/top.js"></script>
 </head>
-<script language=javascript src="./frontend/js-partails/header.js"></script>
 
-<main class="company_profile_main">
-    <div class="container p-0">
-        <div class="company_cover_photo">
-            <div class="container h-100">
-                <div class="comapny_logo_wrap">
-                    <div class="avatar-upload">
-                        <div class="avatar-preview">
-                            <div id="imagePreview" style="background-image: url(./frontend/img/profile.svg);">
-                            </div>
-                        </div>
-                        <div class="avatar-edit">
-                            <label for="imageUpload">
-                                Upload Pic</label>
-                            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+<body class="">
+    <header class="header" id="header">
+        <nav class="navbar navbar-light fixed-top">
+            <div class="container-fluid">
+                <a href="./index.html" class="navbar-brand emplayer-navbrand">
+                    <img src="./frontend/img/nclogo.png" class="obj_fit_contain" alt="">
+                </a>
+                <div class="search-box">
+                    <input class="search-input" type="text" placeholder="Search something..">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                    <div class="employer_notification-dropdown">
+                        <button class="notification" id="open_profile_notification">
+                            <img src="./frontend/img/notifications.svg" class="genral-icon">
+                        </button>
+                        <div class="profile-dropdown">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                    <span>Option 1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                    <span>Option 2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
                         </div>
                     </div>
+                    <div class="employer_profile-dropdown">
+                        <img id="open_profile_dropdown" src="./frontend/img/profil-photo.svg" class="w-40-rounded"
+                            alt="">
+                        <div class="profile-dropdown">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                    <span>Option 1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                    <span>Option 2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <button class="menu_toggle_btn" id="menu_toggle_btn">
+                        <img src="./frontend/img/menu.svg" alt="">
+                    </button>
                 </div>
             </div>
-        </div>
-    </div>
-</main>
+        </nav>
+    </header>
 
-
-<!-- <div class="emplayer-footer">
-    <div class="copyright-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                    <div class="copyright-text">
-                        <p>Copyright &copy; 2018, All Right Reserved LcNursework</a>
-                        </p>
-                    </div>
+    <div class="main-employer_content">
+        <nav class="sidebar">
+            <div>
+                <ul class="side-nav pt-4">
+                    <li class="side-nav__item side-nav__item-active">
+                        <i class='bx bx-home'></i>
+                        <span>Home</span>
+                    </li>
+                    <li class="side-nav__item">
+                        <i class='bx bx-search'></i>
+                        <span>Search for RNs</span>
+                    </li>
+                    <li class="side-nav__item">
+                        <i class='bx bx-street-view'></i>
+                        <span>View Shortlisted RNs</span>
+                    </li>
+                    <li class="side-nav__item">
+                        <i class='bx bxs-universal-access'></i>
+                        <span>Upcoming RN Interviews</span>
+                    </li>
+                    <li class="side-nav__item">
+                        <i class='bx bx-search'></i>
+                        <span>Search for RNs</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="side-nav">
+                <li class="side-nav__item last-item">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <span>Log Out</span>
+                </li>
+            </ul>
+        </nav>
+        <main class="emplayer_main_content">
+            <div class="company-profile_right">
+                <div class="company_cover_photo">
+                    <button class="btn-secondary-bg position-bottom" id="upload-cover-pic">
+                        <span>Upload Cover</span>
+                        <img src="./frontend/img/upload.svg" alt="">
+                    </button>
                 </div>
-                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                    <div class="footer-menu">
-                        <ul class="d-flex gap-2 mb-0">
-                            <li><a href="#" class="text-muted">Home</a></li>
-                            <li><a href="#" class="text-muted">Terms</a></li>
-                            <li><a href="#" class="text-muted">Privacy</a></li>
-                            <li><a href="#" class="text-muted">Policy</a></li>
-                            <li><a href="#" class="text-muted">Contact</a></li>
+                <div class="company_logo_info">
+                    <div class="container p-0">
+                        <div class="comapny_logo_wrap">
+                            <div class="employer_logo">
+                                <img src="./frontend/img/banner-1.jpg" class="pofile-img-rounded" alt="">
+                            </div>
+                            <div class="employer_name">
+                                <h4 class="mb-0">Gosha e Shifa Hospital</h4>
+                                <small class="fs-6 company-email">danishkhurshid333@gmail.com</small>
+                                <p class="mb-0 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+                                    saepe
+                                    optio beatae
+                                    vero consequuntur voluptates architecto ratione in maxime ex.</p>
+                                <a href="#" class="edit-profile d-block mt-3 fs-6" data-bs-toggle="modal"
+                                    data-bs-target="#profileEdit">Edit Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container p-0">
+                        <ul class="nav nav-pills profile_tabs" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-alljobs-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-alljob" type="button" role="tab" aria-controls="pills-alljob"
+                                    aria-selected="true">All Jobs</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-addjob-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-addjob" type="button" role="tab" aria-controls="pills-addjob"
+                                    aria-selected="false">Add Job</button>
+                            </li>
                         </ul>
                     </div>
                 </div>
+                <div class="company_work_space">
+                    <div class="container">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-alljob" role="tabpanel"
+                                aria-labelledby="pills-alljobs-tab" tabindex="0">
+                                <div class="jobs_listing">
+                                    <div class="row">
+                                        <div class="col-lg-12 text-center">
+                                            <h3 class="heading-h3">Jobs Data</h3>
+                                        </div>
+                                    </div>
+                                    <div class="search_result_text mb-3">
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-12">
+                                                <h5 class="mt-3">All Latest jobs Posted By You</h5>
+                                                <div class="search_result_inner">
+                                                    <div>
+                                                        <p class="mb-0 text-white">Find by <b>Search</b> </p>
+                                                        <div class="search-box">
+                                                            <input class="search-input" type="text"
+                                                                placeholder="Search something..">
+                                                            <button class="search-btn"><i
+                                                                    class="fas fa-search"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-start">
+                                        <div class="col-lg-6 mb-4">
+                                            <div class="card job_wrap">
+                                                <span class="job_status">New</span>
+                                                <h5 class="job_title">Registered Nurse for Finland</h5>
+                                                <p class="company_name">Thinkwiser High Manpower International</p>
+                                                <p class="job_location">Lahore, Pakistan</p>
+                                                <div class="row">
+                                                    <div class="col-lg-12 job-discription">
+                                                        <h5>Description</h5>
+                                                        <div class="job_discription_wrap">
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Minima praesentium, itaque assumenda excepturi vitae
+                                                                quasi
+                                                                ullam tempore eveniet, distinctio in obcaecati,
+                                                                inventore
+                                                                magnam optio. Officia doloribus maxime blanditiis
+                                                                ratione
+                                                                cum quia doloremque soluta? Iusto quae labore obcaecati
+                                                                beatae voluptas consectetur consequuntur reprehenderit
+                                                                maiores harum quos commodi reiciendis, esse
+                                                                exercitationem
+                                                                asperiores sed voluptates eaque magni vel consequatur
+                                                                odio
+                                                                facere incidunt perspiciatis! Esse, fuga! Praesentium
+                                                                eius
+                                                                doloremque voluptatem eos cum, qui officia consectetur
+                                                                placeat beatae error saepe, libero amet hic! Dolores
+                                                                libero
+                                                                laboriosam iste dolore maiores quaerat, assumenda
+                                                                recusandae
+                                                                quibusdam sequi. Ex molestias deleniti fuga voluptatum
+                                                                deserunt repellendus nemo quidem? Perspiciatis, quidem!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="job_timing_and_salary">
+                                                    <div class="tag timing">
+                                                        <img src="./frontend/img/stopwatch-svgrepo-com.svg"
+                                                            alt="job_timing">
+                                                        <b>Full Timg</b>
+                                                    </div>
+                                                    <div class="tag salary">
+                                                        <img src="./frontend/img/money-send-svgrepo-com.svg"
+                                                            alt="job_timing">
+                                                        <b>Rs 620,000.00 - Rs630,000.00 per month</b>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <h5>Expertise</h5>
+                                                        <div class="job_specialties job_tags">
+                                                            <span>Registered Nurse</span>
+                                                            <span>Emergency Department</span>
+                                                            <span>Obstetrical (OB)</span>
+                                                            <span>Medical-Surgical</span>
+                                                            <span>Obstetric</span>
+                                                            <span>Inpatient</span>
+                                                            <span>Operating Room</span>
+                                                            <span>Telemetry</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="apply_now_wrap job-action">
+                                                    <div class="dropdown">
+                                                        <button type="button" class="dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <img src="./frontend/img/dotes.svg" class="genral-icon"
+                                                                alt="">
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item text-dark" href="#">Edit</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item text-dark" href="#">Unlist</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item text-dark" href="#">Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-4">
+                                            <div class="card job_wrap">
+                                                <span class="job_status">New</span>
+                                                <h5 class="job_title">Registered Nurse for Finland</h5>
+                                                <p class="company_name">Thinkwiser High Manpower International</p>
+                                                <p class="job_location">Lahore, Pakistan</p>
+                                                <div class="row">
+                                                    <div class="col-lg-12 job-discription">
+                                                        <h5>Description</h5>
+                                                        <div class="job_discription_wrap">
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Minima praesentium, itaque assumenda excepturi vitae
+                                                                quasi
+                                                                ullam tempore eveniet, distinctio in obcaecati,
+                                                                inventore
+                                                                magnam optio. Officia doloribus maxime blanditiis
+                                                                ratione
+                                                                cum quia doloremque soluta? Iusto quae labore obcaecati
+                                                                beatae voluptas consectetur consequuntur reprehenderit
+                                                                maiores harum quos commodi reiciendis, esse
+                                                                exercitationem
+                                                                asperiores sed voluptates eaque magni vel consequatur
+                                                                odio
+                                                                facere incidunt perspiciatis! Esse, fuga! Praesentium
+                                                                eius
+                                                                doloremque voluptatem eos cum, qui officia consectetur
+                                                                placeat beatae error saepe, libero amet hic! Dolores
+                                                                libero
+                                                                laboriosam iste dolore maiores quaerat, assumenda
+                                                                recusandae
+                                                                quibusdam sequi. Ex molestias deleniti fuga voluptatum
+                                                                deserunt repellendus nemo quidem? Perspiciatis, quidem!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="job_timing_and_salary">
+                                                    <div class="tag timing">
+                                                        <img src="./frontend/img/stopwatch-svgrepo-com.svg"
+                                                            alt="job_timing">
+                                                        <b>Full Timg</b>
+                                                    </div>
+                                                    <div class="tag salary">
+                                                        <img src="./frontend/img/money-send-svgrepo-com.svg"
+                                                            alt="job_timing">
+                                                        <b>Rs 620,000.00 - Rs630,000.00 per month</b>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <h5>Expertise</h5>
+                                                        <div class="job_specialties job_tags">
+                                                            <span>Registered Nurse</span>
+                                                            <span>Emergency Department</span>
+                                                            <span>Obstetrical (OB)</span>
+                                                            <span>Medical-Surgical</span>
+                                                            <span>Obstetric</span>
+                                                            <span>Inpatient</span>
+                                                            <span>Operating Room</span>
+                                                            <span>Telemetry</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="apply_now_wrap job-action">
+                                                    <div class="dropdown">
+                                                        <button type="button" class="dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <img src="./frontend/img/dotes.svg" class="genral-icon"
+                                                                alt="">
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item text-dark" href="#">Edit</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item text-dark" href="#">Unlist</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item text-dark" href="#">Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-4">
+                                            <div class="card job_wrap">
+                                                <span class="job_status">New</span>
+                                                <h5 class="job_title">Registered Nurse for Finland</h5>
+                                                <p class="company_name">Thinkwiser High Manpower International</p>
+                                                <p class="job_location">Lahore, Pakistan</p>
+                                                <div class="row">
+                                                    <div class="col-lg-12 job-discription">
+                                                        <h5>Description</h5>
+                                                        <div class="job_discription_wrap">
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Minima praesentium, itaque assumenda excepturi vitae
+                                                                quasi
+                                                                ullam tempore eveniet, distinctio in obcaecati,
+                                                                inventore
+                                                                magnam optio. Officia doloribus maxime blanditiis
+                                                                ratione
+                                                                cum quia doloremque soluta? Iusto quae labore obcaecati
+                                                                beatae voluptas consectetur consequuntur reprehenderit
+                                                                maiores harum quos commodi reiciendis, esse
+                                                                exercitationem
+                                                                asperiores sed voluptates eaque magni vel consequatur
+                                                                odio
+                                                                facere incidunt perspiciatis! Esse, fuga! Praesentium
+                                                                eius
+                                                                doloremque voluptatem eos cum, qui officia consectetur
+                                                                placeat beatae error saepe, libero amet hic! Dolores
+                                                                libero
+                                                                laboriosam iste dolore maiores quaerat, assumenda
+                                                                recusandae
+                                                                quibusdam sequi. Ex molestias deleniti fuga voluptatum
+                                                                deserunt repellendus nemo quidem? Perspiciatis, quidem!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="job_timing_and_salary">
+                                                    <div class="tag timing">
+                                                        <img src="./frontend/img/stopwatch-svgrepo-com.svg"
+                                                            alt="job_timing">
+                                                        <b>Full Timg</b>
+                                                    </div>
+                                                    <div class="tag salary">
+                                                        <img src="./frontend/img/money-send-svgrepo-com.svg"
+                                                            alt="job_timing">
+                                                        <b>Rs 620,000.00 - Rs630,000.00 per month</b>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <h5>Expertise</h5>
+                                                        <div class="job_specialties job_tags">
+                                                            <span>Registered Nurse</span>
+                                                            <span>Emergency Department</span>
+                                                            <span>Obstetrical (OB)</span>
+                                                            <span>Medical-Surgical</span>
+                                                            <span>Obstetric</span>
+                                                            <span>Inpatient</span>
+                                                            <span>Operating Room</span>
+                                                            <span>Telemetry</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="apply_now_wrap job-action">
+                                                    <div class="dropdown">
+                                                        <button type="button" class="dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <img src="./frontend/img/dotes.svg" class="genral-icon"
+                                                                alt="">
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item text-dark" href="#">Edit</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item text-dark" href="#">Unlist</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item text-dark" href="#">Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="tab-pane fade" id="pills-addjob" role="tabpanel"
+                                aria-labelledby="pills-addjob-tab" tabindex="0">2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- <div class="emplayer-footer">
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved LcNursework</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul class="d-flex gap-2 mb-0">
+                                <li><a href="#" class="text-muted fs-6">Home</a></li>
+                                <li><a href="#" class="text-muted fs-6">Terms</a></li>
+                                <li><a href="#" class="text-muted fs-6">Privacy</a></li>
+                                <li><a href="#" class="text-muted fs-6">Policy</a></li>
+                                <li><a href="#" class="text-muted fs-6">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- PROFILE EDIT MODAL -->
+    <div class="modal fade" id="profileEdit" tabindex="-1" aria-labelledby="profileEditLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5" id="profileEditLabel">Edit Your Profile</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Profile Image</label>
+                        <input class="form-control" style="line-height: 1.7;" type="file" id="formFile">
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Company Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Discretion</label>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button class="btn-secondary-bg" id="profile-update-btn">
+                        <span>Upload Cover</span>
+                        <img src="./frontend/img/upload.svg" alt="">
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-</div> -->
-<script language=javascript src="./frontend/js-partails/footer-scripts.js"></script>
+    <script language=javascript src="./frontend/js-partails/footer-scripts.js"></script>
 </body>
 
 </html>

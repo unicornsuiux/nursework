@@ -27,11 +27,17 @@
     .signin-right{
         max-height: unset;
     }
+    .user-nav {
+        justify-content: space-between;
+    }
 }
 @media only screen and (max-width:600px){
     .signin-right{
         padding: 30px 15px;
         overflow-y: unset;
+    }
+    .sidebar {
+        display: none;
     }
     .input__wrap h3{
         font-size: 20px;

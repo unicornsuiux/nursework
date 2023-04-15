@@ -170,63 +170,63 @@ $(document).ready(function() {
 });
 
 
-    $('.custom_input').change(function () {
-        var filename = $(this).val().split('\\').pop();
-        $(this).next('.file-name').text(filename).css('visibility','visible');
+$('.custom_input').change(function () {
+    var filename = $(this).val().split('\\').pop();
+    $(this).next('.file-name').text(filename).css('visibility','visible');
+});
+
+
+
+
+
+$(document).ready(function() {
+    // hide all steps except the first one
+    $('.step-2, .step-3, .step-4, .step-5, .step-6, .step-7, .step-8, .step-9, .step-10, .step-11, .step-12, .step-13, .step-14, .step-15, .step-16, .step-17, .step-18, .step-19, .step-20, .step-21').hide();
+    
+    // when the "Next" button is clicked, show the next step and hide the current step
+    $('.continue').click(function() {
+        var currentStep = $(this).parent();
+        var nextStep = $(this).parent().next();
+        currentStep.hide();
+        nextStep.show();
+        return false; // prevent page refresh
     });
-
-
-
-
-
-    $(document).ready(function() {
-        // hide all steps except the first one
-        $('.step-2, .step-3, .step-4, .step-5, .step-6, .step-7, .step-8, .step-9, .step-10, .step-11, .step-12, .step-13, .step-14, .step-15, .step-16, .step-17, .step-18, .step-19, .step-20, .step-21').hide();
-        
-        // when the "Next" button is clicked, show the next step and hide the current step
-        $('.continue').click(function() {
-          var currentStep = $(this).parent();
-          var nextStep = $(this).parent().next();
-          currentStep.hide();
-          nextStep.show();
-          return false; // prevent page refresh
-        });
-        
-        // when the "Back" button is clicked, show the previous step and hide the current step
-        $('.Back').click(function() {
-          var currentStep = $(this).parent();
-          var previousStep = $(this).parent().prev();
-          currentStep.hide();
-          previousStep.show();
-          return false; // prevent page refresh
-        });
-      });   
+    
+    // when the "Back" button is clicked, show the previous step and hide the current step
+    $('.Back').click(function() {
+        var currentStep = $(this).parent();
+        var previousStep = $(this).parent().prev();
+        currentStep.hide();
+        previousStep.show();
+        return false; // prevent page refresh
+    });
+});   
     
     
 
-    $(document).ready(function() {
-        // add event listener to existing cross icons
-        $(".hospitals_worked_wrap .remove-icon").on("click", function() {
-          $(this).closest(".hospitals_worked_wrap").remove();
+$(document).ready(function() {
+    // add event listener to existing cross icons
+    $(".hospitals_worked_wrap .remove-icon").on("click", function() {
+        $(this).closest(".hospitals_worked_wrap").remove();
+    });
+    
+    // add event listener to new cross icons in cloned elements
+    $(".btn-success").on("click", function(e) {
+        e.preventDefault(); // prevent form submission
+        var hospitalsWrap = $(".hospitals_worked_wrap").last();
+        var newHospitalsWrap = hospitalsWrap.clone();
+        var newCrossIcon = $("<img src='./frontend/img/close.png' class='remove-icon genral-icon' alt='Remove'>"); // create new cross icon
+        newHospitalsWrap.append(newCrossIcon); // add new cross icon to cloned element
+        newHospitalsWrap.insertAfter(hospitalsWrap);
+        
+        // add event listener to new cross icon
+        newCrossIcon.on("click", function() {
+        $(this).closest(".hospitals_worked_wrap").remove();
         });
-      
-        // add event listener to new cross icons in cloned elements
-        $(".btn-success").on("click", function(e) {
-          e.preventDefault(); // prevent form submission
-          var hospitalsWrap = $(".hospitals_worked_wrap").last();
-          var newHospitalsWrap = hospitalsWrap.clone();
-          var newCrossIcon = $("<img src='./frontend/img/close.png' class='remove-icon genral-icon' alt='Remove'>"); // create new cross icon
-          newHospitalsWrap.append(newCrossIcon); // add new cross icon to cloned element
-          newHospitalsWrap.insertAfter(hospitalsWrap);
-          
-          // add event listener to new cross icon
-          newCrossIcon.on("click", function() {
-            $(this).closest(".hospitals_worked_wrap").remove();
-          });
-           // add box-shadow to .all-hopitals-data element
-             $(".all-hopitals-data").css("box-shadow", "1px 1px 10px #f4d4d4");
-        });
-      });
+        // add box-shadow to .all-hopitals-data element
+            $(".all-hopitals-data").css("box-shadow", "1px 1px 10px #f4d4d4");
+    });
+});
       
       
       
@@ -364,3 +364,44 @@ $(document).ready(function () {
         };
     }
 })
+
+
+// EMPLAYER DROPDOWN
+$(document).ready(function() {
+    $(document).click(function(event) {
+        // Check if the clicked element is not within the dropdown or the dropdown button
+        if (!$(event.target).closest('.employer_notification-dropdown, .employer_profile-dropdown').length) {
+            // Hide any visible dropdown
+            $('.profile-dropdown').fadeOut(300);
+        }
+    });
+
+    $('#open_profile_notification').click(function() {
+        if ($('.employer_profile-dropdown .profile-dropdown').is(':visible')) {
+            $('.employer_profile-dropdown .profile-dropdown').fadeOut(300, function() {
+                $('.employer_notification-dropdown .profile-dropdown').fadeIn(300);
+            });
+        } else {
+            $('.employer_notification-dropdown .profile-dropdown').fadeIn(300);
+        }
+    });
+
+    $('#open_profile_dropdown').click(function() {
+        if ($('.employer_notification-dropdown .profile-dropdown').is(':visible')) {
+            $('.employer_notification-dropdown .profile-dropdown').fadeOut(300, function() {
+                $('.employer_profile-dropdown .profile-dropdown').fadeIn(300);
+            });
+        } else {
+            $('.employer_profile-dropdown .profile-dropdown').fadeIn(300);
+        }
+    });
+});
+
+//toggle sidebar
+
+$(document).ready(function() {
+    $('#menu_toggle_btn').click(function () {
+        $('.sidebar').toggleClass('hide')
+        $('.emplayer_main_content').toggleClass('expand')
+    });
+});

@@ -7,6 +7,7 @@ document.write('<script src="https://code.jquery.com/jquery-3.4.1.js" integrity=
 document.write('<script src="https://kit.fontawesome.com/bbcc34f546.js" crossorigin="anonymous"></script>');
 document.write('<link rel="preconnect" href="https://fonts.googleapis.com">');
 document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/country-select-js@2.0.1/build/css/countrySelect.min.css">');
+document.write('<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">');
 document.write('<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>');
 document.write('<link rel="stylesheet" href="./frontend/owl/owl.carousel.min.css">');
 document.write('<link rel="stylesheet" href="./frontend/owl/owl.theme.default.min.css">');

@@ -405,3 +405,46 @@ $(document).ready(function() {
         $('.emplayer_main_content').toggleClass('expand')
     });
 });
+
+
+// 
+
+$(document).ready(function() {
+    $('#skills-input').on('keydown', function(e) {
+      if (e.keyCode === 13) { // Enter key
+        e.preventDefault();
+        var inputVal = $(this).val().trim();
+        if (inputVal !== '') {
+          var skillsArr = inputVal.split(/[ ,]+/); // split by comma or space
+          for (var i = 0; i < skillsArr.length; i++) {
+            var skill = skillsArr[i].trim();
+            if (skill !== '') {
+              var skillItem = $('<li class="skill-item">').text(skill).appendTo('#skills-list');
+              var removeIcon = $('<span class="remove-skill">').html('&times;').appendTo(skillItem);
+              removeIcon.on('click', function() {
+                skillItem.remove();
+              });
+            }
+          }
+          $(this).val('');
+        }
+      }
+    });
+  });
+  
+
+  $(document).ready(function() {
+    $('#skills-input').on('input', function() {
+      var inputWidth = $(this).width();
+      var inputVal = $(this).val();
+      var tempSpan = $('<span>').text(inputVal).appendTo('body');
+      var tempWidth = tempSpan.width() + 10; // add some padding
+      tempSpan.remove();
+      if (tempWidth > inputWidth) {
+        $(this).width(tempWidth);
+      } else {
+        $(this).width(inputWidth);
+      }
+    });
+  });
+  

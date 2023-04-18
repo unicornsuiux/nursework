@@ -323,6 +323,7 @@ header .navbar a{
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
+    padding-top: 10px   ;
 }
 .tag{
     padding: 6px 14px;
@@ -1691,4 +1692,21 @@ header .navbar a{
     color: #6c757d;
     font-size: 14px;
 }
+.company_work_space .job_specialties.job_tags:after{
+    display: none;
+}
 
+.no-job-container{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 22px;
+    background-color: #fff;
+    text-align: center;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+}

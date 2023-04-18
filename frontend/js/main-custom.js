@@ -403,6 +403,7 @@ $(document).ready(function() {
     $('#menu_toggle_btn').click(function () {
         $('.sidebar').toggleClass('hide')
         $('.emplayer_main_content').toggleClass('expand')
+        $('.overlay-shadow').toggleClass('show-overlay');
     });
 });
 

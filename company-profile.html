@@ -21,6 +21,11 @@
     <script language=javascript src="./frontend/js/top.js"></script>
 </head>
 
+
+
+
+
+
 <body class="">
     <header class="header" id="header">
         <nav class="navbar navbar-light fixed-top">
@@ -28,10 +33,10 @@
                 <a href="./index.html" class="navbar-brand emplayer-navbrand">
                     <img src="./frontend/img/nclogo.png" class="obj_fit_contain" alt="">
                 </a>
-                <div class="search-box">
+                <!-- <div class="search-box">
                     <input class="search-input" type="text" placeholder="Search something..">
                     <button class="search-btn"><i class="fas fa-search"></i></button>
-                </div>
+                </div> -->
                 <div class="d-flex gap-2 align-items-center">
                     <div class="employer_notification-dropdown">
                         <button class="notification" id="open_profile_notification">
@@ -39,21 +44,59 @@
                         </button>
                         <div class="profile-dropdown">
                             <li>
-                                <a href="#">
-                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
-                                    <span>Option 1</span>
+                                <a href="#" class="top-text-block">
+                                    <div class="top-text-heading">You have <b>3 new themes</b> trending</div>
+                                    <div class="top-text-light">15 minutes ago</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
-                                    <span>Option 2</span>
+                                <a href="#" class="top-text-block">
+                                    <div class="top-text-heading">New asset recommendations in <b>Gaming Laptop</b>
+                                    </div>
+                                    <div class="top-text-light">2 hours ago</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
-                                    <span>Logout</span>
+                                <a href="#" class="top-text-block">
+                                    <div class="top-text-heading">New asset recommendations in <b>5 themes</b></div>
+                                    <div class="top-text-light">4 hours ago</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="top-text-block">
+                                    <div class="top-text-heading">Assets specifications modified in themes</div>
+                                    <div class="top-text-light">4 hours ago</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="top-text-block">
+                                    <div class="top-text-heading">We crawled <b>www.dell.com</b> successfully</div>
+                                    <div class="top-text-light">5 hours ago</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="top-text-block">
+                                    <div class="top-text-heading">Next crawl scheduled on <b>10 Oct 2016</b></div>
+                                    <div class="top-text-light">6 hours ago</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="top-text-block">
+                                    <div class="top-text-heading">You have an update for <b>www.dell.com</b></div>
+                                    <div class="top-text-light">7 hours ago</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="top-text-block">
+                                    <div class="top-text-heading"><b>"Gaming Laptop"</b> is now trending</div>
+                                    <div class="top-text-light">7 hours ago</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="top-text-block">
+                                    <div class="top-text-heading">New asset recommendations in <b>Gaming Laptop</b>
+                                    </div>
+                                    <div class="top-text-light">7 hours ago</div>
                                 </a>
                             </li>
                         </div>
@@ -95,24 +138,28 @@
             <div>
                 <ul class="side-nav pt-4">
                     <li class="side-nav__item side-nav__item-active">
-                        <i class='bx bx-home'></i>
-                        <span>Home</span>
+                        <a href="./company-profile.html">
+                            <i class='bx bx-home'></i>
+                            <span>Home</span>
+                        </a>
                     </li>
                     <li class="side-nav__item">
-                        <i class='bx bx-search'></i>
-                        <span>Search for RNs</span>
+                        <a href="./search-for-rs.html">
+                            <i class='bx bx-search'></i>
+                            <span>Search for RNs</span>
+                        </a>
                     </li>
                     <li class="side-nav__item">
-                        <i class='bx bx-street-view'></i>
-                        <span>View Shortlisted RNs</span>
+                        <a href="./shortlist-rn.html">
+                            <i class='bx bx-street-view'></i>
+                            <span>View Shortlisted RNs</span>
+                        </a>
                     </li>
                     <li class="side-nav__item">
-                        <i class='bx bxs-universal-access'></i>
-                        <span>Upcoming RN Interviews</span>
-                    </li>
-                    <li class="side-nav__item">
-                        <i class='bx bx-search'></i>
-                        <span>Search for RNs</span>
+                        <a href="./upcoming-interview.html">
+                            <i class='bx bxs-universal-access'></i>
+                            <span>Upcoming RN Interviews</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -123,6 +170,8 @@
                 </li>
             </ul>
         </nav>
+
+
         <main class="emplayer_main_content">
             <div class="company-profile_right">
                 <div class="company_cover_photo">
@@ -169,19 +218,20 @@
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-alljob" role="tabpanel"
                                 aria-labelledby="pills-alljobs-tab" tabindex="0">
-                                <div class="jobs_listing">
+                                <div class="jobs_listing white-background">
                                     <div class="row">
                                         <div class="col-lg-12 text-center">
-                                            <h3 class="heading-h3">Jobs Data</h3>
+                                            <h3 class="heading-h3">Jobs Listing</h3>
                                         </div>
                                     </div>
                                     <div class="search_result_text mb-3">
                                         <div class="row justify-content-center">
                                             <div class="col-lg-12">
-                                                <h5 class="mt-3">All Latest jobs Posted By You</h5>
+                                                <h5 class="mb-3 mt-2">All Latest jobs Posted By You</h5>
                                                 <div class="search_result_inner">
                                                     <div>
-                                                        <p class="mb-0 text-white">Find by <b>Search</b> </p>
+                                                        <p class="mb-0 text-white">You have Added <b>8</b> number of
+                                                            jobs</p>
                                                         <div class="search-box">
                                                             <input class="search-input" type="text"
                                                                 placeholder="Search something..">
@@ -193,906 +243,224 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row justify-content-start">
-                                        <div class="col-lg-6 mb-4">
-                                            <div class="card job_wrap">
-                                                <span class="job_status">New</span>
-                                                <h5 class="job_title">Critical Care RN for Cardiothoracic Center of
-                                                    Excellence</h5>
-                                                <p class="company_name">Texas Health</p>
-                                                <p class="job_location">Fort Worth Texas</p>
-                                                <div class="row">
-                                                    <div class="col-lg-12 job-discription">
-                                                        <h5>Description</h5>
-                                                        <div class="job_discription_wrap">
-                                                            <p>
-                                                                This position description has been designed to indicate
-                                                                the general nature and level of work performed by
-                                                                employees within this classification. It is not designed
-                                                                to contain or be interpreted as a comprehensive
-                                                                inventory of all duties, responsibilities and
-                                                                qualifications which may be required of the employee
-                                                                assigned to
-                                                                the position. Depending on the size of the facility the
-                                                                job duties may vary. Receipt of the job description does
-                                                                not imply nor create a promise of employment, nor an
-                                                                employment contract of any kind; my employment with
-                                                                the Company is at-will.
-                                                            </p>
-                                                            <h6>Position Summary</h6>
-                                                            <p>
-                                                                Nurses care for people who are sick, injured,
-                                                                convalescent or disabled. Under general supervision,
-                                                                they
-                                                                deliver care to patients utilizing the nursing process
-                                                                of assessment, planning, intervention, implementation,
-                                                                and
-                                                                evaluation, in accordance with established philosophy.
-                                                                Nurses collaborate with other professional disciplines
-                                                                to ensure effective patient care delivery and
-                                                                achievement of desired patient outcomes. Nurses
-                                                                effectively
-                                                                interact with patient and significant others, while
-                                                                maintaining the standard of professional nursing. The
-                                                                nature
-                                                                of the direction and supervision required for this
-                                                                position varies by State and job setting.
-                                                                Critical Care Nurses (ICU/CCU) provide care to acutely
-                                                                and critically ill patients, in a highly technical and
-                                                                ongoing monitoring environment. These patients are
-                                                                facing life-threatening problems with varying needs,
-                                                                which require extensive medication protocols and
-                                                                therapies. Critical Care Nurses face the additional
-                                                                responsibility for the emotional and psychosocial health
-                                                                of the patient, family and significant others.
-                                                            </p>
-                                                            <h6>Position Responsibilities </h6>
-                                                            <p>
-                                                                Critical Care Nurses (ICU/CCU) provide direct and
-                                                                individualized nursing care to patients based on the
-                                                                application of scientific nursing principles. In
-                                                                addition to general nursing care, responsibilities of
-                                                                Critical Care
-                                                                Nurses include (but are not limited to):
-                                                            </p>
-                                                            <ul>
-                                                                <li>
-                                                                    Consults and coordinates with health care team
-                                                                    members
-                                                                    to assess, plan, implement and evaluate patient
-                                                                    care plans
-                                                                </li>
-                                                                <li>
-                                                                    Prepares and administers (orally, subcutaneously,
-                                                                    through an IV) and records prescribed medications.
-                                                                    Reports adverse reactions to medications or
-                                                                    treatments
-                                                                    in accordance with the policy regarding the
-                                                                    administration of medications by a licensed
-                                                                    registered
-                                                                    nurse
-                                                                </li>
-                                                                <li>
-                                                                    Provides basic, bedside care
-                                                                </li>
-                                                                <li>
-                                                                    Initiates patient education plan, as prescribed by
-                                                                    physician. Teaches patients and significant others
-                                                                    how
-                                                                    to
-                                                                    manage their illness/injury, by explaining:
-                                                                    post-treatment home care needs,
-                                                                    diet/nutrition/exercise
-                                                                    programs, self-administration of medication and
-                                                                    rehabilitation
-                                                                </li>
-                                                                <li>
-                                                                    Records patients’ medical information and vital
-                                                                    signs
-                                                                </li>
-                                                                <li>
-                                                                    Orders, interprets and evaluates diagnostic tests to
-                                                                    identify and assess patient’s condition
-                                                                </li>
-                                                                <li>
-                                                                    Takes samples for lab work, orders prescribed lab
-                                                                    work
-                                                                    and evaluates/interprets lab reports
-                                                                </li>
-                                                                <li>
-                                                                    Prepares equipment and aids physician during
-                                                                    examination and treatment of patient
-                                                                </li>
-                                                                <li>
-                                                                    Responds to life-saving situations based upon
-                                                                    nursing
-                                                                    standards and protocol
-                                                                </li>
-                                                                <li>
-                                                                    Records all care information concisely, accurately
-                                                                    and
-                                                                    completely, in a timely manner, in the appropriate
-                                                                    format and on the appropriate forms
-                                                                </li>
-                                                                <li>
-                                                                    Applies Hemodynamic, Phlebotomy and IV protocols
-                                                                </li>
-                                                                <li>
-                                                                    Monitors and adjusts specialized equipment used on
-                                                                    patients, and interprets and records electronic
-                                                                    displays, such as intracranial pressures, central
-                                                                    venous
-                                                                    pressures, pulmonary artery pressures, and
-                                                                    cardiac rhythms from cardiac monitors, respirators,
-                                                                    ventilators, manometers, oxygen pumps, etc.
-                                                                </li>
-                                                                <li>
-                                                                    Monitors catheters, leads and tubing for proper
-                                                                    placement and functioning
-                                                                </li>
-                                                                <li>
-                                                                    Initiates corrective action whenever information
-                                                                    from
-                                                                    monitoring/life support equipment shows adverse
-                                                                    symptomatology
-
-                                                                </li>
-                                                                <li>Acts as patient advocate by supporting the basic
-                                                                    rights, values and beliefs of the patien</li>
-                                                                <li> Communicates to family/significant others
-                                                                    appropriate information on patient’s condition
-                                                                </li>
-                                                                <li>
-                                                                    Performs other position-related duties as assigned,
-                                                                    depending on assignment setting
-                                                                </li>
-                                                                <h6>Depending on setting, may also:</h6>
-                                                                <li>
-                                                                    Direct care provided by licensed practical nurses
-                                                                    and nursing aides
-                                                                </li>
-                                                                <li>
-                                                                    Float among various clinical services, where
-                                                                    qualified and competent
-                                                                </li>
-                                                            </ul>
-                                                            <h6>Other Responsibilities </h6>
-                                                            <ul>
-                                                                <li>Completes required orientation as directed by
-                                                                    facility</li>
-                                                                <li>Follows facility and OSHA safety rules and
-                                                                    procedures while on assignment</li>
-                                                                <li>Follows facility and GHR Unusual Occurrence Protocol
-                                                                </li>
-                                                                <li>Respects cultural and religious practices of
-                                                                    patients</li>
-                                                                <li>Upholds HIPAA regulations</li>
-                                                                <li>Punctual and dependent for assigned/confirmed shifts
-                                                                </li>
-                                                            </ul>
-                                                            <h6>Position Requirements </h6>
-                                                            <ul>
-                                                                <li>Graduate of an accredited nursing program</li>
-                                                                <li>Current nursing license, in good standing with the
-                                                                    State licensing board</li>
-                                                                <li>Minimum of one (1) year Critical Care experience
-                                                                </li>
-                                                                <li>Federal-, State- and GHR-required credentials
-                                                                    current and on file</li>
-                                                                <li>Cognitive skills as related to the position</li>
-                                                            </ul>
-                                                            <h6> Working Conditions</h6>
-                                                            <p>
-                                                                Because patients need round-the-clock care, working
-                                                                hours include days, nights, weekends and holidays. The
-                                                                number of patients assigned per shift will vary with
-                                                                facility and specialty, if applicable. Nurses spend
-                                                                considerable time walking, bending, stretching and
-                                                                standing; they assist in patient transfers. Nurses must
-                                                                guard against back injury because they may have to
-                                                                assist CNAs in patient lifts and transfers; they must
-                                                                follow
-                                                                proper body mechanics and procedures for lifting/moving
-                                                                patients. Nurses may face hazards from exposure to
-                                                                chemicals and infectious diseases. In addition, they
-                                                                treat patients that may be confused, irrational,
-                                                                agitated,
-                                                                and/or uncooperative.
-                                                            </p>
-                                                            <h6>Physical Demands</h6>
-                                                            <ul>
-                                                                <li>Ability to lift twenty (20) pounds. Moving, lifting
-                                                                    or transferring of patients may involve lifting of
-                                                                    up to fifty (50) pounds, as well as assist with
-                                                                    weights of more than one-hundred (100) pounds.</li>
-                                                                <li>Ability to stand for extended periods</li>
-                                                                <li>Fine motor skills</li>
-                                                                <li>Visual acuity</li>
-                                                            </ul>
-                                                            <p>
-                                                                The physical demands described here are representative
-                                                                of those that must be met by an employee to
-                                                                successfully perform the essential functions of this
-                                                                job. Reasonable accommodations may be made to
-                                                                enable individuals with disabilities to perform the
-                                                                essential functions. While performing the duties of this
-                                                                job,
-                                                                the employee is regularly required to stand and talk or
-                                                                hear. The employee is frequently required to walk;
-                                                                use hands to finger, handle, or feel; and reach forward
-                                                                with hands and arms. The employee is occasionally
-                                                                required to sit and stoop, kneel, or crouch. The
-                                                                employee must frequently lift and/or move up to 20
-                                                                pounds
-                                                                and occasionally lift or move 50 lbs. Specific vision
-                                                                abilities required by this job include close vision,
-                                                                distance vision, color vision, peripheral vision, depth
-                                                                perception, and ability to adjust focus.
-                                                            </p>
-                                                            <p>
-                                                                The overall physical demand rating for a job of the
-                                                                nurse falls within the Medium classification (exerting
-                                                                20
-                                                                to 50 pounds of force occasionally, and/or 10 to 25
-                                                                pounds of force frequently, and/or greater than
-                                                                negligible up to 10 pounds of force constantly to move
-                                                                objects. Physical Demand requirements are in
-                                                                excess of those for Light Work) according to the
-                                                                Dictionary of Occupational Titles.
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="all-posted-job-listing">
+                                                <div class="job-listing-info_wrap pt-3">
+                                                    <div class="posted-job_item">
+                                                        <div class="job-title">
+                                                            <p class="mb-0">
+                                                                Critical Care RN for Cardiothoracic Center of
+                                                                Excellence Critical
                                                             </p>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="job_timing_and_salary">
-                                                    <div class="tag timing">
-                                                        <img src="./frontend/img/stopwatch-svgrepo-com.svg"
-                                                            alt="job_timing">
-                                                        <b>Full Timg</b>
-                                                    </div>
-                                                    <div class="tag salary">
-                                                        <img src="./frontend/img/money-send-svgrepo-com.svg"
-                                                            alt="job_timing">
-                                                        <b>Rs 620,000.00 - Rs630,000.00 per month</b>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <h5>Expertise</h5>
-                                                        <div class="job_specialties job_tags">
-                                                            <span>Registered Nurse</span>
-                                                            <span>Emergency Department</span>
-                                                            <span>Obstetrical (OB)</span>
-                                                            <span>Medical-Surgical</span>
-                                                            <span>Obstetric</span>
-                                                            <span>Inpatient</span>
-                                                            <span>Operating Room</span>
-                                                            <span>Telemetry</span>
+                                                        <div class="job-location">
+                                                            <img src="./frontend/img/location-icon.svg" alt="">
+                                                            <p class="mb-0">Fort Worth Texas</p>
+                                                        </div>
+                                                        <div class="posted-date-and-time">
+                                                            <span> 1:01pm MDT</span>
+                                                            <span>05/18/2023</span>
+                                                        </div>
+                                                        <div class="job-action-btn open_dropdown">
+                                                            <img src="./frontend/img/action-dots.svg" alt="">
+                                                            <div class="action-dropdown">
+                                                                <a href="#">Edit Job</a>
+                                                                <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#full-job-view">View Full Job</a>
+                                                                <a href="#">Delete Job</a>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="apply_now_wrap job-action">
-                                                    <div class="dropdown">
-                                                        <button type="button" class="dropdown-toggle"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <img src="./frontend/img/dotes.svg" class="genral-icon"
-                                                                alt="">
-                                                        </button>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item text-dark" href="#">Edit</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item text-dark" href="#">Unlist</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item text-dark" href="#">Delete</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 mb-4">
-                                            <div class="card job_wrap">
-                                                <span class="job_status">New</span>
-                                                <h5 class="job_title">Critical Care RN for Cardiothoracic Center of
-                                                    Excellence</h5>
-                                                <p class="company_name">Texas Health</p>
-                                                <p class="job_location">Fort Worth Texas</p>
-                                                <div class="row">
-                                                    <div class="col-lg-12 job-discription">
-                                                        <h5>Description</h5>
-                                                        <div class="job_discription_wrap">
-                                                            <p>
-                                                                This position description has been designed to indicate
-                                                                the general nature and level of work performed by
-                                                                employees within this classification. It is not designed
-                                                                to contain or be interpreted as a comprehensive
-                                                                inventory of all duties, responsibilities and
-                                                                qualifications which may be required of the employee
-                                                                assigned to
-                                                                the position. Depending on the size of the facility the
-                                                                job duties may vary. Receipt of the job description does
-                                                                not imply nor create a promise of employment, nor an
-                                                                employment contract of any kind; my employment with
-                                                                the Company is at-will.
-                                                            </p>
-                                                            <h6>Position Summary</h6>
-                                                            <p>
-                                                                Nurses care for people who are sick, injured,
-                                                                convalescent or disabled. Under general supervision,
-                                                                they
-                                                                deliver care to patients utilizing the nursing process
-                                                                of assessment, planning, intervention, implementation,
-                                                                and
-                                                                evaluation, in accordance with established philosophy.
-                                                                Nurses collaborate with other professional disciplines
-                                                                to ensure effective patient care delivery and
-                                                                achievement of desired patient outcomes. Nurses
-                                                                effectively
-                                                                interact with patient and significant others, while
-                                                                maintaining the standard of professional nursing. The
-                                                                nature
-                                                                of the direction and supervision required for this
-                                                                position varies by State and job setting.
-                                                                Critical Care Nurses (ICU/CCU) provide care to acutely
-                                                                and critically ill patients, in a highly technical and
-                                                                ongoing monitoring environment. These patients are
-                                                                facing life-threatening problems with varying needs,
-                                                                which require extensive medication protocols and
-                                                                therapies. Critical Care Nurses face the additional
-                                                                responsibility for the emotional and psychosocial health
-                                                                of the patient, family and significant others.
-                                                            </p>
-                                                            <h6>Position Responsibilities </h6>
-                                                            <p>
-                                                                Critical Care Nurses (ICU/CCU) provide direct and
-                                                                individualized nursing care to patients based on the
-                                                                application of scientific nursing principles. In
-                                                                addition to general nursing care, responsibilities of
-                                                                Critical Care
-                                                                Nurses include (but are not limited to):
-                                                            </p>
-                                                            <ul>
-                                                                <li>
-                                                                    Consults and coordinates with health care team
-                                                                    members
-                                                                    to assess, plan, implement and evaluate patient
-                                                                    care plans
-                                                                </li>
-                                                                <li>
-                                                                    Prepares and administers (orally, subcutaneously,
-                                                                    through an IV) and records prescribed medications.
-                                                                    Reports adverse reactions to medications or
-                                                                    treatments
-                                                                    in accordance with the policy regarding the
-                                                                    administration of medications by a licensed
-                                                                    registered
-                                                                    nurse
-                                                                </li>
-                                                                <li>
-                                                                    Provides basic, bedside care
-                                                                </li>
-                                                                <li>
-                                                                    Initiates patient education plan, as prescribed by
-                                                                    physician. Teaches patients and significant others
-                                                                    how
-                                                                    to
-                                                                    manage their illness/injury, by explaining:
-                                                                    post-treatment home care needs,
-                                                                    diet/nutrition/exercise
-                                                                    programs, self-administration of medication and
-                                                                    rehabilitation
-                                                                </li>
-                                                                <li>
-                                                                    Records patients’ medical information and vital
-                                                                    signs
-                                                                </li>
-                                                                <li>
-                                                                    Orders, interprets and evaluates diagnostic tests to
-                                                                    identify and assess patient’s condition
-                                                                </li>
-                                                                <li>
-                                                                    Takes samples for lab work, orders prescribed lab
-                                                                    work
-                                                                    and evaluates/interprets lab reports
-                                                                </li>
-                                                                <li>
-                                                                    Prepares equipment and aids physician during
-                                                                    examination and treatment of patient
-                                                                </li>
-                                                                <li>
-                                                                    Responds to life-saving situations based upon
-                                                                    nursing
-                                                                    standards and protocol
-                                                                </li>
-                                                                <li>
-                                                                    Records all care information concisely, accurately
-                                                                    and
-                                                                    completely, in a timely manner, in the appropriate
-                                                                    format and on the appropriate forms
-                                                                </li>
-                                                                <li>
-                                                                    Applies Hemodynamic, Phlebotomy and IV protocols
-                                                                </li>
-                                                                <li>
-                                                                    Monitors and adjusts specialized equipment used on
-                                                                    patients, and interprets and records electronic
-                                                                    displays, such as intracranial pressures, central
-                                                                    venous
-                                                                    pressures, pulmonary artery pressures, and
-                                                                    cardiac rhythms from cardiac monitors, respirators,
-                                                                    ventilators, manometers, oxygen pumps, etc.
-                                                                </li>
-                                                                <li>
-                                                                    Monitors catheters, leads and tubing for proper
-                                                                    placement and functioning
-                                                                </li>
-                                                                <li>
-                                                                    Initiates corrective action whenever information
-                                                                    from
-                                                                    monitoring/life support equipment shows adverse
-                                                                    symptomatology
-
-                                                                </li>
-                                                                <li>Acts as patient advocate by supporting the basic
-                                                                    rights, values and beliefs of the patien</li>
-                                                                <li> Communicates to family/significant others
-                                                                    appropriate information on patient’s condition
-                                                                </li>
-                                                                <li>
-                                                                    Performs other position-related duties as assigned,
-                                                                    depending on assignment setting
-                                                                </li>
-                                                                <h6>Depending on setting, may also:</h6>
-                                                                <li>
-                                                                    Direct care provided by licensed practical nurses
-                                                                    and nursing aides
-                                                                </li>
-                                                                <li>
-                                                                    Float among various clinical services, where
-                                                                    qualified and competent
-                                                                </li>
-                                                            </ul>
-                                                            <h6>Other Responsibilities </h6>
-                                                            <ul>
-                                                                <li>Completes required orientation as directed by
-                                                                    facility</li>
-                                                                <li>Follows facility and OSHA safety rules and
-                                                                    procedures while on assignment</li>
-                                                                <li>Follows facility and GHR Unusual Occurrence Protocol
-                                                                </li>
-                                                                <li>Respects cultural and religious practices of
-                                                                    patients</li>
-                                                                <li>Upholds HIPAA regulations</li>
-                                                                <li>Punctual and dependent for assigned/confirmed shifts
-                                                                </li>
-                                                            </ul>
-                                                            <h6>Position Requirements </h6>
-                                                            <ul>
-                                                                <li>Graduate of an accredited nursing program</li>
-                                                                <li>Current nursing license, in good standing with the
-                                                                    State licensing board</li>
-                                                                <li>Minimum of one (1) year Critical Care experience
-                                                                </li>
-                                                                <li>Federal-, State- and GHR-required credentials
-                                                                    current and on file</li>
-                                                                <li>Cognitive skills as related to the position</li>
-                                                            </ul>
-                                                            <h6> Working Conditions</h6>
-                                                            <p>
-                                                                Because patients need round-the-clock care, working
-                                                                hours include days, nights, weekends and holidays. The
-                                                                number of patients assigned per shift will vary with
-                                                                facility and specialty, if applicable. Nurses spend
-                                                                considerable time walking, bending, stretching and
-                                                                standing; they assist in patient transfers. Nurses must
-                                                                guard against back injury because they may have to
-                                                                assist CNAs in patient lifts and transfers; they must
-                                                                follow
-                                                                proper body mechanics and procedures for lifting/moving
-                                                                patients. Nurses may face hazards from exposure to
-                                                                chemicals and infectious diseases. In addition, they
-                                                                treat patients that may be confused, irrational,
-                                                                agitated,
-                                                                and/or uncooperative.
-                                                            </p>
-                                                            <h6>Physical Demands</h6>
-                                                            <ul>
-                                                                <li>Ability to lift twenty (20) pounds. Moving, lifting
-                                                                    or transferring of patients may involve lifting of
-                                                                    up to fifty (50) pounds, as well as assist with
-                                                                    weights of more than one-hundred (100) pounds.</li>
-                                                                <li>Ability to stand for extended periods</li>
-                                                                <li>Fine motor skills</li>
-                                                                <li>Visual acuity</li>
-                                                            </ul>
-                                                            <p>
-                                                                The physical demands described here are representative
-                                                                of those that must be met by an employee to
-                                                                successfully perform the essential functions of this
-                                                                job. Reasonable accommodations may be made to
-                                                                enable individuals with disabilities to perform the
-                                                                essential functions. While performing the duties of this
-                                                                job,
-                                                                the employee is regularly required to stand and talk or
-                                                                hear. The employee is frequently required to walk;
-                                                                use hands to finger, handle, or feel; and reach forward
-                                                                with hands and arms. The employee is occasionally
-                                                                required to sit and stoop, kneel, or crouch. The
-                                                                employee must frequently lift and/or move up to 20
-                                                                pounds
-                                                                and occasionally lift or move 50 lbs. Specific vision
-                                                                abilities required by this job include close vision,
-                                                                distance vision, color vision, peripheral vision, depth
-                                                                perception, and ability to adjust focus.
-                                                            </p>
-                                                            <p>
-                                                                The overall physical demand rating for a job of the
-                                                                nurse falls within the Medium classification (exerting
-                                                                20
-                                                                to 50 pounds of force occasionally, and/or 10 to 25
-                                                                pounds of force frequently, and/or greater than
-                                                                negligible up to 10 pounds of force constantly to move
-                                                                objects. Physical Demand requirements are in
-                                                                excess of those for Light Work) according to the
-                                                                Dictionary of Occupational Titles.
+                                                    <div class="posted-job_item">
+                                                        <div class="job-title">
+                                                            <p class="mb-0">
+                                                                Critical Care RN for Cardiothoracic Center of
+                                                                Excellence Critical
                                                             </p>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="job_timing_and_salary">
-                                                    <div class="tag timing">
-                                                        <img src="./frontend/img/stopwatch-svgrepo-com.svg"
-                                                            alt="job_timing">
-                                                        <b>Full Timg</b>
-                                                    </div>
-                                                    <div class="tag salary">
-                                                        <img src="./frontend/img/money-send-svgrepo-com.svg"
-                                                            alt="job_timing">
-                                                        <b>Rs 620,000.00 - Rs630,000.00 per month</b>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <h5>Expertise</h5>
-                                                        <div class="job_specialties job_tags">
-                                                            <span>Registered Nurse</span>
-                                                            <span>Emergency Department</span>
-                                                            <span>Obstetrical (OB)</span>
-                                                            <span>Medical-Surgical</span>
-                                                            <span>Obstetric</span>
-                                                            <span>Inpatient</span>
-                                                            <span>Operating Room</span>
-                                                            <span>Telemetry</span>
+                                                        <div class="job-location">
+                                                            <img src="./frontend/img/location-icon.svg" alt="">
+                                                            <p class="mb-0">Fort Worth Texas</p>
+                                                        </div>
+                                                        <div class="posted-date-and-time">
+                                                            <span> 1:01pm MDT</span>
+                                                            <span>05/18/2023</span>
+                                                        </div>
+                                                        <div class="job-action-btn open_dropdown">
+                                                            <img src="./frontend/img/action-dots.svg" alt="">
+                                                            <div class="action-dropdown">
+                                                                <a href="#">Edit Job</a>
+                                                                <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#full-job-view">View Full Job</a>
+                                                                <a href="#">Delete Job</a>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="apply_now_wrap job-action">
-                                                    <div class="dropdown">
-                                                        <button type="button" class="dropdown-toggle"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <img src="./frontend/img/dotes.svg" class="genral-icon"
-                                                                alt="">
-                                                        </button>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item text-dark" href="#">Edit</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item text-dark" href="#">Unlist</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item text-dark" href="#">Delete</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 mb-4">
-                                            <div class="card job_wrap">
-                                                <span class="job_status">New</span>
-                                                <h5 class="job_title">Critical Care RN for Cardiothoracic Center of
-                                                    Excellence</h5>
-                                                <p class="company_name">Texas Health</p>
-                                                <p class="job_location">Fort Worth Texas</p>
-                                                <div class="row">
-                                                    <div class="col-lg-12 job-discription">
-                                                        <h5>Description</h5>
-                                                        <div class="job_discription_wrap">
-                                                            <p>
-                                                                This position description has been designed to indicate
-                                                                the general nature and level of work performed by
-                                                                employees within this classification. It is not designed
-                                                                to contain or be interpreted as a comprehensive
-                                                                inventory of all duties, responsibilities and
-                                                                qualifications which may be required of the employee
-                                                                assigned to
-                                                                the position. Depending on the size of the facility the
-                                                                job duties may vary. Receipt of the job description does
-                                                                not imply nor create a promise of employment, nor an
-                                                                employment contract of any kind; my employment with
-                                                                the Company is at-will.
-                                                            </p>
-                                                            <h6>Position Summary</h6>
-                                                            <p>
-                                                                Nurses care for people who are sick, injured,
-                                                                convalescent or disabled. Under general supervision,
-                                                                they
-                                                                deliver care to patients utilizing the nursing process
-                                                                of assessment, planning, intervention, implementation,
-                                                                and
-                                                                evaluation, in accordance with established philosophy.
-                                                                Nurses collaborate with other professional disciplines
-                                                                to ensure effective patient care delivery and
-                                                                achievement of desired patient outcomes. Nurses
-                                                                effectively
-                                                                interact with patient and significant others, while
-                                                                maintaining the standard of professional nursing. The
-                                                                nature
-                                                                of the direction and supervision required for this
-                                                                position varies by State and job setting.
-                                                                Critical Care Nurses (ICU/CCU) provide care to acutely
-                                                                and critically ill patients, in a highly technical and
-                                                                ongoing monitoring environment. These patients are
-                                                                facing life-threatening problems with varying needs,
-                                                                which require extensive medication protocols and
-                                                                therapies. Critical Care Nurses face the additional
-                                                                responsibility for the emotional and psychosocial health
-                                                                of the patient, family and significant others.
-                                                            </p>
-                                                            <h6>Position Responsibilities </h6>
-                                                            <p>
-                                                                Critical Care Nurses (ICU/CCU) provide direct and
-                                                                individualized nursing care to patients based on the
-                                                                application of scientific nursing principles. In
-                                                                addition to general nursing care, responsibilities of
-                                                                Critical Care
-                                                                Nurses include (but are not limited to):
-                                                            </p>
-                                                            <ul>
-                                                                <li>
-                                                                    Consults and coordinates with health care team
-                                                                    members
-                                                                    to assess, plan, implement and evaluate patient
-                                                                    care plans
-                                                                </li>
-                                                                <li>
-                                                                    Prepares and administers (orally, subcutaneously,
-                                                                    through an IV) and records prescribed medications.
-                                                                    Reports adverse reactions to medications or
-                                                                    treatments
-                                                                    in accordance with the policy regarding the
-                                                                    administration of medications by a licensed
-                                                                    registered
-                                                                    nurse
-                                                                </li>
-                                                                <li>
-                                                                    Provides basic, bedside care
-                                                                </li>
-                                                                <li>
-                                                                    Initiates patient education plan, as prescribed by
-                                                                    physician. Teaches patients and significant others
-                                                                    how
-                                                                    to
-                                                                    manage their illness/injury, by explaining:
-                                                                    post-treatment home care needs,
-                                                                    diet/nutrition/exercise
-                                                                    programs, self-administration of medication and
-                                                                    rehabilitation
-                                                                </li>
-                                                                <li>
-                                                                    Records patients’ medical information and vital
-                                                                    signs
-                                                                </li>
-                                                                <li>
-                                                                    Orders, interprets and evaluates diagnostic tests to
-                                                                    identify and assess patient’s condition
-                                                                </li>
-                                                                <li>
-                                                                    Takes samples for lab work, orders prescribed lab
-                                                                    work
-                                                                    and evaluates/interprets lab reports
-                                                                </li>
-                                                                <li>
-                                                                    Prepares equipment and aids physician during
-                                                                    examination and treatment of patient
-                                                                </li>
-                                                                <li>
-                                                                    Responds to life-saving situations based upon
-                                                                    nursing
-                                                                    standards and protocol
-                                                                </li>
-                                                                <li>
-                                                                    Records all care information concisely, accurately
-                                                                    and
-                                                                    completely, in a timely manner, in the appropriate
-                                                                    format and on the appropriate forms
-                                                                </li>
-                                                                <li>
-                                                                    Applies Hemodynamic, Phlebotomy and IV protocols
-                                                                </li>
-                                                                <li>
-                                                                    Monitors and adjusts specialized equipment used on
-                                                                    patients, and interprets and records electronic
-                                                                    displays, such as intracranial pressures, central
-                                                                    venous
-                                                                    pressures, pulmonary artery pressures, and
-                                                                    cardiac rhythms from cardiac monitors, respirators,
-                                                                    ventilators, manometers, oxygen pumps, etc.
-                                                                </li>
-                                                                <li>
-                                                                    Monitors catheters, leads and tubing for proper
-                                                                    placement and functioning
-                                                                </li>
-                                                                <li>
-                                                                    Initiates corrective action whenever information
-                                                                    from
-                                                                    monitoring/life support equipment shows adverse
-                                                                    symptomatology
-
-                                                                </li>
-                                                                <li>Acts as patient advocate by supporting the basic
-                                                                    rights, values and beliefs of the patien</li>
-                                                                <li> Communicates to family/significant others
-                                                                    appropriate information on patient’s condition
-                                                                </li>
-                                                                <li>
-                                                                    Performs other position-related duties as assigned,
-                                                                    depending on assignment setting
-                                                                </li>
-                                                                <h6>Depending on setting, may also:</h6>
-                                                                <li>
-                                                                    Direct care provided by licensed practical nurses
-                                                                    and nursing aides
-                                                                </li>
-                                                                <li>
-                                                                    Float among various clinical services, where
-                                                                    qualified and competent
-                                                                </li>
-                                                            </ul>
-                                                            <h6>Other Responsibilities </h6>
-                                                            <ul>
-                                                                <li>Completes required orientation as directed by
-                                                                    facility</li>
-                                                                <li>Follows facility and OSHA safety rules and
-                                                                    procedures while on assignment</li>
-                                                                <li>Follows facility and GHR Unusual Occurrence Protocol
-                                                                </li>
-                                                                <li>Respects cultural and religious practices of
-                                                                    patients</li>
-                                                                <li>Upholds HIPAA regulations</li>
-                                                                <li>Punctual and dependent for assigned/confirmed shifts
-                                                                </li>
-                                                            </ul>
-                                                            <h6>Position Requirements </h6>
-                                                            <ul>
-                                                                <li>Graduate of an accredited nursing program</li>
-                                                                <li>Current nursing license, in good standing with the
-                                                                    State licensing board</li>
-                                                                <li>Minimum of one (1) year Critical Care experience
-                                                                </li>
-                                                                <li>Federal-, State- and GHR-required credentials
-                                                                    current and on file</li>
-                                                                <li>Cognitive skills as related to the position</li>
-                                                            </ul>
-                                                            <h6> Working Conditions</h6>
-                                                            <p>
-                                                                Because patients need round-the-clock care, working
-                                                                hours include days, nights, weekends and holidays. The
-                                                                number of patients assigned per shift will vary with
-                                                                facility and specialty, if applicable. Nurses spend
-                                                                considerable time walking, bending, stretching and
-                                                                standing; they assist in patient transfers. Nurses must
-                                                                guard against back injury because they may have to
-                                                                assist CNAs in patient lifts and transfers; they must
-                                                                follow
-                                                                proper body mechanics and procedures for lifting/moving
-                                                                patients. Nurses may face hazards from exposure to
-                                                                chemicals and infectious diseases. In addition, they
-                                                                treat patients that may be confused, irrational,
-                                                                agitated,
-                                                                and/or uncooperative.
-                                                            </p>
-                                                            <h6>Physical Demands</h6>
-                                                            <ul>
-                                                                <li>Ability to lift twenty (20) pounds. Moving, lifting
-                                                                    or transferring of patients may involve lifting of
-                                                                    up to fifty (50) pounds, as well as assist with
-                                                                    weights of more than one-hundred (100) pounds.</li>
-                                                                <li>Ability to stand for extended periods</li>
-                                                                <li>Fine motor skills</li>
-                                                                <li>Visual acuity</li>
-                                                            </ul>
-                                                            <p>
-                                                                The physical demands described here are representative
-                                                                of those that must be met by an employee to
-                                                                successfully perform the essential functions of this
-                                                                job. Reasonable accommodations may be made to
-                                                                enable individuals with disabilities to perform the
-                                                                essential functions. While performing the duties of this
-                                                                job,
-                                                                the employee is regularly required to stand and talk or
-                                                                hear. The employee is frequently required to walk;
-                                                                use hands to finger, handle, or feel; and reach forward
-                                                                with hands and arms. The employee is occasionally
-                                                                required to sit and stoop, kneel, or crouch. The
-                                                                employee must frequently lift and/or move up to 20
-                                                                pounds
-                                                                and occasionally lift or move 50 lbs. Specific vision
-                                                                abilities required by this job include close vision,
-                                                                distance vision, color vision, peripheral vision, depth
-                                                                perception, and ability to adjust focus.
-                                                            </p>
-                                                            <p>
-                                                                The overall physical demand rating for a job of the
-                                                                nurse falls within the Medium classification (exerting
-                                                                20
-                                                                to 50 pounds of force occasionally, and/or 10 to 25
-                                                                pounds of force frequently, and/or greater than
-                                                                negligible up to 10 pounds of force constantly to move
-                                                                objects. Physical Demand requirements are in
-                                                                excess of those for Light Work) according to the
-                                                                Dictionary of Occupational Titles.
+                                                    <div class="posted-job_item">
+                                                        <div class="job-title">
+                                                            <p class="mb-0">
+                                                                Critical Care RN for Cardiothoracic Center of
+                                                                Excellence Critical
                                                             </p>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="job_timing_and_salary">
-                                                    <div class="tag timing">
-                                                        <img src="./frontend/img/stopwatch-svgrepo-com.svg"
-                                                            alt="job_timing">
-                                                        <b>Full Timg</b>
-                                                    </div>
-                                                    <div class="tag salary">
-                                                        <img src="./frontend/img/money-send-svgrepo-com.svg"
-                                                            alt="job_timing">
-                                                        <b>Rs 620,000.00 - Rs630,000.00 per month</b>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <h5>Expertise</h5>
-                                                        <div class="job_specialties job_tags">
-                                                            <span>Registered Nurse</span>
-                                                            <span>Emergency Department</span>
-                                                            <span>Obstetrical (OB)</span>
-                                                            <span>Medical-Surgical</span>
-                                                            <span>Obstetric</span>
-                                                            <span>Inpatient</span>
-                                                            <span>Operating Room</span>
-                                                            <span>Telemetry</span>
+                                                        <div class="job-location">
+                                                            <img src="./frontend/img/location-icon.svg" alt="">
+                                                            <p class="mb-0">Fort Worth Texas</p>
+                                                        </div>
+                                                        <div class="posted-date-and-time">
+                                                            <span> 1:01pm MDT</span>
+                                                            <span>05/18/2023</span>
+                                                        </div>
+                                                        <div class="job-action-btn open_dropdown">
+                                                            <img src="./frontend/img/action-dots.svg" alt="">
+                                                            <div class="action-dropdown">
+                                                                <a href="#">Edit Job</a>
+                                                                <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#full-job-view">View Full Job</a>
+                                                                <a href="#">Delete Job</a>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="apply_now_wrap job-action">
-                                                    <div class="dropdown">
-                                                        <button type="button" class="dropdown-toggle"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <img src="./frontend/img/dotes.svg" class="genral-icon"
-                                                                alt="">
-                                                        </button>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item text-dark" href="#">Edit</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item text-dark" href="#">Unlist</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item text-dark" href="#">Delete</a>
-                                                            </li>
-                                                        </ul>
+                                                    <div class="posted-job_item">
+                                                        <div class="job-title">
+                                                            <p class="mb-0">
+                                                                Critical Care RN for Cardiothoracic Center of
+                                                                Excellence Critical
+                                                            </p>
+                                                        </div>
+                                                        <div class="job-location">
+                                                            <img src="./frontend/img/location-icon.svg" alt="">
+                                                            <p class="mb-0">Fort Worth Texas</p>
+                                                        </div>
+                                                        <div class="posted-date-and-time">
+                                                            <span> 1:01pm MDT</span>
+                                                            <span>05/18/2023</span>
+                                                        </div>
+                                                        <div class="job-action-btn open_dropdown">
+                                                            <img src="./frontend/img/action-dots.svg" alt="">
+                                                            <div class="action-dropdown">
+                                                                <a href="#">Edit Job</a>
+                                                                <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#full-job-view">View Full Job</a>
+                                                                <a href="#">Delete Job</a>
+                                                            </div>
+                                                        </div>
                                                     </div>
-
+                                                    <div class="posted-job_item">
+                                                        <div class="job-title">
+                                                            <p class="mb-0">
+                                                                Critical Care RN for Cardiothoracic Center of
+                                                                Excellence Critical
+                                                            </p>
+                                                        </div>
+                                                        <div class="job-location">
+                                                            <img src="./frontend/img/location-icon.svg" alt="">
+                                                            <p class="mb-0">Fort Worth Texas</p>
+                                                        </div>
+                                                        <div class="posted-date-and-time">
+                                                            <span> 1:01pm MDT</span>
+                                                            <span>05/18/2023</span>
+                                                        </div>
+                                                        <div class="job-action-btn open_dropdown">
+                                                            <img src="./frontend/img/action-dots.svg" alt="">
+                                                            <div class="action-dropdown">
+                                                                <a href="#">Edit Job</a>
+                                                                <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#full-job-view">View Full Job</a>
+                                                                <a href="#">Delete Job</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="posted-job_item">
+                                                        <div class="job-title">
+                                                            <p class="mb-0">
+                                                                Critical Care RN for Cardiothoracic Center of
+                                                                Excellence Critical
+                                                            </p>
+                                                        </div>
+                                                        <div class="job-location">
+                                                            <img src="./frontend/img/location-icon.svg" alt="">
+                                                            <p class="mb-0">Fort Worth Texas</p>
+                                                        </div>
+                                                        <div class="posted-date-and-time">
+                                                            <span> 1:01pm MDT</span>
+                                                            <span>05/18/2023</span>
+                                                        </div>
+                                                        <div class="job-action-btn open_dropdown">
+                                                            <img src="./frontend/img/action-dots.svg" alt="">
+                                                            <div class="action-dropdown">
+                                                                <a href="#">Edit Job</a>
+                                                                <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#full-job-view">View Full Job</a>
+                                                                <a href="#">Delete Job</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="posted-job_item">
+                                                        <div class="job-title">
+                                                            <p class="mb-0">
+                                                                Critical Care RN for Cardiothoracic Center of
+                                                                Excellence Critical
+                                                            </p>
+                                                        </div>
+                                                        <div class="job-location">
+                                                            <img src="./frontend/img/location-icon.svg" alt="">
+                                                            <p class="mb-0">Fort Worth Texas</p>
+                                                        </div>
+                                                        <div class="posted-date-and-time">
+                                                            <span> 1:01pm MDT</span>
+                                                            <span>05/18/2023</span>
+                                                        </div>
+                                                        <div class="job-action-btn open_dropdown">
+                                                            <img src="./frontend/img/action-dots.svg" alt="">
+                                                            <div class="action-dropdown">
+                                                                <a href="#">Edit Job</a>
+                                                                <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#full-job-view">View Full Job</a>
+                                                                <a href="#">Delete Job</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="posted-job_item">
+                                                        <div class="job-title">
+                                                            <p class="mb-0">
+                                                                Critical Care RN for Cardiothoracic Center of
+                                                                Excellence Critical
+                                                            </p>
+                                                        </div>
+                                                        <div class="job-location">
+                                                            <img src="./frontend/img/location-icon.svg" alt="">
+                                                            <p class="mb-0">Fort Worth Texas</p>
+                                                        </div>
+                                                        <div class="posted-date-and-time">
+                                                            <span> 1:01pm MDT</span>
+                                                            <span>05/18/2023</span>
+                                                        </div>
+                                                        <div class="job-action-btn open_dropdown">
+                                                            <img src="./frontend/img/action-dots.svg" alt="">
+                                                            <div class="action-dropdown">
+                                                                <a href="#">Edit Job</a>
+                                                                <a href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#full-job-view">View Full Job</a>
+                                                                <a href="#">Delete Job</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- No data to show -->
-                                <div class="jobs_listing">
+                                <div class="jobs_listing mt-5">
                                     <div class="no-job-container">
                                         <h3>You did not post any job yet</h3>
                                         <p>Please Add any job to see here</p>
                                     </div>
                                 </div>
                             </div>
-
+                            <!-- Button trigger modal -->
 
                             <div class="tab-pane fade" id="pills-addjob" role="tabpanel"
                                 aria-labelledby="pills-addjob-tab" tabindex="0">
@@ -1172,31 +540,7 @@
         <div class="overlay-shadow"></div>
     </div>
     </div>
-    <!-- <div class="emplayer-footer">
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved LcNursework</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul class="d-flex gap-2 mb-0">
-                                <li><a href="#" class="text-muted fs-6">Home</a></li>
-                                <li><a href="#" class="text-muted fs-6">Terms</a></li>
-                                <li><a href="#" class="text-muted fs-6">Privacy</a></li>
-                                <li><a href="#" class="text-muted fs-6">Policy</a></li>
-                                <li><a href="#" class="text-muted fs-6">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+
 
 
 
@@ -1254,6 +598,316 @@
             </div>
         </div>
     </div>
+    <!-- VIEW FULL JOB  -->
+    <div class="modal fade" id="full-job-view" tabindex="-1" aria-labelledby="full-job-viewLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5" id="full-job-viewLabel">Full Job</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12 mb-4">
+                            <div class="card job_wrap">
+                                <span class="job_status">New</span>
+                                <h5 class="job_title">Critical Care RN for Cardiothoracic Center of
+                                    Excellence</h5>
+                                <p class="company_name">Texas Health</p>
+                                <p class="job_location">Fort Worth Texas</p>
+                                <div class="row">
+                                    <div class="col-lg-12 job-discription">
+                                        <h5>Description</h5>
+                                        <div class="job_discription_wrap">
+                                            <p>
+                                                This position description has been designed to indicate
+                                                the general nature and level of work performed by
+                                                employees within this classification. It is not designed
+                                                to contain or be interpreted as a comprehensive
+                                                inventory of all duties, responsibilities and
+                                                qualifications which may be required of the employee
+                                                assigned to
+                                                the position. Depending on the size of the facility the
+                                                job duties may vary. Receipt of the job description does
+                                                not imply nor create a promise of employment, nor an
+                                                employment contract of any kind; my employment with
+                                                the Company is at-will.
+                                            </p>
+                                            <h6>Position Summary</h6>
+                                            <p>
+                                                Nurses care for people who are sick, injured,
+                                                convalescent or disabled. Under general supervision,
+                                                they
+                                                deliver care to patients utilizing the nursing process
+                                                of assessment, planning, intervention, implementation,
+                                                and
+                                                evaluation, in accordance with established philosophy.
+                                                Nurses collaborate with other professional disciplines
+                                                to ensure effective patient care delivery and
+                                                achievement of desired patient outcomes. Nurses
+                                                effectively
+                                                interact with patient and significant others, while
+                                                maintaining the standard of professional nursing. The
+                                                nature
+                                                of the direction and supervision required for this
+                                                position varies by State and job setting.
+                                                Critical Care Nurses (ICU/CCU) provide care to acutely
+                                                and critically ill patients, in a highly technical and
+                                                ongoing monitoring environment. These patients are
+                                                facing life-threatening problems with varying needs,
+                                                which require extensive medication protocols and
+                                                therapies. Critical Care Nurses face the additional
+                                                responsibility for the emotional and psychosocial health
+                                                of the patient, family and significant others.
+                                            </p>
+                                            <h6>Position Responsibilities </h6>
+                                            <p>
+                                                Critical Care Nurses (ICU/CCU) provide direct and
+                                                individualized nursing care to patients based on the
+                                                application of scientific nursing principles. In
+                                                addition to general nursing care, responsibilities of
+                                                Critical Care
+                                                Nurses include (but are not limited to):
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Consults and coordinates with health care team
+                                                    members
+                                                    to assess, plan, implement and evaluate patient
+                                                    care plans
+                                                </li>
+                                                <li>
+                                                    Prepares and administers (orally, subcutaneously,
+                                                    through an IV) and records prescribed medications.
+                                                    Reports adverse reactions to medications or
+                                                    treatments
+                                                    in accordance with the policy regarding the
+                                                    administration of medications by a licensed
+                                                    registered
+                                                    nurse
+                                                </li>
+                                                <li>
+                                                    Provides basic, bedside care
+                                                </li>
+                                                <li>
+                                                    Initiates patient education plan, as prescribed by
+                                                    physician. Teaches patients and significant others
+                                                    how
+                                                    to
+                                                    manage their illness/injury, by explaining:
+                                                    post-treatment home care needs,
+                                                    diet/nutrition/exercise
+                                                    programs, self-administration of medication and
+                                                    rehabilitation
+                                                </li>
+                                                <li>
+                                                    Records patients’ medical information and vital
+                                                    signs
+                                                </li>
+                                                <li>
+                                                    Orders, interprets and evaluates diagnostic tests to
+                                                    identify and assess patient’s condition
+                                                </li>
+                                                <li>
+                                                    Takes samples for lab work, orders prescribed lab
+                                                    work
+                                                    and evaluates/interprets lab reports
+                                                </li>
+                                                <li>
+                                                    Prepares equipment and aids physician during
+                                                    examination and treatment of patient
+                                                </li>
+                                                <li>
+                                                    Responds to life-saving situations based upon
+                                                    nursing
+                                                    standards and protocol
+                                                </li>
+                                                <li>
+                                                    Records all care information concisely, accurately
+                                                    and
+                                                    completely, in a timely manner, in the appropriate
+                                                    format and on the appropriate forms
+                                                </li>
+                                                <li>
+                                                    Applies Hemodynamic, Phlebotomy and IV protocols
+                                                </li>
+                                                <li>
+                                                    Monitors and adjusts specialized equipment used on
+                                                    patients, and interprets and records electronic
+                                                    displays, such as intracranial pressures, central
+                                                    venous
+                                                    pressures, pulmonary artery pressures, and
+                                                    cardiac rhythms from cardiac monitors, respirators,
+                                                    ventilators, manometers, oxygen pumps, etc.
+                                                </li>
+                                                <li>
+                                                    Monitors catheters, leads and tubing for proper
+                                                    placement and functioning
+                                                </li>
+                                                <li>
+                                                    Initiates corrective action whenever information
+                                                    from
+                                                    monitoring/life support equipment shows adverse
+                                                    symptomatology
+
+                                                </li>
+                                                <li>Acts as patient advocate by supporting the basic
+                                                    rights, values and beliefs of the patien</li>
+                                                <li> Communicates to family/significant others
+                                                    appropriate information on patient’s condition
+                                                </li>
+                                                <li>
+                                                    Performs other position-related duties as assigned,
+                                                    depending on assignment setting
+                                                </li>
+                                                <h6>Depending on setting, may also:</h6>
+                                                <li>
+                                                    Direct care provided by licensed practical nurses
+                                                    and nursing aides
+                                                </li>
+                                                <li>
+                                                    Float among various clinical services, where
+                                                    qualified and competent
+                                                </li>
+                                            </ul>
+                                            <h6>Other Responsibilities </h6>
+                                            <ul>
+                                                <li>Completes required orientation as directed by
+                                                    facility</li>
+                                                <li>Follows facility and OSHA safety rules and
+                                                    procedures while on assignment</li>
+                                                <li>Follows facility and GHR Unusual Occurrence Protocol
+                                                </li>
+                                                <li>Respects cultural and religious practices of
+                                                    patients</li>
+                                                <li>Upholds HIPAA regulations</li>
+                                                <li>Punctual and dependent for assigned/confirmed shifts
+                                                </li>
+                                            </ul>
+                                            <h6>Position Requirements </h6>
+                                            <ul>
+                                                <li>Graduate of an accredited nursing program</li>
+                                                <li>Current nursing license, in good standing with the
+                                                    State licensing board</li>
+                                                <li>Minimum of one (1) year Critical Care experience
+                                                </li>
+                                                <li>Federal-, State- and GHR-required credentials
+                                                    current and on file</li>
+                                                <li>Cognitive skills as related to the position</li>
+                                            </ul>
+                                            <h6> Working Conditions</h6>
+                                            <p>
+                                                Because patients need round-the-clock care, working
+                                                hours include days, nights, weekends and holidays. The
+                                                number of patients assigned per shift will vary with
+                                                facility and specialty, if applicable. Nurses spend
+                                                considerable time walking, bending, stretching and
+                                                standing; they assist in patient transfers. Nurses must
+                                                guard against back injury because they may have to
+                                                assist CNAs in patient lifts and transfers; they must
+                                                follow
+                                                proper body mechanics and procedures for lifting/moving
+                                                patients. Nurses may face hazards from exposure to
+                                                chemicals and infectious diseases. In addition, they
+                                                treat patients that may be confused, irrational,
+                                                agitated,
+                                                and/or uncooperative.
+                                            </p>
+                                            <h6>Physical Demands</h6>
+                                            <ul>
+                                                <li>Ability to lift twenty (20) pounds. Moving, lifting
+                                                    or transferring of patients may involve lifting of
+                                                    up to fifty (50) pounds, as well as assist with
+                                                    weights of more than one-hundred (100) pounds.</li>
+                                                <li>Ability to stand for extended periods</li>
+                                                <li>Fine motor skills</li>
+                                                <li>Visual acuity</li>
+                                            </ul>
+                                            <p>
+                                                The physical demands described here are representative
+                                                of those that must be met by an employee to
+                                                successfully perform the essential functions of this
+                                                job. Reasonable accommodations may be made to
+                                                enable individuals with disabilities to perform the
+                                                essential functions. While performing the duties of this
+                                                job,
+                                                the employee is regularly required to stand and talk or
+                                                hear. The employee is frequently required to walk;
+                                                use hands to finger, handle, or feel; and reach forward
+                                                with hands and arms. The employee is occasionally
+                                                required to sit and stoop, kneel, or crouch. The
+                                                employee must frequently lift and/or move up to 20
+                                                pounds
+                                                and occasionally lift or move 50 lbs. Specific vision
+                                                abilities required by this job include close vision,
+                                                distance vision, color vision, peripheral vision, depth
+                                                perception, and ability to adjust focus.
+                                            </p>
+                                            <p>
+                                                The overall physical demand rating for a job of the
+                                                nurse falls within the Medium classification (exerting
+                                                20
+                                                to 50 pounds of force occasionally, and/or 10 to 25
+                                                pounds of force frequently, and/or greater than
+                                                negligible up to 10 pounds of force constantly to move
+                                                objects. Physical Demand requirements are in
+                                                excess of those for Light Work) according to the
+                                                Dictionary of Occupational Titles.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job_timing_and_salary">
+                                    <div class="tag timing">
+                                        <img src="./frontend/img/stopwatch-svgrepo-com.svg" alt="job_timing">
+                                        <b>Full Timg</b>
+                                    </div>
+                                    <div class="tag salary">
+                                        <img src="./frontend/img/money-send-svgrepo-com.svg" alt="job_timing">
+                                        <b>Rs 620,000.00 - Rs630,000.00 per month</b>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h5>Expertise</h5>
+                                        <div class="job_specialties job_tags">
+                                            <span>Registered Nurse</span>
+                                            <span>Emergency Department</span>
+                                            <span>Obstetrical (OB)</span>
+                                            <span>Medical-Surgical</span>
+                                            <span>Obstetric</span>
+                                            <span>Inpatient</span>
+                                            <span>Operating Room</span>
+                                            <span>Telemetry</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="apply_now_wrap job-action">
+                                    <div class="dropdown">
+                                        <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <img src="./frontend/img/dotes.svg" class="genral-icon" alt="">
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item text-dark" href="#">Edit</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-dark" href="#">Unlist</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-dark" href="#">Delete</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
     <script language=javascript src="./frontend/js-partails/footer-scripts.js"></script>
 </body>
 

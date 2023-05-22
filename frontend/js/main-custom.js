@@ -449,3 +449,70 @@ $(document).ready(function() {
     });
   });
   
+
+
+//   emplayer zoon
+$(document).ready(function() {
+    // Hide all dropdowns initially
+    $('.action-dropdown').hide();
+
+    // Toggle dropdown on click
+    $('.open_dropdown').click(function(e) {
+        e.stopPropagation();
+        
+        // Close any previously opened dropdown
+        $('.action-dropdown').not($(this).find('.action-dropdown')).hide();
+        
+        // Toggle the clicked dropdown
+        $(this).find('.action-dropdown').toggle();
+    });
+
+    // Close dropdown when clicking outside
+    $(document).click(function() {
+        $('.action-dropdown').hide();
+    });
+});
+
+$(document).ready(function() {
+    $('.heart-icon').click(function() {
+      $(this).toggleClass('filled');
+      $(this).closest('.nurse-search-result-item').toggleClass('added-in-shortlist')
+    });
+});
+
+$(document).ready(function () {
+    var $filterDropdown = $('.job-filters-wrap-dropdown');
+    var $toggleElements = $('.job-filter-titile, .filter_img, .apply-filter');
+
+    $toggleElements.click(function () {
+        $filterDropdown.slideToggle();
+    });
+
+    $(document).click(function (event) {
+        if (!$(event.target).closest('.job-filters-wrap-dropdown').length &&
+            !$(event.target).closest('.job-filter-titile, .filter_img').length) {
+            if ($filterDropdown.is(":visible")) {
+                $filterDropdown.slideUp();
+            }
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+$(document).ready(function() {
+    $('.select-rn').change(function() {
+      var $parentElement = $('.select-for-upcoming-interview');
+      if ($(this).is(':checked')) {
+        // Add your desired class when the checkbox is checked
+        $parentElement.addClass('selected-all-rn');
+        $(this).closest('.nurse-search-result-item').addClass('selected');
+      } else {
+        // Remove your desired class when the checkbox is unchecked
+        $parentElement.removeClass('selected-all-rn');
+        $(this).closest('.nurse-search-result-item').removeClass('selected');
+      }
+    });
+  });

@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lepcha&family=Tilt+Warp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+Lepcha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @font-face {
     font-family: Muli;
     src: url(../font/muli/Muli.ttf);
@@ -1600,11 +1603,11 @@ header .navbar a{
     width: 350px;
 }
 .search_result_inner .search-box input{
-    border-radius: 30px;
+    border-radius: 5px;
 }
 .company_work_space .search_result_inner{
-    border-radius: 35px;
-    background-color: #000;
+    border-radius: 5px;
+    background-color: var(--theme-primay-color);;
     padding: 10px 13px 10px 30px;
 }
 .job_discription_wrap{
@@ -1710,3 +1713,634 @@ header .navbar a{
     justify-content: center;
     margin-bottom: 30px;
 }
+
+
+/* 5/20/2023 Emplyer zone */
+.company-profile_right{
+    background: #f5f6fa;
+}
+.white-background{
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;    
+    padding: 20px 15px;
+}
+.posted-job_item{
+    background-color: #fAfAfA;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    padding-right: 15px;
+    margin-bottom: 15px;    
+    padding-left: 10px;
+
+}
+.job-location{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 300px;
+}
+.select-job{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+}
+.job-title{
+    padding: 10px;
+}
+.job-title p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #333333;
+    border-radius: 0;
+    width: 550px;
+}
+.job-location p{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #959595;
+    word-break: break-word;
+}
+.posted-date-and-time{
+    flex-grow: 1;
+    text-align: end;
+    padding-right: 13px;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.posted-date-and-time span:nth-child(1) {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+    text-transform: uppercase;
+}
+.posted-date-and-time span:nth-child(2){
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+    opacity: 0.5;
+}
+.job-action-btn{
+    width: 24px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+.action-dropdown {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 177px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 1px 1px 6px 2px rgba(0,0,0,0.15);
+    text-align: left;
+}
+.action-dropdown a{
+    color: #0b0b0b;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: block;
+    padding: 3px 0px;
+}
+.job-action-btn {
+    position: relative;
+    display: inline-block;
+}
+.modal{
+    z-index: 11100;
+}
+#full-job-view .modal-dialog {
+    max-width: 900px;
+    margin: 1.75rem auto;
+}
+.job_discription_wrap{
+    max-height: 350px;
+}
+
+.contact-serach-bar{
+    position: relative;
+    border: 1px solid #E0E0E0;
+    overflow-x: hidden;
+    padding-right: 26px;
+    width: 82%;
+}
+.contact-serach-bar .job-serach-input{
+    padding-left: 53px;
+    border-bottom: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: auto;
+    width: 100%;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 0;
+    border-bottom: 0 !important;
+}
+.job-filter-img{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search-contacs-box{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px !important;
+    line-height: 20px;
+    text-align: center;
+    width: 48px;
+    height: 20px;
+    border-radius: 130px;
+    background: #2f80ed !important;
+    color: white;
+    cursor: pointer;
+}
+.job-search-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.job-filters-wrap{
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    padding: 12px 17px;
+    position: relative;
+    cursor: pointer;
+}
+.job-filters-wrap .job-filter-img{
+    object-fit: contain;
+}
+.job-filter-titile{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    padding-left: 18px;
+    padding-right: 31px;
+}
+.filter-text{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px !important;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.5;
+    display: block;
+    width: 48px;
+    height: 20px;
+    border-radius: 130px;
+    background: hwb(0deg 4% 96%/16%);
+}
+.job-search_result_text{
+    padding: 15px 20px;
+    margin-top: 20px;  
+    border-bottom: 1px solid #E0E0E0;
+}
+.nurse-search-result{
+    padding: 20px 0;
+}
+.nurse-search-result-item{
+    display: flex;
+    gap: 20px;
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+.nurse-search-result-item.selected{
+    border: 1px solid #2f80ed;
+
+}
+.nurse-search-result-item.added-in-shortlist{
+    border: 1px solid #2f80ed;
+}
+.nurse_profile-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.nurse_profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+.nurse_details{
+    width: 80%;
+    flex-grow: 1;
+}
+.fav{
+    text-align: end;
+    width: 100px;
+}
+.nurse-search-result .job_specialties span{
+    border: 1px solid#E0E0E0;
+}
+.nurse-search-result .nurse-name{
+    font-size: 15px;
+    font-weight: 600;
+}
+.nurse-search-result .nurse-status{
+    font-size: 14px;
+    font-style: italic;
+    line-height: 20px;
+}
+.nurse-search-result .job_specialties{
+    padding-top: 10px;
+}
+.year-of-experience,
+.nurse-qualification,
+.nurse-age,
+.nurse-location,
+.nurse-location{
+    font-size: 15px;
+    font-weight: 600;
+}
+.nurse-search-result .job_specialties  span{
+    font-size: 12px;
+}
+.nurse-info_wrap{
+    display: flex;
+    align-items:flex-start;
+    gap: 10px;
+}
+.nurse-info_wrap label{
+    min-width: 140px;
+    margin-top: 6px;
+}
+.heart-icon {
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+    transition: fill 0.3s;
+    cursor: pointer;
+}
+.heart-icon.filled{
+    fill: red;
+}
+.fav{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+.fav .ep-bt-gernal{
+    background: #2F80ED;
+    border-radius: 4px;
+    border: 1px solid #2F80ED;
+    width: 170px;
+    height: 40px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ep-bt-gernal{
+    background: #2F80ED;
+    border-radius: 4px;
+    border: 1px solid #2F80ED;
+    width: 100%;
+    height: 40px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ep-bt-gernal:hover{
+    color: #fff;
+}
+.job-filters-wrap-dropdown{
+    width: 250px;
+    position: absolute;
+    top: 62px;
+    z-index: 11;
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 27px 20px 15px 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+    right: 0;
+    display: none;
+}
+.job-filters-wrap-dropdown p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+}
+.job-filters-wrap-dropdown .checkbox-wrapper-13{
+    margin-bottom: 10px;
+}
+.job-filters-wrap-inner{
+    margin-top: 13px;
+}
+.job-filters-wrap-dropdown .checkbox-wrapper-13 label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+}
+.side-nav__item a span{
+    font-weight: 500;
+    font-size: 14px;
+    color: #596780;
+}
+.side-nav__item a i{
+    color: #596780;
+}
+.side-nav__item a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.side-nav__item-active a i,  .side-nav__item-active a span{
+    color: #fff;
+}
+.side-nav__item:hover a i{
+    color: #fff;
+}
+.side-nav__item:hover a span{
+    color: #fff;
+}
+.shortlist-nurse-wrap .contact-serach-bar{
+    width: 100% !important  ;
+}
+.select-for-upcoming-interview{
+    padding: 15px;
+    margin-top: 30px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.select-for-upcoming-interview .checkbox-wrapper-13 label{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.select-for-upcoming-interview_inner .checkbox-wrapper-13{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.checkbox-wrapper-13 input{
+    border: 1px solid #BBC1E1 !important;
+}
+.checkbox-wrapper-13 input:checked{
+    border: 0 !important;
+}
+.select-for-upcoming-interview.selected-all-rn{
+    background-color: #2F80ED;
+    border-radius: 6px;
+    border-bottom: 1px solid transparent;
+}
+.select-for-upcoming-interview.selected-all-rn .checkbox-wrapper-13 label{
+    color: #fff;     
+}
+
+.delete-all{
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+    display: none;
+}
+.select-for-upcoming-interview.selected-all-rn .delete-all, 
+.select-for-upcoming-interview.selected-all-rn .arrange-upcoming-interview{
+    display: block;
+}
+.delete-all a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #0B0B0B;
+}
+.select-for-upcoming-interview_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.delete-all-nurse-body h2{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #6245DA;
+    font-family: 'Nunito';
+}
+.delete-nurese-btn{
+    background: #EB5757;
+    width: 265px;
+    padding: 20px 0;
+    color: #fff;
+}
+.delete-nurese-btn:hover{
+    color: #fff;
+}
+.delete-all-nurse-body p{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    text-align: center;
+    margin-top: 12px;
+}
+.action-for-upcoming-iterview{
+    display: flex;
+    gap: 10px;
+}
+.arrange-upcoming-interview{
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+    gap: 5px;
+    display: none;
+}
+.arrange-upcoming-interview img{
+    width: 20px;
+    height: 20px;
+}
+.arrange-upcoming-interview a{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #000000;
+    text-align: center;
+}
+.btn-close:focus{
+    box-shadow: none;
+}
+.upcoming-rn-list{
+    max-width: 670px;
+    margin: auto;
+}
+
+#upcomingInterview .modal-dialog {
+    max-width: 750px;
+}
+.upcoming-rn-list_wrap{
+    max-height: 400px;
+    overflow-y: auto;
+}
+.nurse-img-wrap{
+    width: 50px;
+    height: 50px;
+}
+.upcoming-rn-item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.upcoming-rn-item{
+    display: flex;
+    gap: 10px;
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.general-btn{
+    padding: 20px 0;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    border-radius: 5px;
+}
+.btn-red{
+    background: #EB5757;
+}
+.btn-green{
+    background-color: #00D682;
+}
+.modal-btn-wrap{
+    display: flex;
+    gap: 10px;
+}
+/*  */
+.top-text-block {
+    display: block;
+    padding: 5px 10px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: inherit !important;
+    position: relative;
+  }
+  .top-text-block:hover:before {
+    content: '';
+    width: 4px;
+    background: #f05a1a;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+  }
+  .top-text-block.unread {
+    background: #ffc;
+  }
+  .top-text-block .top-text-light {
+    color: #999;
+    font-size: 0.8em;
+  }
+  .top-head-dropdown .dropdown-menu {
+    width: 350px;
+    height: 300px;
+    overflow: auto;
+  }
+  .top-head-dropdown li:last-child .top-text-block {
+    border-bottom: 0;
+  }
+  .topbar-align-center {
+    text-align: center;
+  }
+
+  .employer_notification-dropdown .profile-dropdown{
+    width: 450px;
+    max-width: 450px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  .profile-dropdown li a{
+    justify-content: space-between;
+  }
+  .top-text-heading{
+    max-width: 240px;
+  }
+  .Calendly-btn{
+    background-color: #006BFF;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    justify-content: center;
+  }

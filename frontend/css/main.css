@@ -1888,6 +1888,7 @@ header .navbar a{
     align-items: center;
     justify-content: space-between;
     margin-top: 70px;
+    gap: 20px;
 }
 .job-filters-wrap{
     display: flex;
@@ -1897,6 +1898,8 @@ header .navbar a{
     padding: 12px 17px;
     position: relative;
     cursor: pointer;
+    width: 18%;
+    justify-content: space-between;
 }
 .job-filters-wrap .job-filter-img{
     object-fit: contain;
@@ -1908,8 +1911,6 @@ header .navbar a{
     font-size: 16px;
     line-height: 26px;
     color: #000000;
-    padding-left: 18px;
-    padding-right: 31px;
 }
 .filter-text{
     font-family: 'Nunito';
@@ -1942,6 +1943,7 @@ header .navbar a{
     border-radius: 10px;
     margin-bottom: 20px;
     border: 1px solid transparent;
+    position: relative;
 }
 .nurse-search-result-item.selected{
     border: 1px solid #2f80ed;
@@ -1968,8 +1970,9 @@ header .navbar a{
     flex-grow: 1;
 }
 .fav{
-    text-align: end;
-    width: 100px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 .nurse-search-result .job_specialties span{
     border: 1px solid#E0E0E0;
@@ -1982,6 +1985,7 @@ header .navbar a{
     font-size: 14px;
     font-style: italic;
     line-height: 20px;
+    padding-right: 20px;
 }
 .nurse-search-result .job_specialties{
     padding-top: 10px;

@@ -1,3 +1,8 @@
+@media only screen and (max-width:1400px){
+    .job-title p{
+        max-width: 450px;
+    }
+}
 @media only screen and (max-width:1200px){
     .header_links .link_item .nav-link{
         padding-left: 6px;
@@ -26,6 +31,12 @@
     }
     .search-box{
         margin-left: 0;
+    }
+    .contact-serach-bar{
+        width: 70%;
+    }
+    .job-filters-wrap{
+        width: 30%;
     }
 }
 @media only screen and (max-width:1100px){
@@ -59,6 +70,23 @@
     .home_tab_content, .tabform{
         padding: 30px;
     }
+    .company_work_space .container{
+        max-width: 100%;
+    }
+    .job-location p{
+        font-size: 15px;
+    }
+    .job-title p{
+        font-size: 15px;
+    }
+    .job-location img{
+        width: 20px;
+    }
+}
+@media only screen and (max-width:850px){
+    .job-title p{
+        max-width: 350px;
+    }
 }
 @media only screen and (max-width:768px){
     .signin-right{
@@ -69,6 +97,29 @@
     }
     .navbar .search-box{
         display: none;
+    }
+    .posted-job_item{
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    .job-action-btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .job-action-btn img{
+        transform: rotate(90deg);
+    }
+    .posted-date-and-time{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .job-title{
+        padding-left: 0;
+    }
+    .nurse-info_wrap{
+        flex-direction: column;
     }
 }
 @media only screen and (max-width:600px){
@@ -230,6 +281,22 @@
         flex-wrap: wrap;
         padding-top: 10px;
     }
+    .company_work_space .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .nurse-search-result-item{
+        flex-direction: column;
+    }
+    .nurse_details{
+        width: 100%;
+    }
+    .job-search-wrapper{
+        flex-wrap: wrap;
+    }
+    .contact-serach-bar, .job-filters-wrap{
+        width: 100%;
+    }
 }
 @media only screen and (max-width:550px){
     .company_work_space .search_result_inner{
@@ -249,6 +316,13 @@
     .search_result_inner .search-box input{
         border-radius: 6px;
     }
+    .job-title{
+        width: 100%;
+    }
+    .job-title p{
+        max-width: unset;
+        width: auto;
+    }
 }
 @media only screen and (max-width:425px){
     .side_by_img_size img{
@@ -256,6 +330,9 @@
     }
     .get-started .nav-tabs .nav-link{
         font-size: var(--theme-font16);
+    }
+    .action-for-upcoming-iterview a{
+        display: none;
     }
 }
 @media (min-width: 240px) and (max-width: 479px) {

@@ -516,3 +516,32 @@ $(document).ready(function() {
       }
     });
   });
+
+
+
+$(document).ready(function() {
+    var currentStep = 1;
+    var totalSteps = $(".emplyers-step").length;
+
+    $(".next-step").click(function(e) {
+        e.preventDefault(); // Prevent form submission
+        if (currentStep < totalSteps) {
+            $("#employer-step-" + currentStep).removeClass("active");
+            $(".step-navigation_item").eq(currentStep - 1).removeClass("active");
+            currentStep++;
+            $("#employer-step-" + currentStep).addClass("active");
+            $(".step-navigation_item").eq(currentStep - 1).addClass("active");
+        }
+    });
+
+    $(".prev-step").click(function(e) {
+        e.preventDefault(); // Prevent form submission
+        if (currentStep > 1) {
+            $("#employer-step-" + currentStep).removeClass("active");
+            $(".step-navigation_item").eq(currentStep - 1).removeClass("active");
+            currentStep--;
+            $("#employer-step-" + currentStep).addClass("active");
+            $(".step-navigation_item").eq(currentStep - 1).addClass("active");
+        }
+    });
+});

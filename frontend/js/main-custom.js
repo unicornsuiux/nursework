@@ -523,6 +523,10 @@ $(document).ready(function() {
     var currentStep = 1;
     var totalSteps = $(".emplyers-step").length;
 
+    function updateStepNavigationText() {
+        $(".step-navigate-text").text("Step " + currentStep);
+    }
+
     $(".next-step").click(function(e) {
         e.preventDefault(); // Prevent form submission
         if (currentStep < totalSteps) {
@@ -531,6 +535,7 @@ $(document).ready(function() {
             currentStep++;
             $("#employer-step-" + currentStep).addClass("active");
             $(".step-navigation_item").eq(currentStep - 1).addClass("active");
+            updateStepNavigationText();
         }
     });
 
@@ -542,6 +547,36 @@ $(document).ready(function() {
             currentStep--;
             $("#employer-step-" + currentStep).addClass("active");
             $(".step-navigation_item").eq(currentStep - 1).addClass("active");
+            updateStepNavigationText();
+        }
+    });
+
+    updateStepNavigationText();
+});
+
+
+
+$(document).ready(function() {
+    $('.packages_item').click(function() {
+        $('.packages_item .packages_item_inner').removeClass('selected');
+        $(this).find('.packages_item_inner').addClass('selected');
+    });
+});
+
+
+$(document).ready(function() {
+    $('#select-all-rns').change(function() {
+        var isChecked = $(this).prop('checked');
+        $('.select-rn').prop('checked', isChecked);
+        if (isChecked) {
+            $('.nurse-search-result-item').addClass('selected');
+        } else {
+            $('.nurse-search-result-item').removeClass('selected');
+        }
+    });
+    $('.select-rn').not('#select-all-rns').change(function() {
+        if (!$(this).prop('checked')) {
+            $('#select-all-rns').prop('checked', false);
         }
     });
 });

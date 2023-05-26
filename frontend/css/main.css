@@ -2288,6 +2288,9 @@ header .navbar a{
     display: flex;
     gap: 10px;
 }
+.modal-btn-wrap button{
+    width: 50%;
+}
 /*  */
 .top-text-block {
     display: block;
@@ -2363,14 +2366,14 @@ header .navbar a{
     margin: 0 auto;
   }
   .employer-signup_left{
-    width: 30%;
-    min-height: 100vh;
+    width: 25%;
+    /* min-height: 100vh; */
     padding: 20px;
     background-color:#030E4F;
   }
   .employer-signup_right{
-    width: 70%;
-    min-height: 100vh;
+    width: 75%;
+    /* min-height: 100vh; */
     background-color: #fff
   }
   .signup_logo_wrap{
@@ -2410,6 +2413,7 @@ header .navbar a{
   }
   .back_to_previous button{
     display: flex;
+    margin-left: auto;
     align-items: center;
     font-size: 14px;
     padding: 4px 10px 4px 6px;
@@ -2552,7 +2556,95 @@ header .navbar a{
   }
   .emplyers-step {
     display: none;
-}
-    .emplyers-step.active {
-        display: block;
+   }
+  .emplyers-step.active {
+    display: block;
+   }
+   .packages_wrap{
+    display: flex;
+    gap: 10px;
+   }
+   .packages_item{
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 14px;
+    padding: 0;
+    overflow: hidden;
+   }
+   .packages_item_inner{
+    padding: 14px 18px 14px 18px;
+    border: 2px solid #e0e0e0;
+    border-top: 0;
+    border-bottom: 0;
+   }
+   .packages_item{
+    width: 24.99%;
+   }
+   .packages_item_left{
+    flex-grow: 1;
+    padding-left: 20px;
+    min-height: 242px;
+   }
+   .packages_item_left li{
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+   }
+   .packages_item_left li::after{
+    content: "";
+    position: absolute;
+    width: 46px;
+    left: -32px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 34px;
+    background-image: url(../img/check-solid.svg);
+    top: -6px;
+   }
+   .package-name{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: 'Nunito';
+    background: #275EFE;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 0px;
+    color: #fff;
+    border: 2px solid rgb(39, 94, 254);
+    border-bottom: 0;
+   }
+   .package-price{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    font-family: Nunito;
+    background: rgb(39, 94, 254);
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(39, 94, 254);
+    border-top: 0;
     }
+   .package-disc{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: system-ui;
+    min-height: 70px;
+    margin-bottom: 5px !important;
+    line-height: 22px;
+   }
+   .packages_item_inner.selected{
+    border-color: #275EFE;
+   }
+   .emplyers-step .step-navigate-text{
+    display: none;
+   }

@@ -519,12 +519,17 @@ $(document).ready(function() {
 
 
 
-$(document).ready(function() {
+  $(document).ready(function() {
     var currentStep = 1;
     var totalSteps = $(".emplyers-step").length;
 
     function updateStepNavigationText() {
         $(".step-navigate-text").text("Step " + currentStep);
+    }
+
+    function scrollToTop() {
+        // Scroll to the top of the document
+        window.scrollTo(0, 0);
     }
 
     $(".next-step").click(function(e) {
@@ -536,6 +541,7 @@ $(document).ready(function() {
             $("#employer-step-" + currentStep).addClass("active");
             $(".step-navigation_item").eq(currentStep - 1).addClass("active");
             updateStepNavigationText();
+            scrollToTop();
         }
     });
 
@@ -548,11 +554,13 @@ $(document).ready(function() {
             $("#employer-step-" + currentStep).addClass("active");
             $(".step-navigation_item").eq(currentStep - 1).addClass("active");
             updateStepNavigationText();
+            scrollToTop();
         }
     });
 
     updateStepNavigationText();
 });
+
 
 
 

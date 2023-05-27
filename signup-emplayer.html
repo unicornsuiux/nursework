@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Emplayer Signup</title>
+    <title>Employer Signup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="canonical" href="">
     <meta property="og:title" content="">
@@ -33,7 +33,7 @@
                         <div class="employer-signup_left_steps-content">
                             <h2 class="text-white step-navigate-text">Step 1</h2>
                             <p class="step-text-info step-1-text">
-                                Please Enter Your Hospitle Information
+                                Please Enter Your Hospital Information
                             </p>
                             <div class="step-navigation_wrap">
                                 <div class="step-navigation_item active">
@@ -41,7 +41,7 @@
                                         <span>1</span>
                                     </div>
                                     <div class="step-heading">
-                                        <p class="mb-0">Hospitle Information</p>
+                                        <p class="mb-0">Hospital Information</p>
                                     </div>
                                 </div>
                                 <div class="step-navigation_item">
@@ -49,7 +49,7 @@
                                         <span>2</span>
                                     </div>
                                     <div class="step-heading">
-                                        <p class="mb-0">Personal Information</p>
+                                        <p class="mb-0">User Information</p>
                                     </div>
                                 </div>
                                 <div class="step-navigation_item">
@@ -80,14 +80,14 @@
                             <h2 class="step-navigate-text">Step</h2>
                             <div class="step-header">
                                 <div class="mb-5">
-                                    <h2>Hospitle Information:</h2>
-                                    <p>Please Enter Your Hospitle Information</p>
+                                    <h2>Hospital Information:</h2>
+                                    <p>Please Enter Your Hospital Information</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="hospitle-name" class="form-label">Hospitle Name</label>
-                                    <input type="text" class="form-control" id="hospitle-name">
+                                    <label for="Hospital-name" class="form-label">Hospital Name</label>
+                                    <input type="text" class="form-control" id="Hospital-name">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="hopitleemail" class="form-label">Email</label>
@@ -220,8 +220,8 @@
                             <h2 class="step-navigate-text">Step</h2>
                             <div class="step-header">
                                 <div class="mb-5">
-                                    <h2>Personal Information:</h2>
-                                    <p>Please Enter Your Personal Information</p>
+                                    <h2>User Information:</h2>
+                                    <p>Please Enter Your User Information</p>
                                 </div>
                                 <div class="back_to_previous">
                                     <button class="prev-step">
@@ -231,15 +231,20 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-6">
+                                    <label for="user-name" class="form-label">Hospital Name</label>
+                                    <input type="text" class="form-control" placeholder="Hospital Name"
+                                        id="HospitalName" readonly style="font-style: italic;">
+                                </div>
+                                <div class="col-md-6">
                                     <label for="user-name" class="form-label">User Name</label>
                                     <input type="text" class="form-control" id="user-name">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <label for="hopitleemail" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="hopitleemail">
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <label for="phonenumber" class="form-label">Phone Number</label>
                                     <input type="tel" class="form-control" id="phonenumber">
                                 </div>
@@ -270,7 +275,7 @@
                             <div class="step-header">
                                 <div class="mb-5">
                                     <h2>Select Plans:</h2>
-                                    <p>Please Select Plans according to you requirments</p>
+                                    <p>Please select your preferred plan</p>
                                 </div>
                                 <div class="back_to_previous">
                                     <button class="prev-step">
@@ -282,57 +287,54 @@
                             <div class="row">
                                 <div class="packages_wrap">
                                     <div class="packages_item">
-                                        <div class="packages_item_right">
-                                            <p class="mb-0 package-name">Basic Plan</p>
-                                        </div>
                                         <div class="packages_item_inner">
-                                            <p class="package-disc mb-0">Provides you the ability to:</p>
                                             <div class="packages_item_left">
                                                 <li>Create employer profile</li>
                                                 <li>Post jobs</li>
                                                 <li>Run Searches on Nurse related fields</li>
                                                 <li>Review list of perfectly matched Nurse profiles</li>
                                             </div>
+                                            <div class="packages_item_right">
+                                                <p class="mb-0 package-name">Basic Plan</p>
+                                                <p class="mb-0 package-price">$250 per month</p>
+                                                <span>billed montly</span>
+                                            </div>
                                         </div>
-                                        <p class="mb-0 package-price">$250 per month</p>
                                     </div>
                                     <div class="packages_item">
-                                        <div class="packages_item_right">
-                                            <p class="mb-0 package-name">Diamond Plan</p>
-                                        </div>
+                                        <p class="package-disc mb-0"></p>
                                         <div class="packages_item_inner">
-                                            <p class="package-disc mb-0">Offers everything that the Basic package
-                                                offers, plus:</p>
                                             <div class="packages_item_left">
+                                                <li>Offers everything that the Basic package offers,plus</li>
                                                 <li>Chat/speak live with a NW agent to discuss shortlist candidates</li>
                                                 <li>Setup Video Interviews with upto 20 Nurses in a month.</li>
                                             </div>
+                                            <div class="packages_item_right">
+                                                <p class="mb-0 package-name">Diamond Plan</p>
+                                                <p class="mb-0 package-price">$500 per month</p>
+                                                <span>billed montly</span>
+                                            </div>
                                         </div>
-                                        <p class="mb-0 package-price">$500 per month</p>
                                     </div>
                                     <div class="packages_item">
-                                        <div class="packages_item_right">
-                                            <p class="mb-0 package-name">Platinum Plan</p>
-                                        </div>
                                         <div class="packages_item_inner">
-                                            <p class="package-disc mb-0">Offers everything that the Diamond package
-                                                offers, plus:</p>
                                             <div class="packages_item_left">
+                                                <li>Offers everything that the Diamond package offers, plus</li>
                                                 <li>Own prime visibilty to Nurse(e.g banner at top of Page)</li>
                                                 <li>Have dedicated account manager from NWs to work as inside HR team
                                                     Set up video interviews with upto 100 nurses per month</li>
                                                 <li>Run Searches on Nurse related fields</li>
                                                 <li>Review list of perfectly matched Nurse profiles</li>
                                             </div>
+                                            <div class="packages_item_right">
+                                                <p class="mb-0 package-name">Platinum Plan</p>
+                                                <p class="mb-0 package-price">$2500 per month</p>
+                                                <span>billed montly</span>
+                                            </div>
                                         </div>
-                                        <p class="mb-0 package-price">$2500 per month</p>
                                     </div>
                                     <div class="packages_item">
-                                        <div class="packages_item_right">
-                                            <p class="mb-0 package-name">Custom Plan</p>
-                                        </div>
                                         <div class="packages_item_inner">
-                                            <p class="package-disc mb-0">Provides you the ability to:</p>
                                             <div class="packages_item_left">
                                                 <li>Can Customize features from all 3 packages</li>
                                                 <li>Offers SLA based relationship (e.g. capacity of 150 Nurses with <% 3
@@ -340,8 +342,12 @@
                                                 <li>Run Searches on Nurse related fields</li>
                                                 <li>Review list of perfectly matched Nurse profiles</li>
                                             </div>
+                                            <div class="packages_item_right">
+                                                <p class="mb-0 package-name">Custom Plan</p>
+                                                <p class="mb-0 package-price">Custom</p>
+                                                <span>billed montly</span>
+                                            </div>
                                         </div>
-                                        <p class="mb-0 package-price">Custom</p>
                                     </div>
                                 </div>
                                 <div class="due-payment">

@@ -2,9 +2,6 @@
     .job-title p{
         max-width: 450px;
     }
-    .packages_item_inner{
-        height: 80%;
-    }
 }
 @media only screen and (max-width:1200px){
     .header_links .link_item .nav-link{
@@ -17,7 +14,7 @@
     .sidebar.hide{
         left: 0px;
     }
-    .emplayer_main_content{
+    .Employer_main_content{
         width: 100%;
     }
     .job_title{
@@ -41,18 +38,9 @@
     .job-filters-wrap{
         width: 30%;
     }
-    .packages_item_inner{
-        height: auto;
-    }
-    .packages_wrap{
-        flex-wrap: wrap;
-    }
-    .packages_item{
-        width: 48%;
-    }
 }
 @media only screen and (max-width:1100px){
-    .navbar .navbar-brand.emplayer-navbrand{
+    .navbar .navbar-brand.Employer-navbrand{
         width: 140px;
     }
     .search-box{
@@ -403,9 +391,6 @@
     .step-header p{
         font-size: 14px;
     }
-    .packages_item{
-        width: 100%;
-    }
 }
 @media only screen and (max-width:425px){
     .side_by_img_size img{
@@ -427,13 +412,21 @@
     .back_to_previous{
         width: 100%;
     }
+    .packages_item_inner{
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+    .packages_item_left, .packages_item_right{
+        width: 100%;
+    }
 }
 @media (min-width: 240px) and (max-width: 479px) {
     .login-form-head,
     .login-form-body {
         padding: 40px 20px;
     }
-    .navbar .navbar-brand.emplayer-navbrand{
+    .navbar .navbar-brand.Employer-navbrand{
         width: 85px;
     }
 

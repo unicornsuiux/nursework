@@ -366,7 +366,7 @@ $(document).ready(function () {
 })
 
 
-// EMPLAYER DROPDOWN
+// Employer DROPDOWN
 $(document).ready(function() {
     $(document).click(function(event) {
         // Check if the clicked element is not within the dropdown or the dropdown button
@@ -402,7 +402,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#menu_toggle_btn').click(function () {
         $('.sidebar').toggleClass('hide')
-        $('.emplayer_main_content').toggleClass('expand')
+        $('.Employer_main_content').toggleClass('expand')
         $('.overlay-shadow').toggleClass('show-overlay');
     });
 });
@@ -451,7 +451,7 @@ $(document).ready(function() {
   
 
 
-//   emplayer zoon
+//   Employer zoon
 $(document).ready(function() {
     // Hide all dropdowns initially
     $('.action-dropdown').hide();
@@ -566,8 +566,8 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('.packages_item').click(function() {
-        $('.packages_item .packages_item_inner').removeClass('selected');
-        $(this).find('.packages_item_inner').addClass('selected');
+        $('.packages_item').removeClass('selected'); 
+        $(this).addClass('selected'); 
     });
 });
 

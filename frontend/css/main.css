@@ -27,7 +27,7 @@
     height: 60px;
     width: 80px;
 }
-.navbar-brand.emplayer-navbrand{
+.navbar-brand.Employer-navbrand{
     width: 240px;
     padding: 0;
     margin: 0;
@@ -1090,7 +1090,7 @@ header .navbar a{
 
 
 
-/* Login for emplayer */
+/* Login for Employer */
 /*-------------------- 23. Login ------------------- */
 
 .login-area {
@@ -1261,11 +1261,11 @@ header .navbar a{
 
 
 /* main company profile wrap */
-.emplayer_main_content p,
-.emplayer_main_content span,
-.emplayer_main_content li,
-.emplayer_main_content button,
-.emplayer_main_content a{
+.Employer_main_content p,
+.Employer_main_content span,
+.Employer_main_content li,
+.Employer_main_content button,
+.Employer_main_content a{
     font-size: var(--theme-font16);
 }
 .company_cover_photo{
@@ -1426,7 +1426,7 @@ header .navbar a{
     color: white;
 }
 /* -------------- MAIN CONTENT -------------- */
-.emplayer_main_content {
+.Employer_main_content {
     display: flex;
     width: 100%;
     overflow: auto;
@@ -1434,7 +1434,7 @@ header .navbar a{
     margin-left: auto;
     transition: all .3s linear;
 }
-.emplayer_main_content.expand{
+.Employer_main_content.expand{
     width: 100%;
 }
 .company-email{
@@ -2419,9 +2419,15 @@ header .navbar a{
     padding: 4px 10px 4px 6px;
     gap: 8px;
     border-radius: 4px;
-    background: #f4f4f4;
+    background: #fff;
     border: 1px solid #333;
     font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
   }
   .step-navigation_item{
     display: flex;
@@ -2476,10 +2482,13 @@ header .navbar a{
     padding: 80px 40px 50px 45px;
   }
   .emplyers-step h2{
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 33px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0B0B0B;
+    font-family: 'Nunito';
   }
   .employer-signup_right_inner input,
   .employer-signup_right_inner select{
@@ -2560,91 +2569,97 @@ header .navbar a{
   .emplyers-step.active {
     display: block;
    }
-   .packages_wrap{
-    display: flex;
-    gap: 10px;
-   }
    .packages_item{
     border-radius: 2px;
     cursor: pointer;
     margin-bottom: 14px;
     padding: 0;
     overflow: hidden;
+    border: 2px solid #e0e0e0;
+    padding: 14px 18px 14px 18px;
    }
    .packages_item_inner{
-    padding: 14px 18px 14px 18px;
-    border: 2px solid #e0e0e0;
-    border-top: 0;
-    border-bottom: 0;
+        border-top: 0;
+        display: flex;
+        align-items: center;
+        border-bottom: 0;
+        justify-content: space-between;
    }
    .packages_item{
-    width: 24.99%;
+    
    }
    .packages_item_left{
-    flex-grow: 1;
-    padding-left: 20px;
-    min-height: 242px;
+        width: 70%;
+        padding-left: 20px;
    }
    .packages_item_left li{
-    font-size: 14px;
-    line-height: 22px;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
+        font-size: 14px;
+        line-height: 22px;
+        font-family: 'Roboto', sans-serif;
+        position: relative;
    }
    .packages_item_left li::after{
-    content: "";
-    position: absolute;
-    width: 46px;
-    left: -32px;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 34px;
-    background-image: url(../img/check-solid.svg);
-    top: -6px;
+        content: "";
+        position: absolute;
+        width: 46px;
+        left: -32px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 34px;
+        background-image: url(../img/check-solid.svg);
+        top: -6px;
    }
    .package-name{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: right;
-    text-transform: uppercase;
-    font-family: 'Nunito';
-    background: #275EFE;
-    text-align: center;
-    padding: 15px 0px;
-    border-radius: 0px;
-    color: #fff;
-    border: 2px solid rgb(39, 94, 254);
-    border-bottom: 0;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: right;
+        text-transform: uppercase;
+        font-family: 'Nunito';
+        color: #275EFE;
+        border-radius: 0px;
+        border-bottom: 0;
    }
    .package-price{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-transform: uppercase;
-    font-family: Nunito;
-    background: rgb(39, 94, 254);
-    text-align: center;
-    padding: 15px 0px;
-    border-radius: 0px;
-    color: rgb(255, 255, 255);
-    border: 2px solid rgb(39, 94, 254);
-    border-top: 0;
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: right;
+        border-radius: 0px;
+        color: #1d1639;
+        border-top: 0;
+    }
+    .packages_item_right{
+        text-align: right;
+        width: 30%;
+    }
+    .packages_item_right span{
+        font-family: 'Roboto';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: right;
+        display: block;
+        color: rgba(11,11,11,0.5);
+    }
+    .due-payment{
+        margin-top: 15px;
     }
    .package-disc{
-    font-size: 17px;
-    font-weight: 600;
-    font-family: system-ui;
-    min-height: 70px;
-    margin-bottom: 5px !important;
-    line-height: 22px;
+        font-size: 17px;
+        font-weight: 600;
+        font-family: system-ui;
+        margin-bottom: 5px !important;
+        line-height: 22px;
    }
-   .packages_item_inner.selected{
-    border-color: #275EFE;
+   .packages_item.selected{
+        border-color: #275EFE;
    }
    .emplyers-step .step-navigate-text{
-    display: none;
+        display: none;
    }

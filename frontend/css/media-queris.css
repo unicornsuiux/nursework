@@ -76,6 +76,12 @@
     .step-navigation_wrap .step-navigation_item:not(:last-child)::after{
         display: none;
     }
+    .employer-signup_left{
+        position: unset;
+    }
+    .employer-signup_right{
+        left: 0;
+    }
 }
 @media only screen and (max-width:992px){
     .sign_in_left{
@@ -170,6 +176,27 @@
     }
     .employer-signup_left{
         padding: 10px 20px;
+    }
+    .employer_notification-dropdown .profile-dropdown {
+        width: 300px;
+        max-width: 350px;
+        max-height: 300px;
+    }
+    .top-text-heading {
+        font-size: 12px;
+        max-width: 176px;
+    }
+    .top-text-block .top-text-light{
+        font-size: 10px;
+    }
+    .top-text-block{
+        padding: 0;
+    }
+    .employer_notification-dropdown .profile-dropdown{
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 55px;
     }
 }
 @media only screen and (max-width:600px){
@@ -391,6 +418,23 @@
     .step-header p{
         font-size: 14px;
     }
+    .interview_action_bar p{
+        font-size: 14px;
+    }
+    .interview_action_bar{
+        padding: 20px 8px;
+    }
+    .employer_profile-dropdown-inner p, .employer_profile-dropdown-inner .arrow-down{
+        display: none !important;
+    }
+    .employer_profile-dropdown{
+        padding: 0;
+        background-color: transparent;
+        min-width: unset;
+    }
+    .employer_notification-dropdown .profile-dropdown {
+        transform: translateX(-62%);
+    }
 }
 @media only screen and (max-width:425px){
     .side_by_img_size img{
@@ -419,6 +463,9 @@
     }
     .packages_item_left, .packages_item_right{
         width: 100%;
+    }
+    .interview_action_bar p{
+        font-size: 12px;
     }
 }
 @media (min-width: 240px) and (max-width: 479px) {

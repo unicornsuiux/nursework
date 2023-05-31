@@ -33,32 +33,28 @@
                 <a href="./index.html" class="navbar-brand Employer-navbrand">
                     <img src="./frontend/img/nclogo.png" class="obj_fit_contain" alt="">
                 </a>
-                <!-- <div class="search-box">
-                    <input class="search-input" type="text" placeholder="Search something..">
-                    <button class="search-btn"><i class="fas fa-search"></i></button>
-                </div> -->
                 <div class="d-flex gap-2 align-items-center">
-                    <div class="employer_notification-dropdown">
-                        <button class="notification" id="open_profile_notification">
+                    <div class="employer_notification-dropdown" id="open_profile_notification">
+                        <button class="notification">
                             <img src="./frontend/img/notifications.svg" class="genral-icon">
                         </button>
                         <div class="profile-dropdown">
                             <li>
                                 <a href="#" class="top-text-block">
-                                    <div class="top-text-heading">You have <b>3 new themes</b> trending</div>
+                                    <div class="top-text-heading">You have 3 new themes trending</div>
                                     <div class="top-text-light">15 minutes ago</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="top-text-block">
-                                    <div class="top-text-heading">New asset recommendations in <b>Gaming Laptop</b>
+                                    <div class="top-text-heading">New asset recommendations in Gaming Laptop
                                     </div>
                                     <div class="top-text-light">2 hours ago</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="top-text-block">
-                                    <div class="top-text-heading">New asset recommendations in <b>5 themes</b></div>
+                                    <div class="top-text-heading">New asset recommendations in 5 themes</div>
                                     <div class="top-text-light">4 hours ago</div>
                                 </a>
                             </li>
@@ -68,61 +64,34 @@
                                     <div class="top-text-light">4 hours ago</div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" class="top-text-block">
-                                    <div class="top-text-heading">We crawled <b>www.dell.com</b> successfully</div>
-                                    <div class="top-text-light">5 hours ago</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="top-text-block">
-                                    <div class="top-text-heading">Next crawl scheduled on <b>10 Oct 2016</b></div>
-                                    <div class="top-text-light">6 hours ago</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="top-text-block">
-                                    <div class="top-text-heading">You have an update for <b>www.dell.com</b></div>
-                                    <div class="top-text-light">7 hours ago</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="top-text-block">
-                                    <div class="top-text-heading"><b>"Gaming Laptop"</b> is now trending</div>
-                                    <div class="top-text-light">7 hours ago</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="top-text-block">
-                                    <div class="top-text-heading">New asset recommendations in <b>Gaming Laptop</b>
-                                    </div>
-                                    <div class="top-text-light">7 hours ago</div>
-                                </a>
-                            </li>
                         </div>
                     </div>
-                    <div class="employer_profile-dropdown">
-                        <img id="open_profile_dropdown" src="./frontend/img/profil-photo.svg" class="w-40-rounded"
-                            alt="">
+                    <div class="employer_profile-dropdown" id="open_profile_dropdown">
+                        <div class="employer_profile-dropdown-inner">
+                            <p class="mb-0">Danish</p>
+                            <img src="./frontend/img/employer-profile.svg" class="w-40-rounded" alt="">
+                            <img src="./frontend/img/arrow-down1.svg" class="arrow-down">
+                        </div>
                         <div class="profile-dropdown">
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
-                                    <span>Option 1</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
-                                    <span>Option 2</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
-                                    <span>Logout</span>
-                                </a>
-                            </li>
+                            <div class="profile-dropdown_name-area">
+                                <div class="greeting">
+                                    <h2 class="mb-0">Hi, Danish</h2>
+                                </div>
+                                <div class="profile-dropdown_links">
+                                    <div>
+                                        <a href="">Account Settings & Billing</a>
+                                    </div>
+                                    <div>
+                                        <a href="">Help & Support</a>
+                                    </div>
+                                </div>
+                                <div class="sign-out">
+                                    <a href="">
+                                        <img src="./frontend/img/sign_out.svg" alt="">
+                                        <span>Logout</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <button class="menu_toggle_btn" id="menu_toggle_btn">
@@ -165,7 +134,7 @@
             </div>
             <ul class="side-nav">
                 <li class="side-nav__item last-item">
-                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <img src="./frontend/img/sign_out.svg" alt="">
                     <span>Log Out</span>
                 </li>
             </ul>
@@ -177,69 +146,124 @@
                         <div class="jobs_listing white-background">
                             <div class="row">
                                 <div class="col-lg-12 text-center">
-                                    <h3 class="heading-h3">
-                                        Your Upcoming RN Candidate Interviews
-                                    </h3>
+                                    <h3 class="heading-h3">Upcoming Interviews</h3>
                                 </div>
                             </div>
-                            <div class="search_result_text mb-3 shortlist-nurse-wrap">
+                            <div class="search_result_text mb-3">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-12">
-                                        <div class="nurse-search-result">
-                                            <div class="nurse-search-result_wrap">
-                                                <div class="nurse-search-result-item px-4">
-                                                    <div class="nurse_details">
-                                                        <div class="nurse-info_wrap">
-                                                            <label>Name:</label>
-                                                            <p class="mb-0 nurse-name">Diviya Kumar</p>
-                                                        </div>
-                                                        <div class="nurse-info_wrap">
-                                                            <label>Status:</label>
-                                                            <p class="mb-0 nurse-status">Lorem ipsum dolor sit amet
-                                                                consectetur adipisicing elit. Nobis a eum molestias
-                                                                natus est consequatur commodi maxime in rerum dolor?</p>
-                                                        </div>
-                                                        <div class="nurse-info_wrap">
-                                                            <label>Expertise:</label>
-                                                            <div class="job_specialties job_tags">
-                                                                <span>Registered Nurse</span>
-                                                                <span>Emergency Department</span>
-                                                                <span>Obstetrical (OB)</span>
-                                                                <span>Medical-Surgical</span>
-                                                                <span>Obstetric</span>
-                                                                <span>Inpatient</span>
-                                                                <span>Operating Room</span>
-                                                                <span>Telemetry</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="nurse-info_wrap">
-                                                            <label>Years Of Experience:</label>
-                                                            <p class="mb-0 year-of-experience">5 years</p>
-                                                        </div>
-                                                        <div class="nurse-info_wrap">
-                                                            <label>Qualifications:</label>
-                                                            <p class="mb-0 nurse-qualification">Diploma in nursing exe..
-                                                            </p>
-                                                        </div>
-                                                        <div class="nurse-info_wrap">
-                                                            <label>Age:</label>
-                                                            <p class="mb-0 nurse-age">25 years</p>
-                                                        </div>
-                                                        <div class="nurse-info_wrap">
-                                                            <label>Live In:</label>
-                                                            <p class="mb-0 nurse-location">India</p>
-                                                        </div>
-                                                        <div class="col-lg-4 ms-auto">
-                                                            <div class="scheduled_interview_wrap mt-3">
-                                                                <button class="general-btn Calendly-btn">
-                                                                    <span>
-                                                                        Scheduled Interview With Calendly
-                                                                    </span>
-                                                                </button>
-                                                            </div>
-                                                        </div>
+                                        <h5 class="mb-3 mt-2 text-center">List of all Upcoming Interviews</h5>
+                                        <div class="search_result_inner" style="background-color: #2F80ED;">
+                                            <div>
+                                                <p class="mb-0 text-white">You have <b>8</b> Upcoming Interviews ahead
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="interview_action_bar">
+                                            <div class="interview_action_left">
+                                                <div class="interview_action_left_text">
+                                                    <p class="mb-0">Name & Location of Candidates</p>
+                                                </div>
+                                            </div>
+                                            <div class="interview_action_right">
+                                                <div class="interview_action_right_text">
+                                                    <p class="mb-0">Interviews Timing</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="all-posted-job-listing upcoming-interview_list">
+                                        <div class="job-listing-info_wrap pt-3">
+                                            <div class="posted-job_item">
+                                                <div class="job-title">
+                                                    <p class="mb-0">
+                                                        Divya Kuman
+                                                    </p>
+                                                    <i class="qualification_name">Diploma in nursing exe..</i>
+                                                </div>
+                                                <div class="job-location">
+                                                    <img src="./frontend/img/location-icon.svg" alt="">
+                                                    <p class="mb-0">India</p>
+                                                </div>
+                                                <div class="posted-date-and-time">
+                                                    <span> 1:01pm MDT</span>
+                                                    <span>05/18/2023</span>
+                                                </div>
+                                                <div class="job-action-btn open_dropdown">
+                                                    <img src="./frontend/img/action-dots.svg" alt="">
+                                                    <div class="action-dropdown">
+                                                        <a href="#">Start Interview</a>
+                                                        <a href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#cancel-interview">Cancel Interview</a>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="posted-job_item">
+                                                <div class="job-title">
+                                                    <p class="mb-0">
+                                                        Anisa Kuman
+                                                    </p>
+                                                    <i class="qualification_name">Diploma in nursing exe..</i>
+                                                </div>
+                                                <div class="job-location">
+                                                    <img src="./frontend/img/location-icon.svg" alt="">
+                                                    <p class="mb-0">Pakistan</p>
+                                                </div>
+                                                <div class="posted-date-and-time">
+                                                    <span> 1:01pm MDT</span>
+                                                    <span>05/18/2023</span>
+                                                </div>
+                                                <div class="job-action-btn open_dropdown">
+                                                    <img src="./frontend/img/action-dots.svg" alt="">
+                                                    <div class="action-dropdown">
+                                                        <a href="#">Start Interview</a>
+                                                        <a href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#cancel-interview">Cancel Interview</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="posted-job_item">
+                                                <div class="job-title">
+                                                    <p class="mb-0">
+                                                        Jani Smith
+                                                    </p>
+                                                    <i class="qualification_name">Diploma in nursing exe..</i>
+                                                </div>
+                                                <div class="job-location">
+                                                    <img src="./frontend/img/location-icon.svg" alt="">
+                                                    <p class="mb-0">USA</p>
+                                                </div>
+                                                <div class="posted-date-and-time">
+                                                    <span> 1:01pm MDT</span>
+                                                    <span>05/18/2023</span>
+                                                </div>
+                                                <div class="job-action-btn open_dropdown">
+                                                    <img src="./frontend/img/action-dots.svg" alt="">
+                                                    <div class="action-dropdown">
+                                                        <a href="#">Start Interview</a>
+                                                        <a href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#cancel-interview">Cancel Interview</a></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- No data to show -->
+                                            <div class="jobs_listing mt-5">
+                                                <div class="no-job-container">
+                                                    <h3>You did not have any Upcoming Interviews Yet</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="center">
+                                            <div class="pagination">
+                                                <a href="#">&laquo;</a>
+                                                <a href="#">1</a>
+                                                <a href="#" class="active">2</a>
+                                                <a href="#">3</a>
+                                                <a href="#">&raquo;</a>
                                             </div>
                                         </div>
                                     </div>
@@ -252,6 +276,24 @@
         </main>
         <div class="overlay-shadow"></div>
     </div>
+    </div>
+
+    <!--Cancel Interview Modal -->
+    <div class="modal fade" id="cancel-interview" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="cancel-interviewLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered pb-5">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body delete-all-nurse-body pb-5">
+                    <h2>Are you sure you want to cancel the interview</h2>
+                    <div class="text-center mt-3">
+                        <button type="button" class="btn delete-nurese-btn">Yes, Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 

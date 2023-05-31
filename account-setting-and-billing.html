@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employer Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="canonical" href="">
+    <meta property="og:title" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta property="og:description" content="">
+    <meta name="twitter:description" content=".">
+    <meta property="og:image" content="">
+    <meta name="twitter:image" content="">
+    <meta property="og:url" content="">
+    </meta>
+    <script language=javascript src="./frontend/js/top.js"></script>
+</head>
+
+
+
+
+
+
+<body class="">
+    <header class="header" id="header">
+        <nav class="navbar navbar-light fixed-top">
+            <div class="container-fluid">
+                <a href="./company-profile.html" class="navbar-brand Employer-navbrand">
+                    <img src="./frontend/img/nclogo.png" class="obj_fit_contain" alt="">
+                </a>
+                <div class="d-flex gap-2 align-items-center">
+                    <div class="employer_notification-dropdown" id="open_profile_notification">
+                        <button class="notification">
+                            <img src="./frontend/img/notifications.svg" class="genral-icon">
+                        </button>
+                        <div class="profile-dropdown">
+                            <li>
+                                <a href="#" class="top-text-block">
+                                    <div class="top-text-heading">You have 3 new themes trending</div>
+                                    <div class="top-text-light">15 minutes ago</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="top-text-block">
+                                    <div class="top-text-heading">New asset recommendations in Gaming Laptop
+                                    </div>
+                                    <div class="top-text-light">2 hours ago</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="top-text-block">
+                                    <div class="top-text-heading">New asset recommendations in 5 themes</div>
+                                    <div class="top-text-light">4 hours ago</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="top-text-block">
+                                    <div class="top-text-heading">Assets specifications modified in themes</div>
+                                    <div class="top-text-light">4 hours ago</div>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="employer_profile-dropdown" id="open_profile_dropdown">
+                        <div class="employer_profile-dropdown-inner">
+                            <p class="mb-0">Danish</p>
+                            <img src="./frontend/img/employer-profile.svg" class="w-40-rounded" alt="">
+                            <img src="./frontend/img/arrow-down1.svg" class="arrow-down">
+                        </div>
+                        <div class="profile-dropdown">
+                            <div class="profile-dropdown_name-area">
+                                <div class="greeting">
+                                    <h2 class="mb-0">Hi, Danish</h2>
+                                </div>
+                                <div class="profile-dropdown_links">
+                                    <div>
+                                        <a href="">Account Settings & Billing</a>
+                                    </div>
+                                    <div>
+                                        <a href="">Help & Support</a>
+                                    </div>
+                                </div>
+                                <div class="sign-out">
+                                    <a href="">
+                                        <img src="./frontend/img/sign_out.svg" alt="">
+                                        <span>Logout</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="menu_toggle_btn" id="menu_toggle_btn">
+                        <img src="./frontend/img/menu.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-employer_content">
+        <main class="w-100">
+            <div class="company-profile_right">
+                <div class="company_work_space account-setting">
+                    <div class="container">
+                        <h2>Manage Access</h2>
+                        <div class="jobs_listing white-background ">
+                            <!-- SHOW THIS WHEN NO OTHER PERSON HAS ACCESS -->
+                            <div class="no-access-box mb-4">
+                                <p>
+                                    You have the ability to grant account management access to anyone of
+                                    your choice. By selecting the "Add Member" button, you can provide this person with
+                                    the necessary permissions to manage your account.
+                                </p>
+                                <button class="access-btn" data-bs-toggle="modal" data-bs-target="#add-teammember">
+                                    <span>Add Member</span>
+                                </button>
+                            </div>
+                            <div class="access-person-list">
+                                <div class="table-responsive-sm">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">NAME</th>
+                                                <th scope="col">EMAIL</th>
+                                                <th scope="col">ROLE</th>
+                                                <th scope="col" class="text-end">MANAGE ACCESS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>HAMZA</td>
+                                                <td>hamza@321gmail.com</td>
+                                                <td>HR</td>
+                                                <td class="text-end">
+                                                    <div class="job-action-btn open_dropdown">
+                                                        <img src="./frontend/img/action-dots.svg" alt="">
+                                                        <div class="action-dropdown" style="display: block;">
+                                                            <a href="./edit-job.html" data-bs-toggle="modal"
+                                                                data-bs-target="#changerole">Change Role</a>
+                                                            <a href="#" data-bs-toggle="modal"
+                                                                data-bs-target="#cancel-access">Cancel Access</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="mt-4">Plans</h2>
+                        <div id="generic_price_table" class="white-background">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3 p-0">
+                                        <div class="generic_content">
+                                            <div class="generic_head_price">
+                                                <div class="generic_head_content">
+                                                    <div class="head">
+                                                        <span>Basic</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="generic_feature_list">
+                                                <ul>
+                                                    <li><span>2GB</span> Bandwidth</li>
+                                                    <li><span>150GB</span> Storage</li>
+                                                    <li><span>12</span> Accounts</li>
+                                                    <li><span>7</span> Host Domain</li>
+                                                    <li><span>24/7</span> Support</li>
+                                                </ul>
+                                            </div>
+                                            <div class="generic_head_price">
+                                                <div class="generic_price_tag">
+                                                    <span class="price">
+                                                        <span class="sign">$</span>
+                                                        <span class="currency">99</span>
+                                                        <span class="cent">.99</span>
+                                                        <span class="month">/MON</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="overlay-shadow"></div>
+    </div>
+    </div>
+
+
+
+
+
+    <!--Add team member Modal -->
+    <div class="modal fade" id="add-teammember" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="add-teammemberLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered pb-5">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body delete-all-nurse-body pb-5">
+                    <h2>Give Access to your team member</h2>
+
+                    <form>
+                        <div class="col-md-12 mb-2">
+                            <label for="full-name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="full-name">
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <label for="full-name" class="form-label">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <label class="form-label">Select Role</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">HR</option>
+                                <option value="2">Admin</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <button type="button" class="access-btn w-100">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Cancel Access Modal -->
+    <div class="modal fade" id="cancel-access" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="cancel-accessLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered pb-5">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body delete-all-nurse-body pb-5">
+                    <h2>Cancel Access</h2>
+                    <p>Are you sure you want the cancel access?</p>
+                    <div class="text-center mt-3">
+                        <button type="button" class="btn delete-nurese-btn">Yes, Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Change Role Modal -->
+    <div class="modal fade" id="changerole" data-bs-keyboard="false" tabindex="-1" aria-labelledby="changeroleLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered pb-5">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body delete-all-nurse-body pb-5">
+                    <h2>Change Role</h2>
+                    <p>Please select new role for the this person</p>
+                    <form>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">HR</option>
+                            <option value="2">Admin</option>
+                        </select>
+                    </form>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <button type="button" class="access-btn w-100">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modal -->
+    <script language=javascript src="./frontend/js-partails/footer-scripts.js"></script>
+</body>
+
+</html>

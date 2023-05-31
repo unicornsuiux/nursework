@@ -366,36 +366,52 @@ $(document).ready(function () {
 })
 
 
-// Employer DROPDOWN
 $(document).ready(function() {
     $(document).click(function(event) {
-        // Check if the clicked element is not within the dropdown or the dropdown button
-        if (!$(event.target).closest('.employer_notification-dropdown, .employer_profile-dropdown').length) {
-            // Hide any visible dropdown
-            $('.profile-dropdown').fadeOut(300);
-        }
+      if (!$(event.target).closest('.employer_notification-dropdown, .employer_profile-dropdown').length) {
+        $('.profile-dropdown').hide();
+      }
     });
-
+  
     $('#open_profile_notification').click(function() {
-        if ($('.employer_profile-dropdown .profile-dropdown').is(':visible')) {
-            $('.employer_profile-dropdown .profile-dropdown').fadeOut(300, function() {
-                $('.employer_notification-dropdown .profile-dropdown').fadeIn(300);
-            });
-        } else {
-            $('.employer_notification-dropdown .profile-dropdown').fadeIn(300);
-        }
+      var profileDropdown = $('.employer_notification-dropdown .profile-dropdown');
+      var profileDropdownVisible = profileDropdown.is(':visible');
+      var profileDropdownOther = $('.employer_profile-dropdown .profile-dropdown');
+  
+      if (profileDropdownVisible) {
+        profileDropdown.hide();
+      } else {
+        profileDropdown.show();
+        profileDropdownOther.hide();
+      }
     });
-
+  
     $('#open_profile_dropdown').click(function() {
-        if ($('.employer_notification-dropdown .profile-dropdown').is(':visible')) {
-            $('.employer_notification-dropdown .profile-dropdown').fadeOut(300, function() {
-                $('.employer_profile-dropdown .profile-dropdown').fadeIn(300);
-            });
-        } else {
-            $('.employer_profile-dropdown .profile-dropdown').fadeIn(300);
-        }
+      var profileDropdown = $('.employer_profile-dropdown .profile-dropdown');
+      var profileDropdownVisible = profileDropdown.is(':visible');
+      var profileDropdownOther = $('.employer_notification-dropdown .profile-dropdown');
+  
+      if (profileDropdownVisible) {
+        profileDropdown.hide();
+      } else {
+        profileDropdown.show();
+        profileDropdownOther.hide();
+      }
     });
-});
+  
+    // Close dropdown when the button is clicked again
+    $('#open_profile_notification, #open_profile_dropdown').click(function() {
+      var profileDropdown = $(this).siblings('.profile-dropdown');
+      var profileDropdownVisible = profileDropdown.is(':visible');
+  
+      if (profileDropdownVisible) {
+        profileDropdown.hide();
+      }
+    });
+  });
+  
+  
+  
 
 //toggle sidebar
 
@@ -451,7 +467,7 @@ $(document).ready(function() {
   
 
 
-//   Employer zoon
+//   Employer zoon js with signup js
 $(document).ready(function() {
     // Hide all dropdowns initially
     $('.action-dropdown').hide();

@@ -30,7 +30,7 @@
     <header class="header" id="header">
         <nav class="navbar navbar-light fixed-top">
             <div class="container-fluid">
-                <a href="./index.html" class="navbar-brand Employer-navbrand">
+                <a href="./company-profile.html" class="navbar-brand Employer-navbrand">
                     <img src="./frontend/img/nclogo.png" class="obj_fit_contain" alt="">
                 </a>
                 <div class="d-flex gap-2 align-items-center">
@@ -79,7 +79,7 @@
                                 </div>
                                 <div class="profile-dropdown_links">
                                     <div>
-                                        <a href="">Account Settings & Billing</a>
+                                        <a href="./account-setting-and-billing.html">Account Settings & Billing</a>
                                     </div>
                                     <div>
                                         <a href="">Help & Support</a>
@@ -132,7 +132,7 @@
                     </li>
                 </ul>
             </div>
-            <ul class="side-nav">
+            <ul class="side-nav logout">
                 <li class="side-nav__item last-item">
                     <img src="./frontend/img/sign_out.svg" alt="">
                     <span>Log Out</span>
@@ -459,7 +459,6 @@
                                 aria-labelledby="pills-addjob-tab" tabindex="0">
                                 <h3 class="heading-h3 mb-3">Add New Jobs</h3>
                                 <div class="add-job-container">
-
                                     <form class="row g-3">
                                         <div class="col-md-6">
                                             <label for="jobtitle" class="form-label">Job Title</label>
@@ -512,6 +511,8 @@
                                             <div class="add-skill-wrap form-control border-0  border-bottom rounded-0">
                                                 <div>
                                                     <ul class="d-flex flex-wrap gap-2 p-0 m-0" id="skills-list">
+                                                        <li class="skill-item">Add Required Skills<span
+                                                                class="remove-skill">×</span></li>
                                                     </ul>
                                                 </div>
                                                 <div>
@@ -577,8 +578,8 @@
                         <label for="floatingInput">Email address</label>
                     </div>
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                            style="height: 100px"></textarea>
+                        <textarea class="form-control" placeholder="Leave a comment here"
+                            id="floatingTextarea2" style="height: 100px"></textarea>
                         <label for="floatingTextarea2">Discretion</label>
                     </div>
                 </div>
@@ -593,7 +594,7 @@
     </div>
     <!-- VIEW FULL JOB  -->
     <div class="modal fade" id="full-job-view" tabindex="-1" aria-labelledby="full-job-viewLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header border-0">
                     <h1 class="modal-title fs-5" id="full-job-viewLabel">Full Job</h1>

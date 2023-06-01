@@ -2,6 +2,9 @@
     .job-title p{
         max-width: 450px;
     }
+    .pricingTable-firstTable_table__options{
+        min-height: 470px;
+    }
 }
 @media only screen and (max-width:1200px){
     .header_links .link_item .nav-link{
@@ -37,6 +40,9 @@
     }
     .job-filters-wrap{
         width: 30%;
+    }
+    .pricingTable-firstTable_table__pricing{
+        font-size: 2em;
     }
 }
 @media only screen and (max-width:1100px){
@@ -104,6 +110,17 @@
     }
     .job-location img{
         width: 20px;
+    }
+    .pricingTable-firstTable{
+        flex-direction: column;
+    }
+    .pricingTable-firstTable_table{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .pricingTable-firstTable_table__options{
+        min-height: unset;
     }
 }
 @media only screen and (max-width:850px){
@@ -383,6 +400,7 @@
     .employer-signup .btn-green{
         width: 100%;
     }
+
 }
 @media only screen and (max-width:550px){
     .company_work_space .search_result_inner{
@@ -434,6 +452,12 @@
     }
     .employer_notification-dropdown .profile-dropdown {
         transform: translateX(-62%);
+    }
+    .plans-information_inner-wrap p{
+        font-size: 14px;
+    }
+    .access-person-list .table td{
+        min-width: 200px;
     }
 }
 @media only screen and (max-width:425px){

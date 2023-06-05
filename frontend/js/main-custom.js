@@ -594,7 +594,9 @@ $(document).ready(function() {
         $('.select-rn').prop('checked', isChecked);
         if (isChecked) {
             $('.nurse-search-result-item').addClass('selected');
+            $('.arrange-upcoming-interview').hide();
         } else {
+            $('.arrange-upcoming-interview').show();
             $('.nurse-search-result-item').removeClass('selected');
         }
     });

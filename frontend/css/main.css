@@ -3070,3 +3070,6 @@ header .navbar a{
     .logout .last-item {
       padding: 14px 3px 14px 12px;
     }
+    .arrange-upcoming-interview{
+        display: none;
+    }
